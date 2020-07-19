@@ -1,0 +1,20 @@
+.title-bar {
+    display: flex;
+    width: 10rem;
+    height: 100%;
+    /* 垂直居中 */
+    align-items: center;
+}
+.title-bar .title-bar_title {
+    position: absolute;
+    left: .388889rem /* 42/108 */;
+    font-size: .462963rem /* 50/108 */;
+    font-weight: bold;
+    color: #404040;
+}
+.title-bar .title-bar_name {
+    position: absolute;
+    right: .388889rem /* 42/108 */;
+    font-size: .333333rem /* 36/108 */;
+    color: #888888;
+}

@@ -1,0 +1,26 @@
+.tab_bar{
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+    background-color: #ffffff;
+    border-top: .018519rem /* 2/108 */ solid #d9d9d9/* 4/108 */;
+}
+.tab_bar .tab{
+    flex: 1;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tab_bar .tab .tab-icon{
+    position: absolute;
+    bottom: .555556rem /* 60/108 */;
+    font-size: .574074rem /* 62/108 */;
+}
+.tab_bar .tab .tab-title {
+    position: absolute;
+    bottom: .203704rem /* 22/108 */;
+    font-size: .240741rem /* 26/108 */;
+}
