@@ -3,7 +3,9 @@ html {
   color: #333;
   font-size: 32px;
 }
-
+div{
+  display: block;
+}
 body,
 ul,
 ol,

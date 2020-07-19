@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
-import './Study.styl';
+import './Study.css';
 
 function Study(props) {
     return (
@@ -9,7 +9,7 @@ function Study(props) {
             {/* 头部 */}
             <div className="study-header">
                 <div className="study-title">我的学习</div>
-                <span class="iconfont">&#xe632;</span>
+                <span className="iconfont">&#xe632;</span>
             </div>
 
             {/* 中间 */}
@@ -22,40 +22,34 @@ function Study(props) {
                             <span>小时</span>
                             <span className='yellow-num'>2</span>
                             <span>分钟</span>
+                            <span className="icon">&#xe534;</span>
                         </p>
                     </div>
-                    
-                    {/* <div className="study-item">
-                        <p className="study-item-date">
-                            <span>0</span>
-                        </p>
-                        <p className="study-item-name">笔记</p>
+                    <div className="study-bars">
+                        <div className="study-item">
+                            <div className="study-item-date">0</div>
+                            <div className="study-item-name">笔记</div>
+                        </div>
+                        <div className="study-item">
+                            <div className="study-item-date">0</div>
+                            <div className="study-item-name">留言</div>
+                        </div>
+                        <div className="study-item">
+                            <div className="study-item-date">0</div>
+                            <div className="study-item-name">收藏</div>
+                        </div>
+                        <div className="study-item">
+                            <div className="study-item-date">0</div>
+                            <div className="study-item-name">下载</div>
+                        </div>
                     </div>
-                    <div className="study-item">
-                        <p className="study-item-date">
-                            <span>0</span>
-                        </p>
-                        <p className="study-item-name">留言</p>
-                    </div>
-                    <div className="study-item">
-                        <p className="study-item-date">
-                            <span>0</span>
-                        </p>
-                        <p className="study-item-name">收藏</p>
-                    </div>
-                    <div className="study-item">
-                        <p className="study-item-date">
-                            <span>0</span>
-                        </p>
-                        <p className="study-item-name">下载</p>
-                    </div> */}
                 </div>
 
                 <div className="study-order">
                     <p className="study-tips">暂无学习内容</p>
                     <button className="study-btn">订阅</button>
                 </div>
-             </div>
+            </div>
             {/* 底部 */}
             <div className="study-footer">
 
