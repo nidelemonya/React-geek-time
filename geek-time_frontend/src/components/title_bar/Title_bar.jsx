@@ -17,7 +17,7 @@ function Title_bar(props) {
 
 Title_bar.propTypes = {
     title:PropTypes.string.isRequired,
-    name:PropTypes.string.isRequired
+    name:PropTypes.string
 }
 
 const Title_bars =  withRouter(Title_bar)
