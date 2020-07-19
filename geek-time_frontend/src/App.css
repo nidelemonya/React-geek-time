@@ -2,5 +2,6 @@
   width: 10rem;
   height: 15.4rem;
   background-color: #ffffff;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
