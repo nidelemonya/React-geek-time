@@ -7,6 +7,11 @@ import Forum from'./pages/forum/Forum';
 import Study from './pages/study/Study';
 import My from './pages/my/My';
 function App() {
+  // fetch('http://localhost/data/all')
+  //   .then(data => data.json())
+  //   .then(data => {
+  //     console.log(data)
+  //   })
   return (
     <div className="App">
       <BrowserRouter>

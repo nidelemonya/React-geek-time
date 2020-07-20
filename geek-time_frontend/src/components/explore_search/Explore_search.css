@@ -1,0 +1,45 @@
+.explore_search {
+    position: relative;
+    width: 100%;
+    background-color: #f5f7fc;
+    height: .87037rem /* 94/108 */;
+    zoom: 1;
+    vertical-align: middle;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+.bn {
+    position: absolute;
+    width: .87037rem /* 94/108 */;
+    height: .87037rem /* 94/108 */;
+    font-size: .37037rem /* 40/108 */;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inp {
+    width: 80%;
+    position: absolute;
+    display: block;
+    height: .87037rem /* 94/108 */;
+    overflow: hidden;
+    left: .87037rem /* 94/108 */;
+}
+
+.inp input {
+    /* 干掉 输入框默认样式 outline: none; border: none; */
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+    width: 90%;
+    background-color: #f5f7fc;
+    font-size: .37037rem /* 40/108 */;
+    height: 0.6527775rem;
+    -webkit-appearance: none;
+    padding: 0.1305555rem;
+}
