@@ -144,7 +144,5 @@
 .forum-footer {
     position: fixed;
     bottom: 0;
-    height: 1.333333rem
-        /* 144/108 */
-    ;
+    height: 1.333333rem;
 }
