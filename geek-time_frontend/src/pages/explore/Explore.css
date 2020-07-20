@@ -1,0 +1,41 @@
+.explore {
+  width: 10rem;
+  height: 100%;
+}
+.explore .explore-header {
+  padding: 0 0.37037rem 0 0.37037rem /* 40/108 */;
+  position: fixed;
+  top: 0;
+  height: 1.173rem;
+  z-index: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.explore .explore-header .explore-title {
+  font-size: 0.490741rem /* 53/108 */;
+  font-weight: bold;
+  color: #3b3b3b;
+  width: 8.555556rem /* 924/108 */;
+}
+.explore .explore-header span {
+  flex: 1;
+  font-size: 0.675926rem /* 73/108 */;
+}
+.explore .search {
+  position: relative;
+  top: 0.166667rem /* 18/108 */;
+  padding: 0 0.37037rem 0 0.37037rem /* 40/108 */;
+  height: 0.907407rem /* 98/108 */;
+}
+.explore .swiper-box {
+  position: relative;
+  top: 0.25rem /* 27/108 */;
+  padding: 0 0.37037rem 0 0.37037rem /* 40/108 */;
+  height: 2rem;
+}
+.explore .explore-footer {
+  position: fixed;
+  bottom: 0;
+  height: 1.173rem;
+}

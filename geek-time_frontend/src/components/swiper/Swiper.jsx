@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Swiper from "swiper";
-import "swiper/css/swiper.min.css";
+// import "swiper/css/swiper.min.css";
 
 export default function Explore_swiper(props) {
     // console.log(props)

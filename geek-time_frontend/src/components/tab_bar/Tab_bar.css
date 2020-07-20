@@ -4,7 +4,7 @@
     display: flex;
     z-index: 1;
     background-color: #ffffff;
-    border-top: .018519rem /* 2/108 */ solid #d9d9d9/* 4/108 */;
+    border-top: .000093rem /* 0.01/108 */ solid #d9d9d9;
 }
 .tab_bar .tab{
     flex: 1;
@@ -16,11 +16,11 @@
 }
 .tab_bar .tab .tab-icon{
     position: absolute;
-    bottom: .555556rem /* 60/108 */;
+    bottom: .37037rem /* 40/108 */;
     font-size: .574074rem /* 62/108 */;
 }
 .tab_bar .tab .tab-title {
     position: absolute;
-    bottom: .203704rem /* 22/108 */;
+    bottom: .111111rem /* 12/108 */;
     font-size: .240741rem /* 26/108 */;
 }
