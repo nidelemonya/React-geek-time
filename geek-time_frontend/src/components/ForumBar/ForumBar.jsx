@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
-import './Study_bar.css';
+import './ForumBar.css';
 
-export default function Study_bar(props) {
+export default function ForumBar(props) {
     // console.log(props)
     // 在 all 的下面 第0个
     const { list_study } = props;
@@ -24,6 +24,6 @@ export default function Study_bar(props) {
     )
 }
 
-Study_bar.propTypes = {
+ForumBar.propTypes = {
     // list_study:PropTypes.object.isRequired
 }

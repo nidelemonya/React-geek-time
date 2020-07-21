@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
-import './Title_bar.css';
+import './TitleBar.css';
 
 function Title_bar(props) {
     // console.log(props)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
-import './Tab_bar.css';
+import './TabBar.css';
 
 function Tab_bar(props) {
     return (

@@ -30,9 +30,59 @@
 }
 .explore .swiper-box {
   position: relative;
-  top: 0.25rem /* 27/108 */;
+  top: 0.277778rem /* 30/108 */;
   padding: 0 0.37037rem 0 0.37037rem /* 40/108 */;
-  height: 2rem;
+  height: 4.166667rem /* 450/108 */;
+}
+.explore .explore-peach {
+  position: relative;
+  height: 1.962963rem /* 212/108 */;
+  top: 0.685185rem /* 74/108 */;
+  padding: 0 0.37037rem 0 0.37037rem /* 40/108 */;
+}
+.explore .explore-peach .explore-bg {
+  border: 0.018519rem /* 2/108 */ solid #f8f8f8;
+  border-radius: 0.092593rem /* 10/108 */;
+}
+.explore .explore-peach .explore-bg .peach-top {
+  margin: 0.259259rem 0.259259rem 0 0.259259rem /* 28/108 */;
+  display: flex;
+  align-items: center;
+}
+.explore .explore-peach .explore-bg .peach-top .peach-box {
+  width: 0.759259rem /* 82/108 */;
+  height: 0.759259rem /* 82/108 */;
+  border-radius: 0.37963rem /* 41/108 */;
+  overflow: hidden;
+}
+.explore .explore-peach .explore-bg .peach-top .peach-box img {
+  width: 100%;
+}
+.explore .explore-peach .explore-bg .peach-top .peach-left {
+  margin-left: 0.259259rem /* 28/108 */;
+  width: 7.6rem;
+  font-size: 0.388889rem /* 42/108 */;
+  font-weight: bold;
+}
+.explore .explore-peach .explore-bg .peach-top .peach-right {
+  flex: 1;
+}
+.explore .explore-peach .explore-bg .peach-bottom {
+  margin: 0 0.259259rem 0.259259rem 0.259259rem /* 28/108 */;
+}
+.explore .explore-peach .explore-bg .peach-bottom .peach-title {
+  margin-left: 0.222222rem /* 24/108 */;
+  font-size: 0.388889rem /* 42/108 */;
+}
+.explore .explore-live {
+  position: relative;
+  height: 1.962963rem /* 212/108 */;
+  top: 2.222222rem /* 240/108 */;
+  padding: 0 0.37037rem 0 0.37037rem /* 40/108 */;
+}
+.explore .explore-live .live-top {
+  border-left: 2px solid #fbcfb2;
+  height: 0.506397rem;
 }
 .explore .explore-footer {
   position: fixed;

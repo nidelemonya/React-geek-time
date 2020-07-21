@@ -1,0 +1,15 @@
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.185185rem /* 20/108 */;
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .swiper-pagination-bullet-active {
+  background-color: #DDDDDD;
+}
