@@ -1,9 +1,10 @@
 .study {
   width: 10rem;
-  height: 100%;
+  height: 95%;
 }
 .study .study-header {
   width: 100%;
+  height: 1.333rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -35,11 +36,11 @@
   background-color: #fffffa;
 }
 .study .study-body .study-items .study-time {
-  width: 5.592593rem /* 604/108 */;
+  width: 5.34rem /* 526/108 */;
   height: 0.907407rem /* 98/108 */;
   background-color: #fbf7ef;
   font-size: 0.435185rem /* 47/108 */;
-  border-radius: 0 20px 20px 0 ;
+  border-radius: 0 0.45386rem 0.45386rem 0 /* 20/108 */;
   line-height: 0.907407rem;
   font-weight: bold;
 }
@@ -50,7 +51,7 @@
 .study .study-body .study-items .study-time .study-time-long .yellow-num {
   color: #ff870a;
 }
-.study .study-body .study-items .study-time .study-time-long .icon .icon-fanhui {
+.study .study-body .study-items .study-time .study-time-long .iconfont .icon-fanhui {
   width: 0.240741rem /* 26/108 */;
 }
 .study .study-body .study-items .study-bars {
@@ -59,22 +60,46 @@
   align-items: center;
 }
 .study .study-body .study-items .study-bars .study-item {
-  margin-left: 0.925926rem /* 100/108 */;
+  width: 2.5rem;
   text-align: center;
 }
 .study .study-body .study-items .study-bars .study-item .study-item-date {
   line-height: 0.462963rem /* 50/108 */;
   font-family: "BEBAS___";
   font-size: 24px;
-  color: #fa8919;
+  color: #404040;
 }
 .study .study-body .study-items .study-bars .study-item .study-item-name {
   line-height: 0.314815rem /* 34/108 */;
   font-size: 0.314815rem /* 34/108 */;
   font-weight: 500;
+  font-weight: bold;
   color: #888;
   margin-top: 0.351852rem /* 38/108 */;
 }
 .study .study-body .study-order {
   width: 100%;
+  margin-top: 2.166667rem /* 234/108 */;
+  text-align: center;
+}
+.study .study-body .study-order .study-tips {
+  color: #b2b2b2;
+  font-size: 0.37037rem /* 40/108 */;
+  font-weight: bold;
+  line-height: 0.333333rem /* 36/108 */;
+}
+.study .study-body .study-order .study-btn {
+  height: 0.851852rem /* 92/108 */;
+  width: 3.333333rem /* 360/108 */;
+  background-color: #fa8919;
+  border-radius: 20px;
+  border: 1px solid #fa8919;
+  color: #f5ffff;
+  font-size: 0.462963rem /* 50/108 */;
+  margin-top: 0.333333rem /* 36/108 */;
+}
+.study .study-footer {
+  position: fixed;
+  bottom: 0;
+  height: 1.333333rem /* 144/108 */;
 }

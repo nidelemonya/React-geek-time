@@ -1,8 +1,9 @@
 .study{
     width: 10rem;
-    height: 100%;
+    height: 95%;
     .study-header{
         width: 100%;
+        height: 1.333rem;
         position: fixed;
         top: 0;
         left: 0;
@@ -32,11 +33,12 @@
             /* 128.588px */
             background-color: #fffffa;
             .study-time{
-                width: 5.592593rem /* 604/108 */;
+                // width: 5.592593rem /* 604/108 */;
+                width: 5.34rem /* 526/108 */;
                 height: .907407rem /* 98/108 */;
                 background-color: #fbf7ef;
                 font-size: .435185rem /* 47/108 */;
-                border-radius: 0 20px 20px 0 ;
+                border-radius: 0 0.45386rem 0.45386rem 0/* 20/108 */ ;
                 line-height: .907407rem;
                 font-weight: bold;
                 .study-time-long{
@@ -45,7 +47,7 @@
                     .yellow-num{
                         color: #ff870a;
                     }
-                    .icon .icon-fanhui{
+                    .iconfont .icon-fanhui{
                         width: .240741rem /* 26/108 */;
                     }
                 }
@@ -55,18 +57,19 @@
                 display: flex;
                 align-items: center;
                 .study-item{
-                    margin-left: .925926rem /* 100/108 */;
+                    width: 2.5rem;
                     text-align: center;
                     .study-item-date{
                         line-height: .462963rem /* 50/108 */;
                         font-family: "BEBAS___";
                         font-size: 24px;
-                        color: #fa8919;
+                        color:#404040;
                     }
                     .study-item-name{
                         line-height: .314815rem /* 34/108 */;
                         font-size: .314815rem /* 34/108 */;
                         font-weight: 500;
+                        font-weight: bold;
                         color: #888;
                         margin-top: .351852rem /* 38/108 */;
                     }
@@ -75,6 +78,29 @@
         }
         .study-order{
             width: 100%;
+            margin-top: 2.166667rem /* 234/108 */;
+            text-align: center;
+            .study-tips{
+                color: #b2b2b2;
+                font-size: .37037rem /* 40/108 */;
+                font-weight: bold;
+                line-height: .333333rem /* 36/108 */;
+            }
+            .study-btn{
+                height: .851852rem /* 92/108 */;
+                width: 3.333333rem /* 360/108 */;
+                background-color: #fa8919;
+                border-radius: 20px;
+                border: 1px solid #fa8919;
+                color: #f5ffff;
+                font-size: .462963rem /* 50/108 */;
+                margin-top: .333333rem /* 36/108 */;
+            }
         }
+    }
+    .study-footer{
+        position: fixed;
+        bottom: 0;
+        height: 1.333333rem /* 144/108 */;
     }
 }

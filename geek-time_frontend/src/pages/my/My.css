@@ -1,0 +1,66 @@
+.my {
+  width: 10rem;
+  height: 95%;
+}
+.my .my-header {
+  height: 1.173rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: inline-block;
+}
+.my .my-header .my-info {
+  width: 100%;
+  height: 0.925926rem /* 100/108 */;
+  position: fixed;
+  top: 0;
+  left: 9.037037rem /* 976/108 */;
+}
+.my .my-header .my-info .iconfont {
+  line-height: 0.222222rem /* 24/108 */;
+  font-size: 0.518519rem /* 56/108 */;
+}
+.my .my-header .my-info .my-info__badge {
+  position: absolute;
+  min-width: 0.611111rem;
+  display: inline-block;
+}
+.my .my-body {
+  position: relative;
+  top: 0.203704rem /* 22/108 */;
+  width: 100%;
+  height: 3.703704rem /* 400/108 */;
+}
+.my .my-body .my-body__infoms {
+  height: 2.407407rem /* 260/108 */;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.222222rem /* 24/108 */;
+  background-color: #fff;
+}
+.my .my-body .my-body__infoms .my-body__infoms_avatar {
+  height: 2.037037rem /* 220/108 */;
+  width: 2rem /* 216/108 */;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.my .my-body .my-body__infoms .my-body__infoms_avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.my .my-body .my-body__infoms .my-body__infoms_mess {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.425926rem /* 46/108 */;
+  padding: 0.333333rem /* 36/108 */ 0;
+}
+.my .my-body .my-body__infoms .my-body__infoms_mess h3 {
+  font-weight: bold;
+}
