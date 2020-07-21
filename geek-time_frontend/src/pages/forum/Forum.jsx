@@ -1,10 +1,10 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import Tab_bar from '../../components/tab_bar/Tab_bar';
-import Title_bar from '../../components/title_bar/Title_bar';
-import Study_bar from '../../components/study_bar/Study_bar';
-import Forum_tag from '../../components/forum_tag/Forum_tag';
-import Forum_list from '../../components/forum_list/Forum_list';
+import TabBar from '../../components/TabBar/TabBar';
+import TitleBar from '../../components/TitleBar/TitleBar';
+import ForumBar from '../../components/ForumBar/ForumBar';
+import ForumTag from '../../components/ForumTag/ForumTag';
+import ForumList from '../../components/ForumList/ForumList';
 import PropTypes from 'prop-types';
 import './Forum.css';
 
@@ -22,23 +22,23 @@ function Forum(props) {
             <div className="forum-center">
                 <div className="forum-study">
                     <div className="forum-title1">
-                        <Title_bar title="学习路径" name="查看全部" />
+                        <TitleBar title="学习路径" name="查看全部" />
                     </div>
                     <div className="forum-box1">
-                        <Study_bar />
+                        <ForumBar />
                     </div>
                 </div>
                 <div className="forum-lesson">
                     <div className="forum-lesson-title">
-                        <Title_bar title="课程方向" name="查看全部" />
+                        <TitleBar title="课程方向" name="查看全部" />
                     </div>
                     <div className="forum-box2">
-                        <Forum_tag />
+                        <ForumTag />
                     </div>
                 </div>
                 <div className="forum-all">
                     <div className="forum-all-title">
-                        <Title_bar title="全部课程" name="" />
+                        <TitleBar title="全部课程" name="" />
                     </div>
                     <div className="forum-all-box3">
                         <div className="forum-all-tab">
@@ -57,20 +57,15 @@ function Forum(props) {
                         </div>
                     </div>
                     <div className="forum-xw">
-                        <Forum_list/>
+                        <ForumList/>
                     </div>
                 </div>
             </div>
             <div className="forum-footer">
-                <Tab_bar></Tab_bar>
+                <TabBar></TabBar>
             </div>
-        </div>
-    )
-}
-
-Forum.propTypes = {
-
-}
+        </div>)
+    }
 
 const Forums = withRouter(Forum)
 export default Forums

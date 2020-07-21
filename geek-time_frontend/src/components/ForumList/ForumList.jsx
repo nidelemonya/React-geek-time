@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
-import './Forum_list.css';
+import './ForumList.css';
 
-export default function Forum_list(props) {
+export default function ForumList(props) {
     // console.log(props)
     // 在 all 的下面 第0个
     const { list_study } = props;
@@ -34,6 +34,6 @@ export default function Forum_list(props) {
     )
 }
 
-Forum_list.propTypes = {
+ForumList.propTypes = {
     // list_study:PropTypes.object.isRequired
 }
