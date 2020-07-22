@@ -1,0 +1,18 @@
+.explore_title {
+    display: flex;
+    width: 9.4rem;
+    height: 100%;
+    /* 垂直居中 */
+    align-items: center;
+    justify-content: space-between;
+}
+.explore_title .explore_title_title {
+    margin-left: .259259rem /* 28/108 */;
+    font-size: .506397rem /* 19/37.52 */;
+    font-weight: bold;
+    color: #404040;
+}
+.explore_title .explore_title_name {
+    font-size: .373134rem /* 14/37.52 */;
+    color: #888888;
+}
