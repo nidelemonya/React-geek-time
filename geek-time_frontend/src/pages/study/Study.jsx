@@ -1,9 +1,13 @@
 import React from 'react';
+import Tab_bar from '../../components/tab_bar/Tab_bar'
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './Study.css';
 
 function Study(props) {
+    const studyOrderBtn = () =>{
+        props.history.push('/forum');
+    }
     return (
         <div className="study">
             {/* 头部 */}
@@ -16,14 +20,14 @@ function Study(props) {
             <div className="study-body">
                 <div className="study-items">
                     <div className="study-time">
-                        <p className="study-time-long">
+                        <div className="study-time-long">
                             <span>本周时长</span>
                             <span className='yellow-num'>0</span>
                             <span>小时</span>
                             <span className='yellow-num'>2</span>
                             <span>分钟</span>
-                            <span className="icon">&#xe534;</span>
-                        </p>
+                            <span className="iconfont icon-fanhui"></span>
+                        </div>
                     </div>
                     <div className="study-bars">
                         <div className="study-item">
@@ -47,12 +51,12 @@ function Study(props) {
 
                 <div className="study-order">
                     <p className="study-tips">暂无学习内容</p>
-                    <button className="study-btn">订阅</button>
+                    <button onClick={studyOrderBtn} className="study-btn">订阅</button>
                 </div>
             </div>
             {/* 底部 */}
             <div className="study-footer">
-
+                <Tab_bar/>
             </div>
         </div>
     )
