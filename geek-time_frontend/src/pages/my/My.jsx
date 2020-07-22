@@ -2,6 +2,8 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './My.css';
+import MyItems from '../../components/MyItem/MyItem';
+import Tab_bar from '../../components/tab_bar/Tab_bar';
 
 function My(props) {
     return (
@@ -35,7 +37,8 @@ function My(props) {
                     <img src="../assets/myimg2.png" alt="" />
                 </div>
                 <div className="my-body__tabbars">
-                    <div className="my-body__tabbars_tabbars1">
+                    <MyItems />
+                    {/* <div className="my-body__tabbars_tabbars1">
                         <div className="my-body__tabbars_tabbar_item">
                             <div className="my-body__tabbars_tabbar_itemLeft">
                                 <span className="icon1 iconfont">&#xe605;</span>
@@ -63,7 +66,7 @@ function My(props) {
                                 <span className="icon2 iconfont">&#xe534;</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className="my-body__tabbars_tabbars2">
                         <div className="my-body__tabbars_item">
                             <div className="my-body__tabbars_tabbar_itemLeft">
@@ -173,7 +176,9 @@ function My(props) {
                     </div> */}
                 </div>
             </div>
-            <div className="my-footer"></div>
+            <div className="my-footer">
+                {/* <Tab_bar/> */}
+            </div>
         </div>
     )
 }

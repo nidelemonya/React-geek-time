@@ -37,7 +37,7 @@ function MyItem(props) {
     )
 }
 
-Tab_bar.propTypes = {
+MyItem.propTypes = {
 
 }
 
