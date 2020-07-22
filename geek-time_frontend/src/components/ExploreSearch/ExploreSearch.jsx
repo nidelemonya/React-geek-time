@@ -1,9 +1,9 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
-import './Explore_search.css';
+import './ExploreSearch.css';
 
-export default function Explore_search(props) {
+export default function ExploreSearch(props) {
     return (
         <div className="explore_search">
                 <div className="bn iconfont icon-sousuo"></div>
@@ -14,5 +14,5 @@ export default function Explore_search(props) {
     )
 }
 
-Explore_search.propTypes = {
+ExploreSearch.propTypes = {
 }
