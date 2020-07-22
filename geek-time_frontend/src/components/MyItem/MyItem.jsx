@@ -1,9 +1,12 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './MyItem.css';
 
 function MyItem(props) {
+    const [state,setState] = useState([
+        
+    ])
     return (
         <div className="my-body__items">
             <div className="my-body__tabbars_tabbar_item">
@@ -15,7 +18,7 @@ function MyItem(props) {
                     <span className="icon2 iconfont">&#xe534;</span>
                 </div>
             </div>
-            <div className="my-body__tabbars_tabbar_item">
+            {/* <div className="my-body__tabbars_tabbar_item">
                 <div className="my-body__tabbars_tabbar_itemLeft">
                     <span className="icon1 iconfont">&#xe61d;</span>
                     <div className="name">我的课程</div>
@@ -32,7 +35,7 @@ function MyItem(props) {
                 <div className="my-body__tabbars_tabbar_itemRight">
                     <span className="icon2 iconfont">&#xe534;</span>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

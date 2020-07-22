@@ -1,5 +1,5 @@
 import React from 'react';
-import Tab_bar from '../../components/tab_bar/Tab_bar'
+import TabBar from '../../components/TabBar/TabBar';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './Study.css';
@@ -56,7 +56,7 @@ function Study(props) {
             </div>
             {/* 底部 */}
             <div className="study-footer">
-                <Tab_bar/>
+                <TabBar/>
             </div>
         </div>
     )

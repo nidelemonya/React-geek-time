@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './My.css';
 import MyItems from '../../components/MyItem/MyItem';
-import Tab_bar from '../../components/tab_bar/Tab_bar';
+import TabBar from '../../components/TabBar/TabBar';
 
 function My(props) {
     return (
@@ -177,7 +177,7 @@ function My(props) {
                 </div>
             </div>
             <div className="my-footer">
-                {/* <Tab_bar/> */}
+                {/* <TabBar/> */}
             </div>
         </div>
     )
