@@ -1,6 +1,4 @@
 {
-    "error": [],
-    "extra": [],
     "data": [{
         "list": [{
             "id": 7274,
@@ -186,6 +184,5 @@
         "block_name": "ad_bottom",
         "product_type": "b19",
         "nav_id": 0
-    }],
-    "code": 0
+    }]
 }

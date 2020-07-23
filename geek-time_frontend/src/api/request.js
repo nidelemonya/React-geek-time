@@ -1,7 +1,7 @@
 import { axiosInstance } from './config';
-export const getRecommendListRequest = () => {
-//    return
+export const getLessonsRequest = () => {
+    return axiosInstance.get("/all");
 }
-export const get = () => {
-    // return
+export const getTrainingRequest = () => {
+    return axiosInstance.get("/all");
 }

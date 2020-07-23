@@ -1,16 +1,15 @@
 import React from 'react';
-import { withRouter } from 'react-router';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './ForumList.css';
 
 export default function ForumList(props) {
     // console.log(props)
     // 在 all 的下面 第0个
-    const { list_study } = props;
+    // const { list_study } = props;
     return (
         <div className="_33ly3o09_0">
             <div className="_6Gc2XI7H_0">
-                <img src="https://static001.geekbang.org/resource/image/d3/3a/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg?x-oss-process=image/resize,m_fill,h_216,w_164"></img>
+                <img src="https://static001.geekbang.org/resource/image/d3/3a/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg?x-oss-process=image/resize,m_fill,h_216,w_164" alt="_6Gc2XI7H_0"></img>
             </div>
             <div className="_1yQOkMHx_0">
                 <h3 className="TsqvfD9D_0 NYryeJ04_0">数据结构与算法之美</h3>
@@ -34,6 +33,6 @@ export default function ForumList(props) {
     )
 }
 
-ForumList.propTypes = {
-    // list_study:PropTypes.object.isRequired
-}
+// ForumList.propTypes = {
+//     // list_study:PropTypes.object.isRequired
+// }

@@ -31,7 +31,7 @@ export default function ExploreSwiper(props) {
         linkUrl: '#'
       }]);
     useEffect(()=> {
-        const swiper = new Swiper('.swiper-container', {
+        new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
             loop:true,

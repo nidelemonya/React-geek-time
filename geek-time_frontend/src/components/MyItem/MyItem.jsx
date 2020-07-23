@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './MyItem.css';
 import '../../assets/iconfont/iconfont.js';
 
 function MyItem(props) {
-    const [item_list, setState] = useState([
+    const [item_list] = useState([
         {
             id: 1,
             iconUrl: '\ue605',

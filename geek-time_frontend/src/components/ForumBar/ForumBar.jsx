@@ -1,12 +1,9 @@
 import React from 'react';
-import { withRouter } from 'react-router';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './ForumBar.css';
 
 export default function ForumBar(props) {
-    // console.log(props)
-    // 在 all 的下面 第0个
-    const { list_study } = props;
+    // const { study_lessons } = props;
     return (
         <ul className="forum-ul">
             <li className="forum-li">
@@ -24,6 +21,6 @@ export default function ForumBar(props) {
     )
 }
 
-ForumBar.propTypes = {
-    // list_study:PropTypes.object.isRequired
-}
+// ForumBar.propTypes = {
+//     // list_study:PropTypes.object.isRequired
+// }

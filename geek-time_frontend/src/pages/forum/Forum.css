@@ -8,14 +8,9 @@
     position: fixed;
     display: flex;
     align-items: center;
-    height: 1.1730rem
-        /* 144/108 */
-    ;
-    border-bottom: .018519rem
-        /* 2/108 */
-        solid #f5f5f5
-        /* 4/108 */
-    ;
+    height: 1.1730rem;
+    border-bottom: .018519rem solid #f5f5f5;
+    z-index: 99;
     top: 0;
     background-color: #ffffff;
 }

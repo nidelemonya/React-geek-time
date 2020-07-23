@@ -17,7 +17,7 @@ export default function MySwiper(props) {
         linkUrl: '#'
       }]);
     useEffect(()=> {
-        const swiper = new Swiper('.swiper-container', {
+        new Swiper('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
             loop:true,

@@ -1,13 +1,27 @@
-import React from 'react';
-import { withRouter } from 'react-router';
+import React, { useEffect, memo} from 'react';
+import { connect } from 'react-redux';
+import * as actionTypes from './store/actionCreators';
 import TitleBar from '../../components/TitleBar/TitleBar';
 import ForumBar from '../../components/ForumBar/ForumBar';
 import ForumTag from '../../components/ForumTag/ForumTag';
 import ForumList from '../../components/ForumList/ForumList';
-import PropTypes from 'prop-types';
 import './Forum.css';
 
 function Forum(props) {
+    // 从 props 结构数据出来
+    const { lessons, training, enterLoading } = props;
+    const { getForumListDataDispatch, getTrainDataDispatch} = props;
+    useEffect(()=> {
+        // 如果没有数据 请求一次
+        if (!lessons.length) {
+            getForumListDataDispatch();
+        }
+        if(!training.length) {
+            getTrainDataDispatch();
+        }
+    },[])
+    // 加个空数组防止一直刷新
+    console.log(lessons, training, enterLoading);
     return (
         <div className="forum">
             <div className="forum-header">
@@ -24,7 +38,7 @@ function Forum(props) {
                         <TitleBar title="学习路径" name="查看全部" />
                     </div>
                     <div className="forum-box1">
-                        <ForumBar />
+                        <ForumBar study_lessons={lessons}/>
                     </div>
                 </div>
                 <div className="forum-lesson">
@@ -56,12 +70,27 @@ function Forum(props) {
                         </div>
                     </div>
                     <div className="forum-xw">
-                        <ForumList/>
+                        <ForumList />
                     </div>
                 </div>
             </div>
         </div>)
-    }
+}
 
-const Forums = withRouter(Forum)
-export default Forums
+const mapStateToProps = (state) => ({
+    lessons: state.forum.lessons,
+    training:state.forum.training,
+    enterLoading:state.forum.enterLoading
+})
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getForumListDataDispatch() {
+            dispatch(actionTypes.getLessons())
+        },
+        getTrainDataDispatch() {
+            dispatch(actionTypes.getTraining())
+        }
+    }
+}
+export default connect(mapStateToProps,mapDispatchToProps)(memo(Forum))
