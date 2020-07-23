@@ -1,7 +1,6 @@
 import React from 'react';
-import TabBar from '../../components/TabBar/TabBar';
 import { withRouter } from 'react-router';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './Study.css';
 
 function Study(props) {
@@ -53,10 +52,6 @@ function Study(props) {
                     <p className="study-tips">暂无学习内容</p>
                     <button onClick={studyOrderBtn} className="study-btn">订阅</button>
                 </div>
-            </div>
-            {/* 底部 */}
-            <div className="study-footer">
-                <TabBar/>
             </div>
         </div>
     )

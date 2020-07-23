@@ -3,7 +3,7 @@ import {
     combineReducers,
     applyMiddleware
 } from 'redux';
-import reducers from './reducers';
+import reducers from './reducer';
 import thunk from 'redux-thunk'; // 异步状态修改
 
 export default createStore (

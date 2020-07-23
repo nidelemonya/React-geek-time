@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './My.css';
 import MyItems from '../../components/MyItem/MyItem';
-import TabBar from '../../components/TabBar/TabBar';
+// import TabBar from '../../components/TabBar/TabBar';
 import MySwiper from '../../components/MySwiper/MySwiper';
 
 function My(props) {

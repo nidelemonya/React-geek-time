@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import ExploreSearch from '../../components/ExploreSearch/ExploreSearch';
-import TabBar from '../../components/TabBar/TabBar';
 import ExploreTitle from '../../components/ExploreTitle/ExploreTitle';
 import ExploreSwiper from '../../components/ExploreSwiper/ExploreSwiper';
 import './Explore.css';
@@ -12,7 +11,7 @@ function Explore(props) {
         <div className="explore">
             <div className="explore-header">
                 <div className="explore-title">发现</div>
-                <span className="iconfont icon-rili"></span>
+                <span className="iconfont">&#xe606;</span>
             </div>
             <div className="search">
                 <ExploreSearch />
@@ -105,9 +104,6 @@ function Explore(props) {
                 <div className="explore-winter-box">
                     <img src="https://static001.geekbang.org/resource/image/cc/a7/ccb6575b43e2e7ae69a76b43b1d022a7.png"></img>
                 </div>
-            </div>
-            <div className="explore-footer">
-                <TabBar />
             </div>
         </div>
     )
