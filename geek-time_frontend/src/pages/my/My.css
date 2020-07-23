@@ -93,23 +93,13 @@
   font-size: 0.314815rem /* 34/108 */;
 }
 .my .my-body .my-body__imgs {
-  width: 9.203704rem /* 994/108 */;
+  width: 93%;
   height: 1.425926rem /* 154/108 */;
   display: flex;
+  justify-content: center;
+  padding: 0.425926rem /* 46/108 */ 0.388889rem /* 42/108 */;
+  background-color: #ffffff;
 }
-.my .my-body .my-body__imgs img {
+.my .my-body .my-body__items {
   width: 100%;
-  height: 1.425926rem /* 154/108 */;
-}
-.my .my-body .my-body__tabbars {
-  width: 100%;
-}
-.my .my-body .my-body__tabbars .my-body__tabbars_tabbars1 {
-  background: #fff;
-  margin-top: 0.314815rem /* 34/108 */;
-  padding-left: 0.462963rem /* 50/108 */;
-}
-.my .my-body .my-body__tabbars .my-body__tabbars_tabbars1 .my-body__tabbars_tabbar_item {
-  padding: 0 20px 0 7px;
-  height: 1.388889rem /* 150/108 */;
 }

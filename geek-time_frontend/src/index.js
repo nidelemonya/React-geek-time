@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import fastclick from 'fastclick';//优化点击事件 fastclick
+fastclick.attach(document.body);
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,51 @@
+.my-body__itemsBox {
+  width: 100%;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper {
+  height: 4.185185rem /* 452/108 */;
+  background-color: #fff;
+  margin-top: 0.296296rem /* 32/108 */;
+  padding-left: 0.388889rem /* 42/108 */;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items {
+  height: 1.388889rem /* 150/108 */;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  -webkit-box-align: center;
+  z-index: 1;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 0 0.425926rem /* 46/108 */ 0 0.092593rem /* 10/108 */;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift {
+  display: flex;
+  align-items: center;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift .icon1 {
+  width: 0.518519rem /* 56/108 */;
+  height: 0.555556rem /* 60/108 */;
+  margin-right: 0.5rem /* 54/108 */;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift .name {
+  font-size: 0.462963rem /* 50/108 */;
+  font-weight: 400;
+  font-family: '微软雅黑';
+  color: #525252;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item-right .count {
+  font-size: 0.37037rem /* 40/108 */;
+  color: #868686;
+  margin-right: 0.185185rem /* 20/108 */;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item-right .icon2 {
+  display: block;
+  font-size: 0.37037rem /* 40/108 */;
+  color: #b3b3b3;
+  text-align: center;
+}
