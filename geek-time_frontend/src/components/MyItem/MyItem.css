@@ -22,9 +22,9 @@
   display: flex;
   align-items: center;
 }
-.my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift .icon1 {
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift span {
   width: 0.518519rem /* 56/108 */;
-  height: 0.555556rem /* 60/108 */;
+  height: 0.740741rem /* 80/108 */;
   margin-right: 0.5rem /* 54/108 */;
 }
 .my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift .name {

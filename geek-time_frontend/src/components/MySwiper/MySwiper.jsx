@@ -31,7 +31,7 @@ export default function MySwiper(props) {
                 type: 'bullets',
             },        
           })
-    })
+    },[])
     // console.log(slider_list)
     return (
         <div className="swiper-container">

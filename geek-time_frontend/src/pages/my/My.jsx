@@ -38,13 +38,16 @@ function My(props) {
                 <div className="my-body__items">
                     <MyItems />
                 </div>
+                {/* <div>
+                    <MyItems/>
+                </div> */}
             </div>
             <div className="my-footer">
                 {/* <TabBar/> */}
             </div>
         </div>
     )
-}
+}  
 
 My.propTypes = {
 
