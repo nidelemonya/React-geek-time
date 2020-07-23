@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './TabBar.css';
 
-function Tab_bar(props) {
+function TabBar(props) {
     return (
         <div className="tab_bar">
             <div className="tab">
@@ -30,9 +30,9 @@ function Tab_bar(props) {
     )
 }
 
-Tab_bar.propTypes = {
+TabBar.propTypes = {
     
 }
 
-const Tab_bars =  withRouter(Tab_bar)
-export default Tab_bars
+const TabBars =  withRouter(TabBar)
+export default TabBars

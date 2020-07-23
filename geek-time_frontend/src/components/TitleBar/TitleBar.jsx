@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import './TitleBar.css';
 
-function Title_bar(props) {
+function TitleBar(props) {
     // console.log(props)
     const { title, name } = props;
     // console.log(title,name);
@@ -15,10 +15,10 @@ function Title_bar(props) {
     )
 }
 
-Title_bar.propTypes = {
+TitleBar.propTypes = {
     title:PropTypes.string.isRequired,
     name:PropTypes.string
 }
 
-const Title_bars =  withRouter(Title_bar)
-export default Title_bars
+const TitleBars =  withRouter(TitleBar)
+export default TitleBars
