@@ -141,8 +141,3 @@
 .forum .forum-center .forum-all .forum-xw {
     padding: 0 .399787rem /* 15/37.52 */;
 }
-.forum-footer {
-    position: fixed;
-    bottom: 0;
-    height: 1.1730rem;
-}

@@ -45,7 +45,8 @@ export default function ExploreSwiper(props) {
                 type: 'bullets',
             },        
           })
-    })
+    },[])
+    // 加个空数组防止一直刷新
     // console.log(slider_list)
     return (
         <div className="swiper-container">

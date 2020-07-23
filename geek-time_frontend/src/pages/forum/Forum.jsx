@@ -1,6 +1,5 @@
 import React from 'react';
 import { withRouter } from 'react-router';
-import TabBar from '../../components/TabBar/TabBar';
 import TitleBar from '../../components/TitleBar/TitleBar';
 import ForumBar from '../../components/ForumBar/ForumBar';
 import ForumTag from '../../components/ForumTag/ForumTag';
@@ -60,9 +59,6 @@ function Forum(props) {
                         <ForumList/>
                     </div>
                 </div>
-            </div>
-            <div className="forum-footer">
-                <TabBar></TabBar>
             </div>
         </div>)
     }

@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import fastclick from 'fastclick';//优化点击事件 fastclick
+import fastclick from 'fastclick';
+// 优化移动端 click 事件 把 click 事件变成 touch 事件 因为 移动端 click 事件有延迟 0.5s。
 fastclick.attach(document.body);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById('root')
 );
 

@@ -77,17 +77,110 @@
     }
     .explore-live{
         position: relative;
-        height: 1.962963rem /* 212/108 */;
-        top:2.222222rem /* 240/108 */;
-        padding: 0 .37037rem 0 .37037rem /* 40/108 */;
+        height: 4.592593rem /* 496/108 */;
+        top:1.092593rem /* 118/108 */;
+        padding: .685185rem /* 74/108 */ .37037rem .685185rem /* 74/108 */ .37037rem /* 40/108 */;
         .live-top {
             border-left:2px solid #fbcfb2 ;
             height:.506397rem;
         }
+        .live-bottom {
+            display: flex;
+            height: 3.407407rem /* 368/108 */;
+            border-bottom: .037037rem /* 4/108 */ solid #f4f4f4;
+            .live-bottom-left {
+                position: relative;
+                top: .592593rem /* 64/108 */;
+                flex: 1;
+                .live-bottom-left-top {
+                    font-size: .314815rem /* 34/108 */;
+                    color: #8a8a8a;
+                    .live-bottom-left-top-title{
+                        margin-left: .166667rem /* 18/108 */;
+                    }
+                }
+                .live-bottom-left-center {
+                    position: relative;
+                    top: .166667rem /* 18/108 */;
+                    font-size: .444444rem /* 48/108 */;
+                    font-weight: bold;
+                    color: #444444;
+                }
+                .live-bottom-left-bottom {
+                    position: relative;
+                    top: .351852rem /* 38/108 */;
+                    font-size: .314815rem /* 34/108 */;
+                    color: #8a8a8a;
+                }
+            }
+            .live-bottom-right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 2.222222rem /* 240/108 */;
+                .live-bottom-imgbox{
+                    border-radius: .185185rem /* 20/108 */;
+                    overflow: hidden;
+                    height: 2.222222rem /* 240/108 */;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
-    .explore-footer {
-        position: fixed;
-        bottom: 0;
-        height: 1.1730rem;
+    .explore-winter{
+        padding: 0 .37037rem 0 .37037rem /* 40/108 */;
+        .explore-winter-box {
+            width: 9.259259rem /* 1000/108 */;
+            height: 2.166667rem /* 234/108 */;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .explore-market {
+        position: relative;
+        height: 6.574074rem /* 710/108 */;
+        padding: .685185rem /* 74/108 */ .37037rem .685185rem /* 74/108 */ .37037rem /* 40/108 */;
+        .market-top {
+            border-left:2px solid #fbcfb2 ;
+            height:.506397rem;
+        }
+        .market-bottom {
+            height: 5.37037rem /* 580/108 */;
+            display: flex;
+            justify-content: space-between;
+            .market-box {
+                width: 2.87037rem /* 310/108 */;
+                .market-img{
+                    margin-top: .5rem /* 54/108 */;
+                    height: 3.166667rem /* 342/108 */;
+                    border-radius: .185185rem /* 20/108 */;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .market-title {
+                    margin-top: .166667rem /* 18/108 */;
+                    .market-bottom-t {
+                        font-size: .277778rem /* 30/108 */;
+                        font-weight: bold;
+                        color: #646464;
+                    }
+                    .market-bottom-c {
+                        font-size: .277778rem /* 30/108 */;
+                        color: #888888;
+                    }
+                    .market-bottom-b {
+                        font-size: .277778rem /* 30/108 */;
+                        color: #f89a3d;
+                    }
+                }
+            }
+        }
     }
 }

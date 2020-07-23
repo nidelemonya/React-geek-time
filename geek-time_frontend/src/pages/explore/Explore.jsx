@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import ExploreSearch from '../../components/ExploreSearch/ExploreSearch';
-import TabBar from '../../components/TabBar/TabBar';
-import TitleBar from '../../components/TitleBar/TitleBar';
+import ExploreTitle from '../../components/ExploreTitle/ExploreTitle';
 import ExploreSwiper from '../../components/ExploreSwiper/ExploreSwiper';
 import './Explore.css';
 
@@ -12,7 +11,7 @@ function Explore(props) {
         <div className="explore">
             <div className="explore-header">
                 <div className="explore-title">发现</div>
-                <span className="iconfont icon-rili"></span>
+                <span className="iconfont">&#xe606;</span>
             </div>
             <div className="search">
                 <ExploreSearch />
@@ -37,38 +36,100 @@ function Explore(props) {
             </div>
             <div className="explore-live">
                 <div className="live-top">
-                    <TitleBar title="极客Live" name="直播预告"/>
+                    <ExploreTitle title="极客Live" name="直播预告"/>
                 </div>
-                <div className="live-top">
-                    <TitleBar title="极客商城" name="进入商城"/>
+                <div className="live-bottom">
+                    <div className="live-bottom-left">
+                        <div className="live-bottom-left-top">
+                            <span className="iconfont icon-rili"></span>
+                            <span className="live-bottom-left-top-title">2020年07月20日 20:00</span>
+                        </div>
+                        <div className="live-bottom-left-center">
+                            <span>一小时带你了解 Vim 常用技巧</span>
+                        </div>
+                        <div className="live-bottom-left-bottom">
+                            <span>前 Intel 资深软件架构师吴咏炜，带你快速上手 Vim 模式</span>
+                        </div>
+                    </div>
+                    <div className="live-bottom-right">
+                        <div className="live-bottom-imgbox">
+                            <img src="https://static001.geekbang.org/resource/image/4d/e1/4dbfdffc675120d8153afda952eb32e1.jpg?x-oss-process=image/resize,m_fill,h_216,w_164" alt="吴咏炜"></img>
+                        </div>
+                    </div>
                 </div>
-                <div className="live-top">
-                    <TitleBar title="极客视点" name="查看全部"/>
-                </div>
-                <div className="live-top">
-                    <TitleBar title="极客大学" name="查看全部"/>
-                </div>
-                <div className="live-top">
-                    <TitleBar title="每日一课" name="查看全部"/>
-                </div>
-                <div className="live-top">
-                    <TitleBar title="推荐阅读" name="全部课程"/>
-                </div>
-                <div className="live-top">
-                    <TitleBar title="热点专题" name="查看全部"/>
-                </div>
-                <div className="live-top">
-                    <TitleBar title="视频合集" name="查看全部"/>
-                </div>
-                <div className="live-bottom"></div>
             </div>
-            <div className="explore-footer">
-                <TabBar />
+            <div className="explore-winter">
+                <div className="explore-winter-box">
+                    <img src="https://static001.geekbang.org/resource/image/cc/a7/ccb6575b43e2e7ae69a76b43b1d022a7.png"></img>
+                </div>
+            </div>
+            <div className="explore-market">
+                <div className="market-top">
+                    <ExploreTitle title="极客商城" name="进入商城"/>
+                </div>
+                <div className="market-bottom">
+                    <div className="market-box">
+                        <div className="market-img">
+                            <img src="https://img.yzcdn.cn/upload_files/2020/05/22/FkuMpMbB85EqgaLw6JCbGIu8_rD2.jpg"></img>
+                        </div>
+                        <div className="market-title">
+                            <p className="market-bottom-t">充￥500得￥580</p>
+                            <p className="market-bottom-c">限时免费得好礼</p>
+                            <p className="market-bottom-b">￥ 500</p>
+                        </div>
+                    </div>
+                    <div className="market-box">
+                        <div className="market-img">
+                            <img src="https://img.yzcdn.cn/upload_files/2020/03/13/FrAkhuiMCAezSs3Q1yu7yLSbJ33u.jpg"></img>
+                        </div>
+                        <div className="market-title">
+                            <p className="market-bottom-t">图谱合集特惠</p>
+                            <p className="market-bottom-c">下单就返现</p>
+                            <p className="market-bottom-b">￥ 119</p>
+                        </div>
+                    </div>
+                    <div className="market-box">
+                        <div className="market-img">
+                            <img src="https://img.yzcdn.cn/upload_files/2019/11/29/FtELb3LbjVFl7JyC1Ut6QTE1IcFN.jpg"></img>
+                        </div>
+                        <div className="market-title">
+                            <p className="market-bottom-t">极客时间VIP年卡</p>
+                            <p className="market-bottom-c">365畅学专栏视频课</p>
+                            <p className="market-bottom-b">￥ 2999</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="explore-winter">
+                <div className="explore-winter-box">
+                    <img src="https://static001.geekbang.org/resource/image/cc/a7/ccb6575b43e2e7ae69a76b43b1d022a7.png"></img>
+                </div>
             </div>
         </div>
     )
 }
 
+{/* <div className="live-top">
+                    <ExploreTitle title="极客商城" name="进入商城"/>
+                </div>
+                <div className="live-top">
+                    <ExploreTitle title="极客视点" name="查看全部"/>
+                </div>
+                <div className="live-top">
+                    <ExploreTitle title="极客大学" name="查看全部"/>
+                </div>
+                <div className="live-top">
+                    <ExploreTitle title="每日一课" name="查看全部"/>
+                </div>
+                <div className="live-top">
+                    <ExploreTitle title="推荐阅读" name="全部课程"/>
+                </div>
+                <div className="live-top">
+                    <ExploreTitle title="热点专题" name="查看全部"/>
+                </div>
+                <div className="live-top">
+                    <ExploreTitle title="视频合集" name="查看全部"/>
+                </div> */}
 Explore.propTypes = {
 
 }
