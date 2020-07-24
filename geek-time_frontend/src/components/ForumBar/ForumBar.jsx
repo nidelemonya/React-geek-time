@@ -3,7 +3,8 @@ import React from 'react';
 import './ForumBar.css';
 
 export default function ForumBar(props) {
-    // const { study_lessons } = props;
+    const { study_lessons } = props;
+    console.log(study_lessons);
     return (
         <ul className="forum-ul">
             <li className="forum-li">

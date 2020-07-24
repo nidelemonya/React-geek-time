@@ -21,7 +21,11 @@ function Forum(props) {
         }
     },[])
     // 加个空数组防止一直刷新
-    console.log(lessons, training, enterLoading);
+    // console.log(lessons, training, enterLoading);
+    // console.log((lessons.data),'------')
+    if(lessons.data !== undefined) {
+        const study_lessons = lessons.data[0]
+    }
     return (
         <div className="forum">
             <div className="forum-header">
@@ -38,7 +42,7 @@ function Forum(props) {
                         <TitleBar title="学习路径" name="查看全部" />
                     </div>
                     <div className="forum-box1">
-                        <ForumBar study_lessons={lessons}/>
+                        <ForumBar study_lessons={lessons.data !== undefined ? lessons.data[0] : []}/>
                     </div>
                 </div>
                 <div className="forum-lesson">
