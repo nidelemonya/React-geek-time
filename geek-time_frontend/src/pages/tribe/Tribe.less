@@ -1,0 +1,148 @@
+.tribe{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    .tribe-header {
+        width: 10rem;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        height: 1.1730rem;
+        border-bottom: .018519rem solid #f5f5f5;
+        z-index: 99;
+        top: 0;
+        background-color: #ffffff;
+        .tribe-title {
+            font-size: .490741rem
+                /* 53/108 */
+            ;
+            font-weight: bold;
+            .tribe-name {
+                margin-left: .388889rem
+                    /* 42/108 */
+                ;
+                color: #a5a5a5;
+            }
+            .tribe-name-active {
+                color: #363636;
+            }
+        }
+        .tribe-icon {
+            flex: 1;
+            position: absolute;
+            right: .361111rem;
+            width: .555556rem /* 60/108 */;
+            img {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .tribe-body{
+        width: 10rem;
+        height: 100vh;
+        .tribe-container{
+            min-height: 100vh;
+            padding-top: 10px;
+            padding-bottom: 60px;
+            box-sizing: border-box;
+            .tribe-like{
+                padding: 32px 0 20px;
+                text-align: center;
+                .tribe-like-img{
+                    text-align: center;
+                    img{
+                        height: 2.074074rem /* 224/108 */;
+                        width: 3.981481rem /* 430/108 */;
+                    }
+                }
+                p{
+                    font-size: .351852rem /* 38/108 */;
+                    font-weight: 600;
+                    color: #404040;
+                    margin-top: .518519rem /* 56/108 */;
+                }
+            }
+            .tribe-attention{
+                margin-top: 15px;
+                padding: 0 15px;
+                box-sizing: border-box;
+                .tribe-item{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 14px 0;
+                    .tribe-item-left{
+                        flex:1;
+                        display: flex;
+                        align-items: center;
+                        .tribe-avatar{
+                            width: 1.240741rem /* 134/108 */;
+                            height: 1.240741rem /* 134/108 */;
+                            border-radius: 5px;
+                            background: #dbdde3;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .tribe-title{
+                            font-size: .333333rem /* 36/108 */;
+                            width: 63%;
+                            font-weight: bold;
+                            margin-left: .277778rem /* 30/108 */;
+                            // text-overflow: ellipsis;
+                        }
+                    }
+                    .tribe-item-addBtn{
+                        width: 1.425926rem /* 154/108 */;
+                        height: .703704rem /* 76/108 */;
+                        a {
+                            outline: none;
+                            border: none;
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                            background: #fa8919;
+                            color: #f7ffff;
+                            font-size: .296296rem /* 32/108 */;
+                            font-weight: bold;
+                            justify-content: center;
+                            align-items: center;
+                            // text-decoration: none;
+                            span{
+                                font-size: .296296rem /* 32/108 */;
+                                margin-right: .277778rem /* 30/108 */;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .tribe-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: .925926rem /* 100/108 */;
+                a{
+                    text-decoration: none;
+                    width: 5rem /* 540/108 */;
+                    height: 1rem /* 108/108 */;
+                    font-size: .37037rem /* 40/108 */;
+                    color: #fffff2;
+                    background: #fa8919;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    //轮廓
+                    outline: none;
+                    border: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            
+        }
+    }
+}
