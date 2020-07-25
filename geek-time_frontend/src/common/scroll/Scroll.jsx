@@ -8,7 +8,7 @@ import './scroll.css';
 
 
 let bScrpll = null;
-function Scroll(props) {
+function Scroll(props) {  
     const ref = useRef();
     const { click, onScroll, children} = props;
     useEffect(() => {
@@ -27,11 +27,11 @@ function Scroll(props) {
         }
     },[]);
     
-    let refresh =  () => {
-        if(bScrpll) {
-            bScrpll.refresh();
-        }
-    }
+    // let refresh =  () => {
+    //     if(bScrpll) {
+    //         bScrpll.refresh();
+    //     }
+    // }
     // console.log(children);
         return(
             <div className="scroll-view" ref={ref}>

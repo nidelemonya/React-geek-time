@@ -34,10 +34,10 @@ function Tribe(props) {
                                 </div>
                             </div>
                             <div className="tribe-item-addBtn">
-                                <a href="#">
-                                    <span>+</span>
+                                <div className="tribe-item-addName">
+                                    <span>+   </span>
                                     <span>关注</span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="tribe-item">
@@ -50,10 +50,10 @@ function Tribe(props) {
                                 </div>
                             </div>
                             <div className="tribe-item-addBtn">
-                                <a href="#">
-                                    <span>+</span>
+                                <div className="tribe-item-addName">
+                                    <span>+   </span>
                                     <span>关注</span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="tribe-item">
@@ -66,10 +66,10 @@ function Tribe(props) {
                                 </div>
                             </div>
                             <div className="tribe-item-addBtn">
-                                <a href="#">
-                                    <span>+</span>
+                                <div className="tribe-item-addName">
+                                    <span>+   </span>
                                     <span>关注</span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="tribe-item">
@@ -82,10 +82,10 @@ function Tribe(props) {
                                 </div>
                             </div>
                             <div className="tribe-item-addBtn">
-                                <a href="#">
-                                    <span>+</span>
+                                <div className="tribe-item-addName">
+                                    <span>+   </span>
                                     <span>关注</span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div className="tribe-item">
@@ -98,10 +98,10 @@ function Tribe(props) {
                                 </div>
                             </div>
                             <div className="tribe-item-addBtn">
-                                <a href="#">
-                                    <span>+</span>
+                                <div className="tribe-item-addName">
+                                    <span>+   </span>
                                     <span>关注</span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>

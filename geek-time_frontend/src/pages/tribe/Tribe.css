@@ -35,13 +35,15 @@
   width: 100%;
   display: flex;
   align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .tribe .tribe-body {
   width: 10rem;
   height: 100vh;
 }
 .tribe .tribe-body .tribe-container {
-  min-height: 100vh;
+  height: 100%;
   padding-top: 10px;
   padding-bottom: 60px;
   box-sizing: border-box;
@@ -84,6 +86,7 @@
   width: 1.240741rem /* 134/108 */;
   height: 1.240741rem /* 134/108 */;
   border-radius: 5px;
+  overflow: hidden;
   background: #dbdde3;
 }
 .tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-left .tribe-avatar img {
@@ -98,23 +101,21 @@
 .tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn {
   width: 1.425926rem /* 154/108 */;
   height: 0.703704rem /* 76/108 */;
-}
-.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn a {
   outline: none;
   border: none;
   display: flex;
-  width: 100%;
-  height: 100%;
   background: #fa8919;
   color: #f7ffff;
   font-size: 0.296296rem /* 32/108 */;
   font-weight: bold;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
 }
-.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn a span {
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn .tribe-item-addName {
   font-size: 0.296296rem /* 32/108 */;
-  margin-right: 0.277778rem /* 30/108 */;
+  margin-right: 0.092593rem /* 10/108 */;
 }
 .tribe .tribe-body .tribe-container .tribe-btn {
   display: flex;

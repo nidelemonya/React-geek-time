@@ -25,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.37037rem /* 40/108 */;
+  font-size: 0.537037rem /* 58/108 */;
 }
 .my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift span {
   width: 0.518519rem /* 56/108 */;
