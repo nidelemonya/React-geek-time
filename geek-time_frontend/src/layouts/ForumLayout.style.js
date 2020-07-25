@@ -1,14 +1,5 @@
 import styled from 'styled-components';
 
-
-{/* <div className="forum-header">
-    <div className="forum-title">
-        <span className="forum-name forum-name-active">课程</span>
-        <span className="forum-name">训练营</span>
-        <span className="forum-name">每日一课</span>
-    </div>
-    <span className="forum-icon iconfont">&#xe688;</span>
-</div> */}
 export const Top = styled.div`
     width: 10rem;
     position: fixed;

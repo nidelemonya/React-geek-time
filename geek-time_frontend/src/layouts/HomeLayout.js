@@ -34,7 +34,7 @@ function Home(props) {
                             <div className="tab-title">学习</div>
                         </TabItem>
                     </NavLink>
-                    <NavLink to="/my" activeClassName="selected">
+                    <NavLink to="/user" activeClassName="selected">
                         <TabItem>
                             <span className="tab-icon iconfont ">&#xe502;</span>
                            <div className="tab-title">我的</div>

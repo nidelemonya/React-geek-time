@@ -1,6 +1,6 @@
 // 负责进行数据请求
 import * as actionTypes from './constants';
-import { getLessonsRequest, getInfosRequest} from '../../../api/request'
+import { getLessonsRequest, getInfosRequest} from '../../../../api/request'
 
 export const changeLessons = (data) => ({
     type: actionTypes.CHANGE_LESSONS,
