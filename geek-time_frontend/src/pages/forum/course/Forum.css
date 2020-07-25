@@ -6,17 +6,17 @@
 .forum{
     height: 100vh;
 }
-.forum.forum-study {
+.forum .forum-study {
     height: 3.6680rem;
     padding: .3rem;
 }
 
-.forum.forum-study .forum-title1 {
+.forum .forum-study .forum-title1 {
     height: .895522rem
         /* 33.6/37.52 */
 }
 
-.forum.forum-study .forum-box1 {
+.forum .forum-study .forum-box1 {
     width: 100%;
     margin-top: .037037rem
         /* 4/108 */
@@ -24,20 +24,20 @@
     overflow: hidden;
 }
 
-.forum.forum-lesson {
+.forum .forum-lesson {
     padding: .3rem;
     height: 5.76452rem
         /* 259.6/37.52 */
     ;
 }
 
-.forum.forum-lesson .forum-lesson-title {
+.forum .forum-lesson .forum-lesson-title {
     height: .895522rem
         /* 33.6/37.52 */
     ;
 }
 
-.forum.forum-lesson .forum-box2 {
+.forum .forum-lesson .forum-box2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -46,15 +46,15 @@
     margin-top: .185185rem /* 20/108 */;
 }
 
-.forum.forum-all .forum-all-title {
+.forum .forum-all .forum-all-title {
     padding: 0 .399787rem /* 15/37.52 */;
     height: .895522rem;
 }
 
-.forum.forum-all .forum-all-box3 {
+.forum .forum-all .forum-all-box3 {
     margin-left: -0.319829rem /* 12/37.52 */;
 }
-.forum.forum-all .forum-all-box3 .forum-all-tab {
+.forum .forum-all .forum-all-box3 .forum-all-tab {
     position: relative;
     height: 50px;
     display: -webkit-box;
@@ -68,7 +68,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.forum.forum-all .forum-all-box3 .forum-all-tab .froum_s {
+.forum .forum-all .forum-all-box3 .forum-all-tab .froum_s {
     width: 100%;
     text-align: center;
     font-size: 15px;
@@ -76,12 +76,12 @@
     color: #4c4c4c;
     overflow: hidden;
 }
-.forum.forum-all .forum-all-box3 .forum-all-tab .forum_v {
+.forum .forum-all .forum-all-box3 .forum-all-tab .forum_v {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
-.forum.forum-all .forum-all-box3 .forum-all-tab .froum_s .kt {
+.forum .forum-all .forum-all-box3 .forum-all-tab .froum_s .kt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -92,20 +92,20 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-.forum.forum-all .forum-all-box3 .forum-all-tab .froum_s .FWsN21kW_0 {
+.forum .forum-all .forum-all-box3 .forum-all-tab .froum_s .FWsN21kW_0 {
     color: #fa8919;
 }
-.forum.forum-all .forum-all-box3 .forum-all-tab .froum_s .kt .sv {
+.forum .forum-all .forum-all-box3 .forum-all-tab .froum_s .kt .sv {
     display: inline-block;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.forum.forum-all .forum-all-box3 .forum-all-tab .froum_s .kt .uwa {
+.forum .forum-all .forum-all-box3 .forum-all-tab .froum_s .kt .uwa {
     font-size: .277778rem /* 30/108 */;
 }
 
-.forum.forum-all .forum-xw {
+.forum .forum-all .forum-xw {
     padding: 0 .399787rem /* 15/37.52 */;
 }

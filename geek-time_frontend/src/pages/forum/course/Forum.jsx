@@ -1,12 +1,12 @@
 import React, { useState, useEffect, memo } from 'react';
 import { connect } from 'react-redux';
 import * as actionTypes from './store/actionCreators';
-import TitleBar from '../../components/TitleBar/TitleBar';
-import ForumBar from '../../components/ForumBar/ForumBar';
-import ForumTag from '../../components/ForumTag/ForumTag';
-import ForumList from '../../components/ForumList/ForumList';
-import Loading from '../../common/loading/Loading';
-import Scroll from '../../common/scroll/Scroll';
+import TitleBar from '../../../components/TitleBar/TitleBar';
+import ForumBar from '../../../components/ForumBar/ForumBar';
+import ForumTag from '../../../components/ForumTag/ForumTag';
+import ForumList from '../../../components/ForumList/ForumList';
+import Loading from '../../../common/loading/Loading';
+import Scroll from '../../../common/scroll/Scroll';
 import { ListContainer } from './style';
 import { forceCheck } from 'react-lazyload';
 import './Forum.css';

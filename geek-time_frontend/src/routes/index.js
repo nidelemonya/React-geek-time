@@ -6,17 +6,23 @@ import { Redirect } from 'react-router-dom';
 // import Forum from'../pages/forum/Forum';
 // import Tribe from '../pages/tribe/Tribe';
 // import Study from '../pages/study/Study';
-// import My from '../pages/my/My';
+// import My from '../pages/My/My';
+// import Account from '../pages/account/Account';
 import BlankLayout from '../layouts/BlankLayout';
 import HomeLayout from '../layouts/HomeLayout';
 import ForumLayout from '../layouts/ForumLayout';
 
 // 懒加载 不会直接引入
 const ExploreComponent = lazy(()=> import ('../pages/explore/Explore'))
-const ForumComponent = lazy(()=> import ('../pages/forum/Forum'))
+const ForumComponent = lazy(()=> import ('../pages/forum/course/Forum'))
 const TribeComponent = lazy(()=> import ('../pages/tribe/Tribe'))
 const StudyComponent = lazy(()=> import ('../pages/study/Study'))
 const MyComponent = lazy(()=> import ('../pages/my/My'))
+const AccountComponent = lazy(() => import ('../pages/my/account/Account'))
+// const DetailComponent = lazy(() => import ('../pages/forum/course/detail/Detail'))
+const CampComponent= lazy(()=> import ('../pages/forum/camp/Camp'))
+// const PayComponent= lazy(() => import ('../pages/forum/course/pay/Pay'))
+const DayComponent = lazy(()=> import ('../pages/forum/day/Day'))
 
 // 进行性能优化 懒加载
 const SyspenseComponent = Component => props => {
@@ -59,15 +65,26 @@ export default [
                             },
                             {
                                 path:'/forum/course',
-                                component:SyspenseComponent(ForumComponent)
+                                component:SyspenseComponent(ForumComponent),
                             },
+                            //     routes:[
+                            //         {
+                            //             path:'/forum/course/detail',
+                            //             component:SyspenseComponent(DetailComponent)
+                            //         },
+                            //         {
+                            //             path:'/forum/course/pay',
+                            //             component:SyspenseComponent(PayComponent)
+                            //         }
+                            //     ]
+                            // },
                             {
                                 path:'/forum/camp',
-                                component:SyspenseComponent(ForumComponent)
+                                component:SyspenseComponent(CampComponent)
                             },
                             {
                                 path:'/forum/day',
-                                component:SyspenseComponent(ForumComponent)
+                                component:SyspenseComponent(AccountComponent)
                             },
                         ]
                     },
@@ -82,9 +99,23 @@ export default [
                         component:SyspenseComponent(StudyComponent)
                     },
                     {
-                        path:'/my',
-                        // component: My
-                        component:SyspenseComponent(MyComponent)
+                        path:'/user', 
+                        component:BlankLayout,
+                        routes:[
+                            {
+                                path:'/user',
+                                exact:true,
+                                render: () => <Redirect to={"/user/detail"} />
+                            },
+                            {
+                                path:'/user/detail',
+                                component:SyspenseComponent(MyComponent),
+                            },
+                            {
+                                path:'/user/account',
+                                component:SyspenseComponent(AccountComponent),
+                            }
+                        ]
                     }
                 ]
             }
