@@ -28,7 +28,7 @@
 }
 .study .study-body {
   width: 100%;
-  height: 3.703704rem /* 400/108 */;
+  height: 100vh;
 }
 .study .study-body .study-items {
   margin-top: 20px;

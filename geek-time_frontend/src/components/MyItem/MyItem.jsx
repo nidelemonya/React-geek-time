@@ -18,8 +18,6 @@ function MyItem(props) {
                      item_list === undefined ? <React.Fragment></React.Fragment>
                      : item_list.map(i => {
                         return (
-                            // <Link to="../../pages/myAccount">
-                            <Link to="/myAccount">
                                 <div  className="items" key={i.id}>
                                     <div className="item_lift">
                                         <span className="icon1 iconfont">{i.iconUrl}</span>
@@ -29,9 +27,7 @@ function MyItem(props) {
                                         <span className="count">{i.count}</span>
                                         <span className="icon2 iconfont">&#xe534;</span>
                                     </div>
-                                </div>
-                            </Link>
-                            
+                                </div>  
                         )
                     })
                 }
