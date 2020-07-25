@@ -1,0 +1,139 @@
+.tribe {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.tribe .tribe-header {
+  width: 10rem;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 1.173rem;
+  border-bottom: 0.018519rem solid #f5f5f5;
+  z-index: 99;
+  top: 0;
+  background-color: #ffffff;
+}
+.tribe .tribe-header .tribe-title {
+  font-size: 0.490741rem /* 53/108 */;
+  font-weight: bold;
+}
+.tribe .tribe-header .tribe-title .tribe-name {
+  margin-left: 0.388889rem /* 42/108 */;
+  color: #a5a5a5;
+}
+.tribe .tribe-header .tribe-title .tribe-name-active {
+  color: #363636;
+}
+.tribe .tribe-header .tribe-icon {
+  flex: 1;
+  position: absolute;
+  right: 0.361111rem;
+  width: 0.555556rem /* 60/108 */;
+}
+.tribe .tribe-header .tribe-icon img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.tribe .tribe-body {
+  width: 10rem;
+  height: 100vh;
+}
+.tribe .tribe-body .tribe-container {
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+.tribe .tribe-body .tribe-container .tribe-like {
+  padding: 32px 0 20px;
+  text-align: center;
+}
+.tribe .tribe-body .tribe-container .tribe-like .tribe-like-img {
+  text-align: center;
+}
+.tribe .tribe-body .tribe-container .tribe-like .tribe-like-img img {
+  height: 2.074074rem /* 224/108 */;
+  width: 3.981481rem /* 430/108 */;
+}
+.tribe .tribe-body .tribe-container .tribe-like p {
+  font-size: 0.351852rem /* 38/108 */;
+  font-weight: 600;
+  color: #404040;
+  margin-top: 0.518519rem /* 56/108 */;
+}
+.tribe .tribe-body .tribe-container .tribe-attention {
+  margin-top: 15px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-left .tribe-avatar {
+  width: 1.240741rem /* 134/108 */;
+  height: 1.240741rem /* 134/108 */;
+  border-radius: 5px;
+  background: #dbdde3;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-left .tribe-avatar img {
+  width: 100%;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-left .tribe-title {
+  font-size: 0.333333rem /* 36/108 */;
+  width: 63%;
+  font-weight: bold;
+  margin-left: 0.277778rem /* 30/108 */;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn {
+  width: 1.425926rem /* 154/108 */;
+  height: 0.703704rem /* 76/108 */;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn a {
+  outline: none;
+  border: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fa8919;
+  color: #f7ffff;
+  font-size: 0.296296rem /* 32/108 */;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+.tribe .tribe-body .tribe-container .tribe-attention .tribe-item .tribe-item-addBtn a span {
+  font-size: 0.296296rem /* 32/108 */;
+  margin-right: 0.277778rem /* 30/108 */;
+}
+.tribe .tribe-body .tribe-container .tribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.925926rem /* 100/108 */;
+}
+.tribe .tribe-body .tribe-container .tribe-btn a {
+  text-decoration: none;
+  width: 5rem /* 540/108 */;
+  height: 1rem /* 108/108 */;
+  font-size: 0.37037rem /* 40/108 */;
+  color: #fffff2;
+  background: #fa8919;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
