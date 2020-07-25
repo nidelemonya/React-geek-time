@@ -77,6 +77,15 @@
     ;
 }
 
+.forum .forum-center .forum-lesson .forum-box2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: .185185rem /* 20/108 */;
+}
+
 .forum .forum-center .forum-all .forum-all-title {
     padding: 0 .399787rem /* 15/37.52 */;
     height: .895522rem;
@@ -131,6 +140,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.forum .forum-center .forum-all .forum-all-box3 .forum-all-tab .froum_s .kt .uwa {
+    font-size: .277778rem /* 30/108 */;
 }
 
 .forum .forum-center .forum-all .forum-xw {

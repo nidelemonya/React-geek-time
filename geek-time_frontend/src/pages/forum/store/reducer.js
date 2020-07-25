@@ -5,7 +5,7 @@ const defaultState = {
     // 课程数据
     lessons:[],
     // 训练营数据
-    training:[],
+    infos:[],
     // 加载中
     enterLoading:true
 }
@@ -14,8 +14,8 @@ export default (state = defaultState, action) => {
         case actionTypes.CHANGE_LESSONS:
             // 展开原有的状态
             return { ...state, lessons: action.data}
-        case actionTypes.CHANGE_TRAINING_CAMP:
-            return { ...state, training: action.data}
+        case actionTypes.CHANGE_INFOS:
+            return { ...state, infos: action.data}
         case actionTypes.CHANGE_ENTER_LOADING:
             return { ...state, enterLoading: action.data}
         default:

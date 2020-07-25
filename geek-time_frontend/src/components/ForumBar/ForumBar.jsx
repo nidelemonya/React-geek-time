@@ -1,27 +1,34 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './ForumBar.css';
 
 export default function ForumBar(props) {
-    const { study_lessons } = props;
-    console.log(study_lessons);
+    const { lessons_path } = props;
+    // console.log(lessons_path)
     return (
-        <ul className="forum-ul">
-            <li className="forum-li">
-                <div className="forum-bg">
-                    <div className="forum-div">
-                        <div className="forum-div-title">Java工程师</div>
-                        <div className="forum-div-num">19门课程</div>
-                    </div> <img
-                        src="https://static001.geekbang.org/resource/image/50/b6/50cac4f8a8e9b600636c0890967113b6.jpg?x-oss-process=image/resize,m_fill,h_100,w_100"
-                        alt=""/>
-                    <div className="forum-less"></div>
-                </div>
-            </li>
-        </ul>
+        // 如果为 undefined 返回空div
+        lessons_path.list === undefined ? <div></div>
+            : <ul className="forum-ul">
+                {
+                    lessons_path.list.map(m => {
+                        return (
+                            <li className="forum-li" key={m.id}>
+                                <div className="forum-bg">
+                                    <div className="forum-div">
+                                        <div className="forum-div-title">{m.name}</div>
+                                        <div className="forum-div-num">{m.product_count}门课程</div>
+                                    </div>
+                                    <img src={m.icon} alt="" />
+                                    <div className="forum-less"></div>
+                                </div>
+                            </li>
+                        )
+                    })
+                }
+            </ul>
     )
 }
 
-// ForumBar.propTypes = {
-//     // list_study:PropTypes.object.isRequired
-// }
+ForumBar.propTypes = {
+    lessons_path:PropTypes.object.isRequired
+}

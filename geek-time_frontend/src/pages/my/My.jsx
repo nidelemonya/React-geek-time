@@ -3,16 +3,15 @@ import React from 'react';
 import './My.css';
 import MyItems from '../../components/MyItem/MyItem';
 import MySwiper from '../../components/MySwiper/MySwiper';
+import { iconSet } from '../../api/config';
 
 function My(props) {
+    console.log( iconSet );
     return (
         <div className="my">
             <div className="my-header">
                 <div className="my-info">
                     <span className="iconfont">&#xe60b;</span>
-                    {/* <span className="my-info__badge">
-                      11
-                   </span> */}
                 </div>
             </div>
             <div className="my-body">
@@ -35,12 +34,11 @@ function My(props) {
                 <div className="my-body__imgs">
                     <MySwiper></MySwiper>
                 </div>
-                <div className="my-body__items">
-                    <MyItems />
-                </div>
-                {/* <div>
-                    <MyItems/>
-                </div> */}
+                <MyItems item_list= { iconSet[0].data[0].tab1  }/>
+                <MyItems item_list= { iconSet[0].data[0].tab2  }/>
+                <MyItems item_list= { iconSet[0].data[0].tab3  }/>
+                <MyItems item_list= { iconSet[0].data[0].tab4  }/>
+                <MyItems item_list= { iconSet[0].data[0].tab5  }/>
             </div>
         </div>
     )

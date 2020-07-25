@@ -2,7 +2,6 @@
   width: 100%;
 }
 .my-body__itemsBox .my-body__itemsBox_wrapper {
-  height: 4.185185rem /* 452/108 */;
   background-color: #fff;
   margin-top: 0.296296rem /* 32/108 */;
   padding-left: 0.388889rem /* 42/108 */;
@@ -21,6 +20,12 @@
 .my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift {
   display: flex;
   align-items: center;
+}
+.my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift .icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.37037rem /* 40/108 */;
 }
 .my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift span {
   width: 0.518519rem /* 56/108 */;

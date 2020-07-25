@@ -5,31 +5,14 @@ import './MyItem.css';
 import '../../assets/iconfont/iconfont.js';
 
 function MyItem(props) {
-    const [item_list] = useState([
-        {
-            id: 1,
-            iconUrl: '\ue605',
-            name: '账户',
-            count: '0.0'
-        },
-        {
-            id: 2,
-            iconUrl: '\ue61d',
-            name: '我的课程',
-            count: ''
-        },
-        {
-            id: 3,
-            iconUrl: '\ue677',
-            name: '我的订单',
-            count: ''
-        }
-    ])
+    const { item_list } = props;
+    // console.log (item_list)
     return (
         <div className="my-body__itemsBox">
             <div className="my-body__itemsBox_wrapper">
                 {
-                    item_list.map(i => {
+                     item_list === undefined ? <React.Fragment></React.Fragment>
+                     : item_list.map(i => {
                         return (
                             <div className="items" key={i.id}>
                                 <div className="item_lift">

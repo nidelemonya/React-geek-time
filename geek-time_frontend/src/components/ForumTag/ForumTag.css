@@ -6,7 +6,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(33.333% - 5px);
+  width: calc(33.333% - 0.23326226rem);
   padding: 0 0.159915rem /* 6/37.52 */;
   height: 1.252665rem /* 47/37.52 */;
   line-height: 0.479744rem /* 18/37.52 */;
