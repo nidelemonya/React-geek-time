@@ -25,7 +25,7 @@ function Study(props) {
                             <span>小时</span>
                             <span className='yellow-num'>2</span>
                             <span>分钟</span>
-                            <span className="iconfont icon-fanhui"></span>
+                            <span className="iconfont">&#xe534;</span>
                         </div>
                     </div>
                     <div className="study-bars">
