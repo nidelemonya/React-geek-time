@@ -9,6 +9,7 @@ import { Redirect } from 'react-router-dom';
 // import My from '../pages/my/My';
 import BlankLayout from '../layouts/BlankLayout';
 import HomeLayout from '../layouts/HomeLayout';
+import ForumLayout from '../layouts/ForumLayout';
 
 // 懒加载 不会直接引入
 const ExploreComponent = lazy(()=> import ('../pages/explore/Explore'))
@@ -49,7 +50,26 @@ export default [
                     {
                         path:'/forum',
                         // component: Forum
-                        component:SyspenseComponent(ForumComponent)
+                        component: ForumLayout,
+                        routes:[
+                            {
+                                path:'/forum',
+                                exact:true,
+                                render: () => <Redirect to={"/forum/course"} />
+                            },
+                            {
+                                path:'/forum/course',
+                                component:SyspenseComponent(ForumComponent)
+                            },
+                            {
+                                path:'/forum/camp',
+                                component:SyspenseComponent(ForumComponent)
+                            },
+                            {
+                                path:'/forum/day',
+                                component:SyspenseComponent(ForumComponent)
+                            },
+                        ]
                     },
                     {
                         path:'/tribe',
