@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from 'react';
+import React, { useEffect, memo } from 'react';
 import { connect } from 'react-redux';
 import * as actionTypes from './store/actionCreators';
 import TitleBar from '../../../components/TitleBar/TitleBar';
@@ -12,32 +12,42 @@ import { forceCheck } from 'react-lazyload';
 import './Forum.css';
 
 function Forum(props) {
-    // 从 props 结构数据出来
-    const { lessons, infos, enterLoading } = props;
-    const { getForumListDataDispatch, getInfosDataDispatch } = props;
-    const [refreshScroll, setrefreshScroll] = useState(false);
+    // 从 props 解构数据出来
+    const { lessons, infos, enterLoading, pageCount, pullUpLoading, pullDownLoading } = props;
+    const { getForumListDataDispatch, getInfoListDataDispatch, pullUpRefresh, pullDownRefresh } = props;
+
+    const handlePullUp = () => {
+        pullUpRefresh(pageCount);
+    };
+
+    const handlePullDown = () => {
+        pullDownRefresh(pageCount);
+    };
+
     useEffect(() => {
         // 如果没有数据 请求一次
         if (!lessons.length) {
             getForumListDataDispatch();
         }
         if (!infos.length) {
-            getInfosDataDispatch();
-            setrefreshScroll(true)
+            getInfoListDataDispatch();
         }
-    }, [])
+    }, [getForumListDataDispatch, getInfoListDataDispatch, lessons.length, infos.length])
     // 加个空数组防止一直刷新
     // console.log(lessons, infos, enterLoading);
-    console.log(refreshScroll);
     // console.log((lessons), '------')
     return (
         <div className="forum">
-                <ListContainer>
+            <ListContainer>
                 <Scroll
-                    onScroll = {forceCheck} 
-                    // pullUp={ handlePullUp }
-                    // pullDown = { handlePullDown }
-                    >
+                    onScroll={forceCheck}
+                    pullUp={handlePullUp}
+                    pullDown={handlePullDown}
+                    pullUpLoading={pullUpLoading}
+                    pullDownLoading={pullDownLoading}
+                // pulldown，监听下拉动作，可以实现下拉刷新；
+                // pullup，监听上拉动作，可以实现上拉加载；
+                >
                     <div>
                         <div className="forum-study">
                             <div className="forum-title1">
@@ -48,9 +58,11 @@ function Forum(props) {
                             </div>
                         </div>
                         <div className="forum-lesson">
+
                             <div className="forum-lesson-title">
                                 <TitleBar title="课程方向" name="查看全部" />
                             </div>
+
                             <div className="forum-box2">
                                 <ForumTag lessons_tag={lessons.data !== undefined ? lessons.data[1] : {}} />
                             </div>
@@ -82,11 +94,11 @@ function Forum(props) {
                                 </div>
                             </div>
                             <div className="forum-xw">
-                                <ForumList refreshScroll={refreshScroll} infos={infos.length !== 0 ? infos.data : {}} />
+                                <ForumList infos={infos.length !== 0 ? infos.data : {}} />
                             </div>
                         </div>
                     </div>
-            </Scroll>
+                </Scroll>
             </ListContainer>
             <Loading Loading={enterLoading} title="正在加载中..." />
         </div>)
@@ -95,7 +107,8 @@ function Forum(props) {
 const mapStateToProps = (state) => ({
     lessons: state.forum.lessons,
     infos: state.forum.infos,
-    enterLoading: state.forum.enterLoading
+    enterLoading: state.forum.enterLoading,
+    pageCount: state.forum.pageCount
 })
 
 const mapDispatchToProps = (dispatch) => {
@@ -103,8 +116,21 @@ const mapDispatchToProps = (dispatch) => {
         getForumListDataDispatch() {
             dispatch(actionTypes.getLessons())
         },
-        getInfosDataDispatch() {
-            dispatch(actionTypes.getInfos())
+        getInfoListDataDispatch() {
+            dispatch(actionTypes.getInfoList())
+        },
+
+        // 滑到最底部刷新部分的处理
+        pullUpRefresh(count) {
+            dispatch(actionTypes.changePullUpLoading(true));
+            dispatch(actionTypes.refreshMoreInfoList());
+        },
+        
+        //顶部下拉刷新
+        pullDownRefresh() {
+            dispatch(actionTypes.changePullDownLoading(true));
+            dispatch(actionTypes.changeListOffset(0));
+            dispatch(actionTypes.getInfoList());
         }
     }
 }

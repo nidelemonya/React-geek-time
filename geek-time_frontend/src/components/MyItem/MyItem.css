@@ -4,7 +4,6 @@
 .my-body__itemsBox .my-body__itemsBox_wrapper {
   background-color: #fff;
   margin-top: 0.296296rem /* 32/108 */;
-  padding-left: 0.388889rem /* 42/108 */;
 }
 .my-body__itemsBox .my-body__itemsBox_wrapper .items {
   height: 1.388889rem /* 150/108 */;
@@ -15,7 +14,8 @@
   -webkit-box-align: center;
   z-index: 1;
   border-bottom: 1px solid #f4f4f4;
-  padding: 0 0.425926rem /* 46/108 */ 0 0.092593rem /* 10/108 */;
+  padding-left: 0.388889rem /* 42/108 */;
+  padding: 0 0.425926rem 0.092593rem 0.425926rem /* 46/108 */;
 }
 .my-body__itemsBox .my-body__itemsBox_wrapper .items .item_lift {
   display: flex;

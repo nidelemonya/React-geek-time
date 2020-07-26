@@ -1,12 +1,22 @@
-.forum-ul {
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.185185rem /* 20/108 */;
+  overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav {
   margin-bottom: -0.426439rem /* 16/37.52 */;
   padding: 0.426439rem /* 16/37.52 */ 0;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
-.forum-ul .forum-li {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li {
   display: inline-block;
   width: 4.157783rem /* 156/37.52 */;
   height: 2.238806rem /* 84/37.52 */;
@@ -15,7 +25,7 @@
   background: #f6f7fa;
   border-radius: 0.133262rem /* 5/37.52 */;
 }
-.forum-ul .forum-li .forum-bg {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li .forum-bg {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +40,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.forum-ul .forum-li .forum-bg .forum-div {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li .forum-bg .forum-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,7 +53,7 @@
   justify-content: space-between;
   height: 1.545842rem /* 58/37.52 */;
 }
-.forum-ul .forum-li .forum-bg .forum-div .forum-div-title {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li .forum-bg .forum-div .forum-div-title {
   width: 2.212154rem /* 83/37.52 */;
   line-height: 0.479744rem /* 18/37.52 */;
   font-size: 0.373134rem /* 14/37.52 */;
@@ -56,19 +66,19 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-.forum-ul .forum-li .forum-bg .forum-div .forum-div-num {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li .forum-bg .forum-div .forum-div-num {
   font-size: 0.319829rem /* 12/37.52 */;
   font-weight: 400;
   color: #888;
 }
-.forum-ul .forum-li .forum-bg img {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li .forum-bg img {
   position: relative;
   z-index: 10;
   width: 1.332623rem /* 50/37.52 */;
   height: 1.332623rem /* 50/37.52 */;
   border-radius: 0.133262rem /* 5/37.52 */;
 }
-.forum-ul .forum-li .forum-bg .forum-less {
+.swiper-container .swiper-wrapper .swiper-slide .slider-nav .forum-li .forum-bg .forum-less {
   position: absolute;
   top: 0.453092rem /* 17/37.52 */;
   right: 0.21322rem /* 8/37.52 */;

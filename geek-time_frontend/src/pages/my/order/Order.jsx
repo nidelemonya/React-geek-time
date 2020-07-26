@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Detail(props){
+export default function Order(props){
     return (
         <div>
-            Detail
+            Order
         </div>
     )
 }

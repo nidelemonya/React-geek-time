@@ -3,7 +3,7 @@ import React from 'react'
 export default function Day(props){
     return (
         <div>
-            Day
+            这个页面啥也没有...
         </div>
     )
 }
