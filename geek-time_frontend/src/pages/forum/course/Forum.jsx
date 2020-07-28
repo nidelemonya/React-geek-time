@@ -13,9 +13,9 @@ import './Forum.css';
 
 function Forum(props) {
     // 从 props 解构数据出来
-    const { lessons, infos, enterLoading, pageCount, pullUpLoading, pullDownLoading } = props;
+    const { pathList, directionList, infoList, enterLoading, pageCount, pullUpLoading, pullDownLoading } = props;
     const { getForumListDataDispatch, getInfoListDataDispatch, pullUpRefresh, pullDownRefresh } = props;
-
+    // console.log(pathList, directionList, infoList)
     const handlePullUp = () => {
         pullUpRefresh(pageCount);
     };
@@ -26,16 +26,15 @@ function Forum(props) {
 
     useEffect(() => {
         // 如果没有数据 请求一次
-        if (!lessons.length) {
+        if (!pathList.length || !directionList.length) {
             getForumListDataDispatch();
         }
-        if (!infos.length) {
+        if (!infoList.length) {
             getInfoListDataDispatch();
         }
-    }, [getForumListDataDispatch, getInfoListDataDispatch, lessons.length, infos.length])
+    }, [getForumListDataDispatch, getInfoListDataDispatch, pathList.length, directionList.length, infoList.length])
     // 加个空数组防止一直刷新
-    // console.log(lessons, infos, enterLoading);
-    // console.log((lessons), '------')
+    // console.log(pullUpLoading, pullDownLoading, '------')
     return (
         <div className="forum">
             <ListContainer>
@@ -54,7 +53,7 @@ function Forum(props) {
                                 <TitleBar title="学习路径" name="查看全部" />
                             </div>
                             <div className="forum-box1">
-                                <ForumBar lessons_path={lessons.data !== undefined ? lessons.data[0] : {}} />
+                                <ForumBar pathList={pathList} />
                             </div>
                         </div>
                         <div className="forum-lesson">
@@ -64,7 +63,7 @@ function Forum(props) {
                             </div>
 
                             <div className="forum-box2">
-                                <ForumTag lessons_tag={lessons.data !== undefined ? lessons.data[1] : {}} />
+                                <ForumTag  directionList={directionList}/>
                             </div>
                         </div>
                         <div className="forum-all">
@@ -94,7 +93,7 @@ function Forum(props) {
                                 </div>
                             </div>
                             <div className="forum-xw">
-                                <ForumList infos={infos.length !== 0 ? infos.data : {}} />
+                                <ForumList infoList={infoList} />
                             </div>
                         </div>
                     </div>
@@ -105,16 +104,20 @@ function Forum(props) {
 }
 
 const mapStateToProps = (state) => ({
-    lessons: state.forum.lessons,
-    infos: state.forum.infos,
+    pathList: state.forum.pathList,
+    directionList: state.forum.directionList,
+    infoList: state.forum.infoList,
     enterLoading: state.forum.enterLoading,
-    pageCount: state.forum.pageCount
+    pageCount: state.forum.pageCount,
+    pullUpLoading: state.forum.pullUpLoading,
+    pullDownLoading: state.forum.pullDownLoading
 })
 
 const mapDispatchToProps = (dispatch) => {
     return {
         getForumListDataDispatch() {
-            dispatch(actionTypes.getLessons())
+            dispatch(actionTypes.getPathList())
+            dispatch(actionTypes.getDirectionList())
         },
         getInfoListDataDispatch() {
             dispatch(actionTypes.getInfoList())

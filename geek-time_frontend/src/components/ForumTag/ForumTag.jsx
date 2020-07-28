@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import './ForumTag.css';
 
 export default function ForumTag(props) {
-    const {lessons_tag} = props;
-    // console.log(lessons_tag);
+    const { directionList } = props;
+    // console.log(directionList);
     return (
-        lessons_tag.list === undefined ? <div></div>
-        : lessons_tag.list.map(m =>{
+        directionList.map(m => {
             return (
                 <div key={m.id} className="K0VUHZTt_0">{m.title}</div>
             )
@@ -16,5 +15,5 @@ export default function ForumTag(props) {
 }
 
 ForumTag.propTypes = {
-    lessons_tag: PropTypes.object.isRequired
+    directionList: PropTypes.array.isRequired
 }

@@ -6,12 +6,12 @@ import './ForumList.css';
 
 export default function ForumList(props) {
     // console.log(props)
-    const { infos } = props;
-    // console.log(infos)
+    const { infoList } = props;
+    // console.log(infoList,'forumlist')
+    // console.log(infoList.length)
     return (
-        infos.data === undefined ? <React.Fragment></React.Fragment> : 
         <React.Fragment>
-            {infos.data.infos.map (m => {
+            {infoList.map (m => {
             return (
                 <NavLink key = {m.id} to={"/forum/course/detail/"+m.id} activeClassName="selected">
                 <div className="forum-list-box">
@@ -46,5 +46,5 @@ export default function ForumList(props) {
 }
 
 ForumList.propTypes = {
-    infos:PropTypes.object.isRequired
+    infoList:PropTypes.array.isRequired
 }

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './ForumBar.css';
 
 export default function ForumBar(props) {
-    const { lessons_path } = props;
+    const { pathList } = props;
     useEffect(() => {
         new Swiper('.swiper-container', {
             // Optional parameters
@@ -14,75 +14,70 @@ export default function ForumBar(props) {
             roundLengths: true, //防止文字模糊
         })
     }, [])
-    // console.log(lessons_path)
+    // console.log(pathList)
     return (
-        // 如果为 undefined 返回空节点
-        // <ul className="forum-ul">
         <div className="swiper-container">
             <div className="swiper-wrapper">
-                {
-                    lessons_path.list === undefined ?
-                        <React.Fragment>
-                            <div className="swiper-slide"></div>
-                            <div className="swiper-slide"></div>
-                        </React.Fragment>
-                        :
-                        <React.Fragment>
-                            <div className="swiper-slide">
-                                <div className="slider-nav">
-                                    <li className="forum-li" key={lessons_path.list[0].id}>
-                                        <div className="forum-bg">
-                                            <div className="forum-div">
-                                                <div className="forum-div-title">{lessons_path.list[0].name}</div>
-                                                <div className="forum-div-num">{lessons_path.list[0].product_count}门课程</div>
-                                            </div>
-                                            <img src={lessons_path.list[0].icon} alt="" />
-                                            <div className="forum-less"></div>
+                { pathList.length === 0 ? <React.Fragment>
+                    <div className="swiper-slide"></div>
+                    <div className="swiper-slide"></div>
+                </React.Fragment>
+                    :
+                    <React.Fragment>
+                        <div className="swiper-slide">
+                            <div className="slider-nav">
+                                <li className="forum-li" key={pathList[0].id}>
+                                    <div className="forum-bg">
+                                        <div className="forum-div">
+                                            <div className="forum-div-title">{pathList[0].name}</div>
+                                            <div className="forum-div-num">{pathList[0].product_count}门课程</div>
                                         </div>
-                                    </li>
-                                    <li className="forum-li" key={lessons_path.list[1].id}>
-                                        <div className="forum-bg">
-                                            <div className="forum-div">
-                                                <div className="forum-div-title">{lessons_path.list[1].name}</div>
-                                                <div className="forum-div-num">{lessons_path.list[1].product_count}门课程</div>
-                                            </div>
-                                            <img src={lessons_path.list[1].icon} alt="" />
-                                            <div className="forum-less"></div>
+                                        <img src={pathList[0].icon} alt="" />
+                                        <div className="forum-less"></div>
+                                    </div>
+                                </li>
+                                <li className="forum-li" key={pathList[1].id}>
+                                    <div className="forum-bg">
+                                        <div className="forum-div">
+                                            <div className="forum-div-title">{pathList[1].name}</div>
+                                            <div className="forum-div-num">{pathList[1].product_count}门课程</div>
                                         </div>
-                                    </li>
-                                </div>
+                                        <img src={pathList[1].icon} alt="" />
+                                        <div className="forum-less"></div>
+                                    </div>
+                                </li>
                             </div>
-                            <div className="swiper-slide">
-                                <div className="slider-nav">
-                                    <li className="forum-li" key={lessons_path.list[2].id}>
-                                        <div className="forum-bg">
-                                            <div className="forum-div">
-                                                <div className="forum-div-title">{lessons_path.list[2].name}</div>
-                                                <div className="forum-div-num">{lessons_path.list[2].product_count}门课程</div>
-                                            </div>
-                                            <img src={lessons_path.list[2].icon} alt="" />
-                                            <div className="forum-less"></div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div className="slider-nav">
+                                <li className="forum-li" key={pathList[2].id}>
+                                    <div className="forum-bg">
+                                        <div className="forum-div">
+                                            <div className="forum-div-title">{pathList[2].name}</div>
+                                            <div className="forum-div-num">{pathList[2].product_count}门课程</div>
                                         </div>
-                                    </li>
-                                    <li className="forum-li" key={lessons_path.list[3].id}>
-                                        <div className="forum-bg">
-                                            <div className="forum-div">
-                                                <div className="forum-div-title">{lessons_path.list[3].name}</div>
-                                                <div className="forum-div-num">{lessons_path.list[3].product_count}门课程</div>
-                                            </div>
-                                            <img src={lessons_path.list[3].icon} alt="" />
-                                            <div className="forum-less"></div>
+                                        <img src={pathList[2].icon} alt="" />
+                                        <div className="forum-less"></div>
+                                    </div>
+                                </li>
+                                <li className="forum-li" key={pathList[3].id}>
+                                    <div className="forum-bg">
+                                        <div className="forum-div">
+                                            <div className="forum-div-title">{pathList[3].name}</div>
+                                            <div className="forum-div-num">{pathList[3].product_count}门课程</div>
                                         </div>
-                                    </li>
-                                </div>
+                                        <img src={pathList[3].icon} alt="" />
+                                        <div className="forum-less"></div>
+                                    </div>
+                                </li>
                             </div>
-                        </React.Fragment>}
+                        </div>
+                    </React.Fragment>}
             </div>
         </div>
-        // </ul>
     )
 }
 
 ForumBar.propTypes = {
-    lessons_path: PropTypes.object.isRequired
+    pathList: PropTypes.array.isRequired
 }
