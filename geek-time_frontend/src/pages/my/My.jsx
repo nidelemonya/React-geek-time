@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
+import React from 'react';
 import './My.css';
 import MyItems from '../../components/MyItem/MyItem';
 import MySwiper from '../../components/MySwiper/MySwiper';
@@ -9,10 +8,6 @@ import { ListContainer } from './style';
 import { iconSet } from '../../api/config';
 
 function My(props) {
-    // const [refreshScroll, setrefreshScroll] = useState(false);
-    // useEffect(()=>{
-    //     setrefreshScroll(true);
-    // },[])
     return (
         <div className="my">
             <div className="my-header">
@@ -20,8 +15,6 @@ function My(props) {
                     <span className="iconfont">&#xe60b;</span>
                 </div>
             </div>
-
-            <div className="my-container">
                 <ListContainer>
                     <Scroll onScroll={forceCheck}>
                         <div className="my-body">
@@ -45,24 +38,18 @@ function My(props) {
                             <div className="my-body__imgs">
                                 <MySwiper></MySwiper>
                             </div>
-                            {/* <div className="my-body__bscroll"> */}
-                                <div className="my-body__box">
-                                    <MyItems item_list={iconSet[0].data[0].tab1} />
-                                    <MyItems item_list={iconSet[0].data[0].tab2} />
-                                    <MyItems item_list={iconSet[0].data[0].tab3} />
-                                    <MyItems item_list={iconSet[0].data[0].tab4} />
-                                    <MyItems item_list={iconSet[0].data[0].tab5} />
-                                </div>
-                            {/* </div> */}
+                            <div className="my-body__box">
+                                <MyItems item_list={iconSet[0].data[0].tab1} />
+                                <MyItems item_list={iconSet[0].data[0].tab2} />
+                                <MyItems item_list={iconSet[0].data[0].tab3} />
+                                <MyItems item_list={iconSet[0].data[0].tab4} />
+                                <MyItems item_list={iconSet[0].data[0].tab5} />
+                            </div>
                         </div>
                     </Scroll>
                 </ListContainer>
-            </div>
         </div>
     )
 }
 
-// My.propTypes = {
-
-// }
 export default My

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Detail(props){
+export default function Course(props){
     return (
         <div>
-            Detail
+            Course
         </div>
     )
 }

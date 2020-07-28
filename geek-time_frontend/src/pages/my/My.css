@@ -24,16 +24,13 @@
   line-height: 0.222222rem /* 24/108 */;
   font-size: 0.518519rem /* 56/108 */;
 }
-.my .my-container {
-  width: 100%;
-  height: 100%;
-}
-.my .my-container .my-body {
+.my .my-body {
   position: relative;
   top: 0.203704rem /* 22/108 */;
   width: 100%;
+  height: 28rem;
 }
-.my .my-container .my-body .my-body__infoms {
+.my .my-body .my-body__infoms {
   height: 2.407407rem /* 260/108 */;
   display: flex;
   justify-content: space-between;
@@ -41,19 +38,19 @@
   padding: 0.222222rem /* 24/108 */;
   background-color: #fff;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_avatar {
+.my .my-body .my-body__infoms .my-body__infoms_avatar {
   height: 2.037037rem /* 220/108 */;
   width: 2rem /* 216/108 */;
   border-radius: 50%;
   overflow: hidden;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_avatar img {
+.my .my-body .my-body__infoms .my-body__infoms_avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_mess {
+.my .my-body .my-body__infoms .my-body__infoms_mess {
   position: relative;
   top: 0;
   left: 0;
@@ -65,14 +62,14 @@
   margin-left: 0.425926rem /* 46/108 */;
   padding: 0.333333rem /* 36/108 */ 0;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_mess h4 {
+.my .my-body .my-body__infoms .my-body__infoms_mess h4 {
   height: 0.703704rem /* 76/108 */;
   font-weight: 400;
   font-family: '微软雅黑';
   color: #4a4a4a;
   line-height: 0.740741rem /* 80/108 */;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_mess .my-body__infoms_mess_phone {
+.my .my-body .my-body__infoms .my-body__infoms_mess .my-body__infoms_mess_phone {
   width: 100%;
   height: 1.018519rem /* 110/108 */;
   display: flex;
@@ -83,7 +80,7 @@
   color: #bababa;
   font-weight: 400;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_mess .my-body__infoms_mess_phone .my-body__infoms_mess_phone_my {
+.my .my-body .my-body__infoms .my-body__infoms_mess .my-body__infoms_mess_phone .my-body__infoms_mess_phone_my {
   display: flex;
   line-height: 0.555556rem /* 60/108 */;
   color: #d39349;
@@ -91,12 +88,12 @@
   font-family: '微软雅黑';
   text-decoration: none;
 }
-.my .my-container .my-body .my-body__infoms .my-body__infoms_mess .my-body__infoms_mess_phone .my-body__infoms_mess_phone_my span {
+.my .my-body .my-body__infoms .my-body__infoms_mess .my-body__infoms_mess_phone .my-body__infoms_mess_phone_my span {
   display: block;
   color: #d39349;
   font-size: 0.314815rem /* 34/108 */;
 }
-.my .my-container .my-body .my-body__imgs {
+.my .my-body .my-body__imgs {
   width: 93%;
   height: 1.425926rem /* 154/108 */;
   display: flex;
@@ -104,7 +101,7 @@
   padding: 0.425926rem /* 46/108 */ 0.388889rem /* 42/108 */;
   background-color: #ffffff;
 }
-.my .my-container .my-body .my-body__box {
+.my .my-body .my-body__box {
   height: 21.5rem;
   background-color: #f8f8f8;
 }

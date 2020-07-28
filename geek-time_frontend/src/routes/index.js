@@ -19,12 +19,13 @@ const TribeComponent = lazy(()=> import ('../pages/tribe/Tribe'))
 const StudyComponent = lazy(()=> import ('../pages/study/Study'))
 const MyComponent = lazy(()=> import ('../pages/my/My'))
 const AccountComponent = lazy(() => import ('../pages/my/account/Account'))
-// const DetailComponent = lazy(() => import ('../pages/forum/course/detail/Detail'))
+const DetailComponent = lazy(() => import ('../pages/forum/course/detail/Detail'))
 const CampComponent= lazy(()=> import ('../pages/forum/camp/Camp'))
-// const PayComponent= lazy(() => import ('../pages/forum/course/pay/Pay'))
+const PayComponent= lazy(() => import ('../pages/forum/course/pay/Pay'))
 const DayComponent = lazy(()=> import ('../pages/forum/day/Day'))
-
-// 进行性能优化 懒加载
+const CourseComponent = lazy(() => import ('../pages/my/course/Course')) 
+const OrderComponent = lazy(() => import ('../pages/my/order/Order'))
+// 进行性能优化 懒加载;
 const SyspenseComponent = Component => props => {
     return (
         // fallback 是一个回滚事件
@@ -65,26 +66,34 @@ export default [
                             },
                             {
                                 path:'/forum/course',
-                                component:SyspenseComponent(ForumComponent),
+                                component:BlankLayout,
+                                routes:[
+                                    {   
+                                        path:'/forum/course',
+                                        exact:true,
+                                        render: () => <Redirect to={"/forum/course/all"} />
+                                    },
+                                    {   
+                                        path:'/forum/course/all',
+                                        component:SyspenseComponent(ForumComponent),
+                                    },
+                                    {
+                                        path:'/forum/course/detail',
+                                        component:SyspenseComponent(DetailComponent)
+                                    },
+                                    {
+                                        path:'/forum/course/pay',
+                                        component:SyspenseComponent(PayComponent)
+                                    }
+                                ]
                             },
-                            //     routes:[
-                            //         {
-                            //             path:'/forum/course/detail',
-                            //             component:SyspenseComponent(DetailComponent)
-                            //         },
-                            //         {
-                            //             path:'/forum/course/pay',
-                            //             component:SyspenseComponent(PayComponent)
-                            //         }
-                            //     ]
-                            // },
                             {
                                 path:'/forum/camp',
                                 component:SyspenseComponent(CampComponent)
                             },
                             {
                                 path:'/forum/day',
-                                component:SyspenseComponent(AccountComponent)
+                                component:SyspenseComponent(DayComponent)
                             },
                         ]
                     },
@@ -105,16 +114,24 @@ export default [
                             {
                                 path:'/user',
                                 exact:true,
-                                render: () => <Redirect to={"/user/detail"} />
+                                render: () => <Redirect to={"/user/all"} />
                             },
                             {
-                                path:'/user/detail',
+                                path:'/user/all',
                                 component:SyspenseComponent(MyComponent),
                             },
                             {
                                 path:'/user/account',
                                 component:SyspenseComponent(AccountComponent),
-                            }
+                            },
+                            {
+                                path:'/user/course',
+                                component:SyspenseComponent(CourseComponent),
+                            },
+                            {
+                                path:'/user/order',
+                                component:SyspenseComponent(OrderComponent),
+                            },
                         ]
                     }
                 ]

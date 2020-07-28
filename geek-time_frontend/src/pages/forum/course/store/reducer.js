@@ -7,7 +7,10 @@ const defaultState = {
     // 训练营数据
     infos:[],
     // 加载中
-    enterLoading:true
+    enterLoading:true,
+    pullUpLoading: false,
+    pullDownLoading: false,
+    listOffset: 0, // 请求列表的偏移不是 page，是个数
 }
 export default (state = defaultState, action) => {
     switch(action.type) {
@@ -18,6 +21,12 @@ export default (state = defaultState, action) => {
             return { ...state, infos: action.data}
         case actionTypes.CHANGE_ENTER_LOADING:
             return { ...state, enterLoading: action.data}
+        case actionTypes.CHANGE_LIST_OFFSET:
+            return state.set('listOffset', action.data);
+        case actionTypes.CHANGE_PULLUP_LOADING:
+            return state.set('pullUpLoading', action.data);
+        case actionTypes.CHANGE_PULLDOWN_LOADING:
+            return state.set('pullDownLoading', action.data);
         default:
             return state
     }

@@ -1,18 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Lazyload from 'react-lazyload';
+import { NavLink } from 'react-router-dom';
 import './ForumList.css';
 
 export default function ForumList(props) {
     // console.log(props)
     const { infos } = props;
-    console.log(infos)
+    // console.log(infos)
     return (
         infos.data === undefined ? <React.Fragment></React.Fragment> : 
         <React.Fragment>
             {infos.data.infos.map (m => {
             return (
-                <div key = {m.id} className="_33ly3o09_0">
+                <NavLink key = {m.id} to={"/forum/course/detail/"+m.id} activeClassName="selected">
+                <div className="forum-list-box">
                     <div className="_6Gc2XI7H_0">
                         <Lazyload height={60}>
                             <img src={m.author.avatar} alt="_6Gc2XI7H_0"></img>
@@ -36,6 +38,7 @@ export default function ForumList(props) {
                         </div>
                     </div>
                 </div>
+                </NavLink>
             )
         })}
         </React.Fragment>
