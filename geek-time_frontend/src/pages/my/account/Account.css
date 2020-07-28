@@ -1,0 +1,166 @@
+.Account {
+  width: 10rem;
+  height: 100%;
+  background-color: #f8f8f8;
+  font-family: "微软雅黑";
+  z-index: 999;
+}
+.Account .Account-header {
+  height: 1.333333rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.Account .Account-header .icon {
+  font-size: 0.462963rem /* 50/108 */;
+  margin-left: 0.425926rem /* 46/108 */;
+  color: #999999;
+  font-weight: 600;
+}
+.Account .Account-header .title {
+  font-size: 0.518519rem /* 56/108 */;
+  margin-left: 3.703704rem /* 400/108 */;
+  font-weight: bold;
+}
+.Account .Account-header .enter {
+  font-size: 0.388889rem /* 42/108 */;
+  color: #888888;
+  position: fixed;
+  align-items: center;
+  flex: 1;
+  right: 0.8rem;
+  top: 0.509259rem;
+  right: 0.564815rem;
+}
+.Account .Account-balance {
+  width: 100%;
+  height: 6.148148rem /* 664/108 */;
+  background-color: #fff;
+}
+.Account .Account-balance .Account-number {
+  height: 3.203704rem /* 346/108 */;
+}
+.Account .Account-balance .Account-number .money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Account .Account-balance .Account-number .money span {
+  font-size: 0.648148rem /* 70/108 */;
+  color: #353535;
+  font-weight: 500;
+}
+.Account .Account-balance .Account-number .money .iconfont {
+  font-size: 0.833333rem /* 90/108 */;
+}
+.Account .Account-balance .Account-number .count {
+  font-size: 0.398148rem /* 43/108 */;
+  text-align: center;
+  color: #d0d0d0;
+  font-weight: 500;
+  line-height: 0.425926rem /* 46/108 */;
+}
+.Account .Account-balance .Account-number .check {
+  font-size: 0.351852rem /* 38/108 */;
+  color: #888888;
+  text-align: center;
+  margin-top: 0.518519rem /* 56/108 */;
+  font-weight: 600;
+}
+.Account .Account-balance .Account-img {
+  width: 92%;
+  height: 2.240741rem /* 242/108 */;
+  display: flex;
+  justify-content: center;
+  padding: 0.481481rem /* 52/108 */ 0.425926rem /* 46/108 */;
+  background-color: #ffffff;
+  border-bottom: 0.5px solid #d0d0d0;
+}
+.Account .Account-balance .Account-img img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.185185rem /* 20/108 */;
+  overflow: hidden;
+}
+.Account .Account-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.Account .Account-container .Account-topUp {
+  height: 60%;
+  width: 100%;
+}
+.Account .Account-container .Account-topUp .Account-topUp-title {
+  width: 100%;
+  display: flex;
+  padding-top: 1.037037rem /* 112/108 */;
+  line-height: 1.018519rem /* 110/108 */;
+}
+.Account .Account-container .Account-topUp .Account-topUp-title .title {
+  font-size: 0.5rem /* 54/108 */;
+  color: #353535;
+  margin-left: 0.444444rem /* 48/108 */;
+  font-weight: bold;
+}
+.Account .Account-container .Account-topUp .Account-topUp-title .name {
+  margin-left: 0.277778rem /* 30/108 */;
+  font-size: 0.296296rem /* 32/108 */;
+  color: #888888;
+  font-weight: bold;
+}
+.Account .Account-container .Account-topUp .Account-topUp-wrap {
+  height: 7.537037rem /* 814/108 */;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0.759259rem /* 82/108 */ 0.407407rem /* 44/108 */ 0.972222rem /* 105/108 */ 0.407407rem /* 44/108 */;
+}
+.Account .Account-container .Account-topUp .Account-topUp-affirm {
+  width: 100%;
+}
+.Account .Account-container .Account-topUp .Account-topUp-affirm .Account-topUp-affirm-btn {
+  height: 1.388889rem /* 150/108 */;
+  width: 9.203704rem /* 994/108 */;
+  margin-left: 0.407407rem /* 44/108 */;
+  background-color: #fa8919;
+  border: 1px solid #fa8919;
+  border-radius: 8px;
+  color: #fffff4;
+  font-size: 0.462963rem /* 50/108 */;
+  font-weight: bold;
+  line-height: 1.064815rem /* 105/108 */;
+}
+.Account .Account-container .Account-explain {
+  height: 40%;
+  width: 100%;
+  position: flex;
+}
+.Account .Account-container .Account-explain .Account-explain-title {
+  display: flex;
+  padding-top: 1.092593rem /* 118/108 */;
+  line-height: 1.018519rem /* 110/108 */;
+}
+.Account .Account-container .Account-explain .Account-explain-title .name {
+  font-size: 0.5rem /* 54/108 */;
+  color: #353535;
+  margin-left: 0.444444rem /* 48/108 */;
+  font-weight: bold;
+}
+.Account .Account-container .Account-explain .Account-explain-detail {
+  font-size: 0.351852rem /* 38/108 */;
+  color: #a8a8a8;
+  margin: 0.592593rem /* 64/108 */ 0.944444rem /* 102/108 */ 1.277778rem /* 138/108 */ 0.462963rem /* 50/108 */;
+}
+.Account .Account-container .Account-explain .Account-explain-detail span {
+  font-weight: bold;
+  color: #353535;
+}

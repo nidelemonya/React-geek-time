@@ -16,13 +16,13 @@ export const iconSet = [{
         "tab1": [
             {
                 "id": 1,
-                "iconUrl": "\ue605",
+                "iconUrl": "\ue606",
                 "name": "账户",
                 "count": "0.0"
             },
             {
                 "id": 2,
-                "iconUrl": "\ue61d",
+                "iconUrl": "\ue6ce",
                 "name": "我的课程",
                 "count": ""
             },
@@ -64,7 +64,7 @@ export const iconSet = [{
         "tab4": [
             {
                 "id": 1,
-                "iconUrl": "\ue61f",
+                "iconUrl": "\ue65d",
                 "name": "礼券",
                 "count": "2"
             },
@@ -76,7 +76,7 @@ export const iconSet = [{
             },
             {
                 "id": 3,
-                "iconUrl": "\ue60c",
+                "iconUrl": "\ue69f",
                 "name": "分享有赏",
                 "count": ""
             },
@@ -88,7 +88,7 @@ export const iconSet = [{
             },
             {
                 "id": 5,
-                "iconUrl": "\ue60d",
+                "iconUrl": "\ue603",
                 "name": "关注服务号领币",
                 "count": ""
             }
@@ -102,7 +102,7 @@ export const iconSet = [{
             },
             {
                 "id": 2,
-                "iconUrl": "\ue616",
+                "iconUrl": "\ue617",
                 "name": "设置",
                 "count": ""
             }

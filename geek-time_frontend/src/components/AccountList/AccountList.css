@@ -1,0 +1,28 @@
+.Account-topUp-wrapBox {
+  width: 100%;
+  height: 7.537037rem /* 814/108 */;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.Account-topUp-wrapBox .list {
+  height: 1.685185rem /* 182/108 */;
+  width: 2.888889rem /* 312/108 */;
+  background-color: #f5f8fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.Account-topUp-wrapBox .list .list-top {
+  font-size: 0.462963rem /* 50/108 */;
+  color: #5c5d5a;
+}
+.Account-topUp-wrapBox .list .list-top .iconfont {
+  font-size: 0.462963rem /* 50/108 */;
+}
+.Account-topUp-wrapBox .list .list-button {
+  font-size: 0.259259rem /* 28/108 */;
+  color: #b9bcbc;
+}

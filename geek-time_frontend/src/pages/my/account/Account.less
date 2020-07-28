@@ -1,0 +1,192 @@
+.Account{
+    width: 10rem;
+    height: 100%;
+    background-color: #f8f8f8;
+    font-family: "微软雅黑";
+    z-index: 999;
+    .Account-header{
+        height: 1.333333rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        .icon{
+            font-size: .462963rem /* 50/108 */;
+            margin-left: .425926rem /* 46/108 */;
+            color: #999999;
+            font-weight: 600;
+        }
+        .title{
+            font-size: .518519rem /* 56/108 */;
+            // color: #353535;
+            margin-left: 3.703704rem /* 400/108 */;
+            font-weight: bold;
+            
+        }
+        .enter{
+            font-size: .388889rem /* 42/108 */;
+            color: #888888;
+            position: fixed;
+            align-items: center;
+            flex: 1;
+            right: 0.8rem;
+            top: .509259rem;
+            right: .564815rem;
+        }
+    }
+    .Account-balance{
+        width: 100%;
+        height: 6.148148rem /* 664/108 */;
+        background-color: #fff;
+        .Account-number{
+            height: 3.203704rem /* 346/108 */;
+            .money{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span{
+                    font-size: .648148rem /* 70/108 */;
+                    color: #353535;
+                    font-weight: 500;
+                }
+                .iconfont{
+                    font-size: .833333rem /* 90/108 */;
+                }
+            }
+            .count{
+                font-size: .398148rem /* 43/108 */;
+                text-align: center;
+                color: #d0d0d0;
+                font-weight: 500;
+                line-height: .425926rem /* 46/108 */;
+            }
+            .check{
+                font-size: .351852rem /* 38/108 */;
+                color: #888888;
+                text-align: center;
+                margin-top: .518519rem /* 56/108 */;
+                font-weight: 600;
+            }
+        }
+        .Account-img{
+            width:92%;
+            height: 2.240741rem /* 242/108 */;
+            display: flex;
+            justify-content: center;
+            padding: .481481rem /* 52/108 */ .425926rem /* 46/108 */;
+            background-color: #ffffff;
+            border-bottom: 0.5px solid #d0d0d0;
+            img{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border-radius: .185185rem /* 20/108 */;
+                overflow: hidden;
+            }
+        }
+    }
+    .Account-container{
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+        .Account-topUp{
+            height: 60%;
+            width: 100%;
+            .Account-topUp-title{
+                width: 100%;
+                display: flex;
+                padding-top: 1.037037rem /* 112/108 */;  
+                line-height: 1.018519rem /* 110/108 */;
+                .title{
+                    font-size: .5rem /* 54/108 */;
+                    color: #353535;
+                    margin-left: .444444rem /* 48/108 */;
+                    font-weight: bold;     
+                }
+                .name{
+                    margin-left: .277778rem /* 30/108 */;
+                    font-size: .296296rem /* 32/108 */;
+                    color: #888888;
+                    font-weight:  bold;
+                }
+            }
+            .Account-topUp-wrap{
+                // width: 100%;
+                height: 7.537037rem /* 814/108 */;
+                display: flex;
+                // flex-direction: row;
+                justify-content: space-between;
+                align-content: space-between;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                background-color: #fff;
+                padding: .759259rem /* 82/108 */ .407407rem /* 44/108 */ .972222rem /* 105/108 */ .407407rem /* 44/108 */;
+                // .list{
+                //     height: 1.685185rem /* 182/108 */;
+                //     width: 2.888889rem /* 312/108 */;
+                //     background-color: #f5f8fa;
+                //     display: flex;
+                //     flex-direction: column;
+                //     justify-content: center;
+                //     align-items: center;
+                //     border-radius: 8px;
+                //     .list-top{
+                //         font-size: .462963rem /* 50/108 */;
+                //         color: #5c5d5a;
+                //         .iconfont{
+                //             font-size: .462963rem /* 50/108 */;
+                //         }
+                //     }
+                //     .list-button{
+                //         font-size: .259259rem /* 28/108 */;
+                //         color: #b9bcbc;
+                //     }
+                // }
+            }
+            .Account-topUp-affirm{
+                width: 100%;
+                .Account-topUp-affirm-btn{
+                    height: 1.388889rem /* 150/108 */;
+                    width: 9.203704rem /* 994/108 */;
+                    margin-left: .407407rem /* 44/108 */;
+                    background-color: #fa8919;
+                    border: 1px solid #fa8919;
+                    border-radius: 8px;
+                    color: #fffff4;
+                    font-size: .462963rem /* 50/108 */;
+                    font-weight: bold;
+                    line-height: 1.064815rem /* 105/108 */;
+                }
+                
+            }
+        } 
+        .Account-explain{
+            height: 40%;
+            width: 100%;
+            position: flex;
+            .Account-explain-title{
+                display: flex;
+                padding-top: 1.092593rem /* 118/108 */;  
+                line-height: 1.018519rem /* 110/108 */;
+                .name{
+                    font-size: .5rem /* 54/108 */;
+                    color: #353535;
+                    margin-left: .444444rem /* 48/108 */;
+                    font-weight: bold;     
+                }
+            }
+            .Account-explain-detail{
+                font-size: .351852rem /* 38/108 */;
+                color: #a8a8a8;
+                margin: .592593rem /* 64/108 */ .944444rem /* 102/108 */ 1.277778rem /* 138/108 */ .462963rem /* 50/108 */;
+                span{
+                    font-weight: bold;
+                    color: #353535;
+                }
+            }
+        }
+    }
+}
