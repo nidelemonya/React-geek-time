@@ -39,11 +39,11 @@ function My(props) {
                                 <MySwiper></MySwiper>
                             </div>
                             <div className="my-body__box">
-                                <MyItems item_list={iconSet[0].data[0].tab1} />
-                                <MyItems item_list={iconSet[0].data[0].tab2} />
-                                <MyItems item_list={iconSet[0].data[0].tab3} />
-                                <MyItems item_list={iconSet[0].data[0].tab4} />
-                                <MyItems item_list={iconSet[0].data[0].tab5} />
+                                <MyItems item_list={iconSet.tab1} />
+                                <MyItems item_list={iconSet.tab2} />
+                                <MyItems item_list={iconSet.tab3} />
+                                <MyItems item_list={iconSet.tab4} />
+                                <MyItems item_list={iconSet.tab5} />
                             </div>
                         </div>
                     </Scroll>

@@ -123,14 +123,15 @@ const Scroll = forwardRef((props, ref) => {
   }));
 
   const PullUpdisplayStyle = pullUpLoading ? { display: "" } : { display: "none" };
-  const PullDowndisplayStyle = pullDownLoading ? { display: "" } : { display: "none" };
+  // const PullDowndisplayStyle = pullDownLoading ? { display: "" } : { display: "none" };
   return (
     <ScrollContainer ref={scrollContaninerRef}>
       {props.children}
       {/* 滑到底部加载动画 */}
-      <PullUpLoading style={ PullUpdisplayStyle }><Loading></Loading></PullUpLoading>
+      <PullUpLoading style={ PullUpdisplayStyle }><Loading2></Loading2></PullUpLoading>
       {/* 顶部下拉刷新动画 */}
-      <PullDownLoading style={ PullDowndisplayStyle }><Loading2></Loading2></PullDownLoading>
+      {/* <PullDownLoading style={ PullDowndisplayStyle }><Loading2></Loading2></PullDownLoading> */}
+      <Loading Loading={pullDownLoading} title="正在加载中..." />
     </ScrollContainer>
   );
 })

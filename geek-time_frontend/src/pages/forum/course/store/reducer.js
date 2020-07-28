@@ -3,9 +3,10 @@ import * as actionTypes from './constants';
 const defaultState = {
     // 一个页面只有一个 loading 值
     // 课程数据
-    lessons:[],
+    pathList:[],
+    directionList:[],
     // 训练营数据
-    infos:[],
+    infoList:[],
     // 加载中
     enterLoading:true,
     pullUpLoading: false,
@@ -14,19 +15,21 @@ const defaultState = {
 }
 export default (state = defaultState, action) => {
     switch(action.type) {
-        case actionTypes.CHANGE_LESSONS:
+        case actionTypes.CHANGE_PATH:
             // 展开原有的状态
-            return { ...state, lessons: action.data}
+            return { ...state, pathList: action.data}
+        case actionTypes.CHANGE_Direction:
+            return { ...state, directionList: action.data}
         case actionTypes.CHANGE_INFOS:
-            return { ...state, infos: action.data}
+            return { ...state, infoList: action.data}
         case actionTypes.CHANGE_ENTER_LOADING:
             return { ...state, enterLoading: action.data}
         case actionTypes.CHANGE_LIST_OFFSET:
-            return state.set('listOffset', action.data);
+            return { ...state,listOffset:action.data}
         case actionTypes.CHANGE_PULLUP_LOADING:
-            return state.set('pullUpLoading', action.data);
+            return { ...state,pullUpLoading:action.data}
         case actionTypes.CHANGE_PULLDOWN_LOADING:
-            return state.set('pullDownLoading', action.data);
+            return { ...state,pullDownLoading:action.data}
         default:
             return state
     }

@@ -1,0 +1,84 @@
+.detail{
+    width: 100%;
+    height: 100%;
+    .detail-header{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0;
+        width: 10rem;
+        height: 1.22rem;
+        background-color: #ffffff;
+        z-index: 500;
+        .detail-header-left{
+            display: flex;
+            align-items: center;
+            margin-left: .37037rem /* 40/108 */;
+            font-size: .444444rem /* 48/108 */;
+            width: 7rem;
+            height: 100%;
+        }
+        .detail-header-right {
+            padding: 0.3rem;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            span {
+                font-size: .555556rem /* 60/108 */;
+            }
+        }
+        
+    }
+    .detail-center {
+
+    }
+    .detail-bottom {
+        position: fixed;
+        bottom: 0;
+        width: 10rem;
+        height: 1.1730rem;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        z-index: 500;
+        .detail-bottom-left {
+            display: flex;
+            margin-left: .648148rem /* 70/108 */;
+            width: 7rem;
+            .detail-bottom-t{
+                font-size: .555556rem /* 60/108 */;
+                color: #fe8912;
+            }
+            .detail-bottom-b{
+                margin-left: .185185rem /* 20/108 */;
+                font-size: .277778rem /* 30/108 */;
+                .detail-bottom-bk{
+                    width: .925926rem /* 100/108 */;
+                    height: .388889rem /* 42/108 */;
+                    text-align: center;
+                    overflow: hidden;
+                    border: .018519rem /* 2/108 */ solid #d49350;
+                    border-radius: .074074rem /* 8/108 */;
+                    color: #e2903a;
+                    font-size: .277778rem /* 30/108 */;
+                }
+                .detail-bottom-sk{
+                    color: #b2b2b2;
+                    text-decoration:line-through;
+                    margin-top: .018519rem /* 2/108 */;
+                }
+            }
+        }
+        .detail-bottom-right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 2.777778rem /* 300/108 */;
+            height: 100%;
+            background-color: #fa8e1f;
+            font-size: .388889rem /* 42/108 */;
+            font-weight: bold;
+            color: #f9ffff;
+        }
+    }
+}
