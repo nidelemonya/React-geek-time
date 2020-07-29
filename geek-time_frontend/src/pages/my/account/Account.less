@@ -3,8 +3,9 @@
     height: 100%;
     background-color: #f8f8f8;
     font-family: "微软雅黑";
-    z-index: 999;
+    z-index: 499;
     .Account-header{
+        z-index: 500;
         height: 1.333333rem;
         width: 100%;
         position: fixed;
@@ -124,27 +125,6 @@
                 box-sizing: border-box;
                 background-color: #fff;
                 padding: .759259rem /* 82/108 */ .407407rem /* 44/108 */ .972222rem /* 105/108 */ .407407rem /* 44/108 */;
-                // .list{
-                //     height: 1.685185rem /* 182/108 */;
-                //     width: 2.888889rem /* 312/108 */;
-                //     background-color: #f5f8fa;
-                //     display: flex;
-                //     flex-direction: column;
-                //     justify-content: center;
-                //     align-items: center;
-                //     border-radius: 8px;
-                //     .list-top{
-                //         font-size: .462963rem /* 50/108 */;
-                //         color: #5c5d5a;
-                //         .iconfont{
-                //             font-size: .462963rem /* 50/108 */;
-                //         }
-                //     }
-                //     .list-button{
-                //         font-size: .259259rem /* 28/108 */;
-                //         color: #b9bcbc;
-                //     }
-                // }
             }
             .Account-topUp-affirm{
                 width: 100%;
@@ -188,5 +168,16 @@
                 }
             }
         }
+    }
+    .Account-footer{
+        height: 1.851852rem /* 200/108 */;
+        width: 100%;
+        z-index: 499;
+        position: fixed;
+        top: 16rem;
+        left: 0;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
     }
 }

@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
+import { withRouter } from 'react-router'
 import './Account.css';
 import { accountToUp } from '../../../api/config';
 import AccountList from '../../../components/AccountList/AccountList'
 
-export default function Account(props) {
+function Account(props) {
     console.log(accountToUp)
+    const handleBack = () => {
+        window.history.back()
+    }
     return (
         <div className="Account">
             <div className="Account-header">
-                <span className="icon iconfont">&#xe571;</span>
+                <span className="icon iconfont" onClick={handleBack}>&#xe571;</span>
                 <span className="title">账户</span>
                 <span className="enter">兑换入口</span>
             </div>
@@ -34,7 +38,7 @@ export default function Account(props) {
                         <span className="name">(  充值金额仅限 Android 系统使用  )</span>
                     </div>
                     <div className="Account-topUp-wrap" >
-                        <AccountList topUp_list ={accountToUp[0].data.list} />
+                        <AccountList topUp_list ={accountToUp.list} />
                     </div>
                     <div className="Account-topUp-affirm">
                         <button className="Account-topUp-affirm-btn">确认充值</button>
@@ -52,6 +56,13 @@ export default function Account(props) {
                     </div>
                 </div>
             </div>
+           <div className="Account-footer">
+            
+            </div>
         </div>
+        
     )
 }
+
+const Accounts = withRouter(Account)
+export default Accounts
