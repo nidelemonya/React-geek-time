@@ -10,10 +10,12 @@ import Scroll from '../../../common/scroll/Scroll';
 import { ListContainer } from './style';
 import { forceCheck } from 'react-lazyload';
 import './Forum.css';
+import { renderRoutes } from 'react-router-config';
 
 function Forum(props) {
+    // console.log(props);
     // 从 props 解构数据出来
-    const { pathList, directionList, infoList, enterLoading, pageCount, pullUpLoading, pullDownLoading } = props;
+    const { route, pathList, directionList, infoList, enterLoading, pageCount, pullUpLoading, pullDownLoading } = props;
     const { getForumListDataDispatch, getInfoListDataDispatch, pullUpRefresh, pullDownRefresh } = props;
     // console.log(pathList, directionList, infoList)
     const handlePullUp = () => {
@@ -100,6 +102,8 @@ function Forum(props) {
                 </Scroll>
             </ListContainer>
             <Loading Loading={enterLoading} title="正在加载中..." />
+            {/* 重新 render routes 一次 */}
+            {renderRoutes(route.routes)}
         </div>)
 }
 

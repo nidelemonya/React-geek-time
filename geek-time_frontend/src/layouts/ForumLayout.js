@@ -14,7 +14,7 @@ function Forum(props) {
     useEffect(() => {
         FroumDom = ref.current;
         // console.log(FroumDom)
-    },[])
+    },FroumDom)
     // 缓存 Dom 节点？
     const changeNavIcon = (e) => {
         length = e.target.getAttribute('move');

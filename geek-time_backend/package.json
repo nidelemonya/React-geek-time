@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "mocker-api": "^2.1.0",
-    "normalize.css": "^8.0.1"
+    "mocker-api": "^2.1.0"
   }
 }
