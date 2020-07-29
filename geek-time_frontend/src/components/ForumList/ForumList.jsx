@@ -13,7 +13,7 @@ export default function ForumList(props) {
         <React.Fragment>
             {infoList.map (m => {
             return (
-                <NavLink key = {m.id} to={"/forum/course/detail/"+m.id} activeClassName="selected">
+                <NavLink key = {m.id} to={"/forum/course/"+m.id} activeClassName="selected">
                 <div className="forum-list-box">
                     <div className="_6Gc2XI7H_0">
                         <Lazyload height={60}>

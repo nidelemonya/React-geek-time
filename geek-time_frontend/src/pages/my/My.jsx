@@ -6,8 +6,10 @@ import Scroll from '../../common/scroll/Scroll';
 import { forceCheck } from 'react-lazyload';
 import { ListContainer } from './style';
 import { iconSet } from '../../api/config';
+import { renderRoutes } from 'react-router-config';
 
 function My(props) {
+    const { route } = props;
     return (
         <div className="my">
             <div className="my-header">
@@ -48,6 +50,7 @@ function My(props) {
                         </div>
                     </Scroll>
                 </ListContainer>
+                {renderRoutes(route.routes)}
         </div>
     )
 }

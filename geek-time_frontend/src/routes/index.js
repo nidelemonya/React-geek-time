@@ -19,14 +19,14 @@ const TribeComponent = lazy(()=> import ('../pages/tribe/Tribe'))
 const StudyComponent = lazy(()=> import ('../pages/study/Study'))
 const MyComponent = lazy(()=> import ('../pages/my/My'))
 const AccountComponent = lazy(() => import ('../pages/my/account/Account'))
-const DetailComponent = lazy(() => import ('../pages/forum/course/detail/Detail'))
+const IntroComponent = lazy(() => import ('../pages/forum/course/intro/Intro'))
 const CampComponent= lazy(()=> import ('../pages/forum/camp/Camp'))
-const PayComponent= lazy(() => import ('../pages/forum/course/pay/Pay'))
+const PayComponent= lazy(() => import ('../pages/payment/Payment'))
 const DayComponent = lazy(()=> import ('../pages/forum/day/Day'))
 const CourseComponent = lazy(() => import ('../pages/my/course/Course')) 
 const OrderComponent = lazy(() => import ('../pages/my/order/Order'))
 // 进行性能优化 懒加载;
-const SyspenseComponent = Component => props => {
+const SuspenseComponent = Component => props => {
     return (
         // fallback 是一个回滚事件
         <Suspense fallback= {null}>
@@ -52,7 +52,7 @@ export default [
                     {
                         path:'/explore',
                         // component: Explore
-                        component:SyspenseComponent(ExploreComponent)
+                        component:SuspenseComponent(ExploreComponent)
                     },
                     {
                         path:'/forum',
@@ -66,74 +66,57 @@ export default [
                             },
                             {
                                 path:'/forum/course',
-                                component:BlankLayout,
+                                component:SuspenseComponent(ForumComponent),
                                 routes:[
-                                    {   
-                                        path:'/forum/course',
-                                        exact:true,
-                                        render: () => <Redirect to={"/forum/course/all"} />
-                                    },
-                                    {   
-                                        path:'/forum/course/all',
-                                        component:SyspenseComponent(ForumComponent),
-                                    },
                                     {
-                                        path:'/forum/course/detail',
-                                        component:SyspenseComponent(DetailComponent)
+                                        // https://time.geekbang.org/column/intro/100056201?tab=intro
+                                        path:'/forum/course/:id',
+                                        component:SuspenseComponent(IntroComponent)
                                     },
-                                    {
-                                        path:'/forum/course/pay',
-                                        component:SyspenseComponent(PayComponent)
-                                    }
                                 ]
                             },
                             {
                                 path:'/forum/camp',
-                                component:SyspenseComponent(CampComponent)
+                                component:SuspenseComponent(CampComponent)
                             },
                             {
                                 path:'/forum/day',
-                                component:SyspenseComponent(DayComponent)
+                                component:SuspenseComponent(DayComponent)
                             },
                         ]
                     },
                     {
                         path:'/tribe',
                         // component: Tribe,
-                        component:SyspenseComponent(TribeComponent)
+                        component:SuspenseComponent(TribeComponent)
                     },
                     {
                         path:'/study',
                         // component: Study
-                        component:SyspenseComponent(StudyComponent)
+                        component:SuspenseComponent(StudyComponent)
                     },
                     {
                         path:'/user', 
-                        component:BlankLayout,
+                        component:SuspenseComponent(MyComponent),
                         routes:[
                             {
-                                path:'/user',
-                                exact:true,
-                                render: () => <Redirect to={"/user/all"} />
-                            },
-                            {
-                                path:'/user/all',
-                                component:SyspenseComponent(MyComponent),
-                            },
-                            {
                                 path:'/user/account',
-                                component:SyspenseComponent(AccountComponent),
+                                component:SuspenseComponent(AccountComponent),
                             },
                             {
                                 path:'/user/course',
-                                component:SyspenseComponent(CourseComponent),
+                                component:SuspenseComponent(CourseComponent),
                             },
                             {
                                 path:'/user/order',
-                                component:SyspenseComponent(OrderComponent),
+                                component:SuspenseComponent(OrderComponent),
                             },
                         ]
-                    }
+                    },
+                    {
+                        path:'/payment',
+                        component:SuspenseComponent(PayComponent)
+                    },
                 ]
             }
         ]

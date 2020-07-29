@@ -1,8 +1,8 @@
-.detail {
+.intro {
   width: 100%;
   height: 100%;
 }
-.detail .detail-header {
+.intro .intro-header {
   position: fixed;
   display: flex;
   align-items: center;
@@ -10,9 +10,9 @@
   width: 10rem;
   height: 1.22rem;
   background-color: #ffffff;
-  z-index: 500;
+  z-index: 120;
 }
-.detail .detail-header .detail-header-left {
+.intro .intro-header .intro-header-left {
   display: flex;
   align-items: center;
   margin-left: 0.37037rem /* 40/108 */;
@@ -20,16 +20,16 @@
   width: 7rem;
   height: 100%;
 }
-.detail .detail-header .detail-header-right {
+.intro .intro-header .intro-header-right {
   padding: 0.3rem;
   flex: 1;
   display: flex;
   justify-content: space-between;
 }
-.detail .detail-header .detail-header-right span {
+.intro .intro-header .intro-header-right span {
   font-size: 0.555556rem /* 60/108 */;
 }
-.detail .detail-bottom {
+.intro .intro-bottom {
   position: fixed;
   bottom: 0;
   width: 10rem;
@@ -37,22 +37,22 @@
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  z-index: 500;
+  z-index: 120;
 }
-.detail .detail-bottom .detail-bottom-left {
+.intro .intro-bottom .intro-bottom-left {
   display: flex;
   margin-left: 0.648148rem /* 70/108 */;
   width: 7rem;
 }
-.detail .detail-bottom .detail-bottom-left .detail-bottom-t {
+.intro .intro-bottom .intro-bottom-left .intro-bottom-t {
   font-size: 0.555556rem /* 60/108 */;
   color: #fe8912;
 }
-.detail .detail-bottom .detail-bottom-left .detail-bottom-b {
+.intro .intro-bottom .intro-bottom-left .intro-bottom-b {
   margin-left: 0.185185rem /* 20/108 */;
   font-size: 0.277778rem /* 30/108 */;
 }
-.detail .detail-bottom .detail-bottom-left .detail-bottom-b .detail-bottom-bk {
+.intro .intro-bottom .intro-bottom-left .intro-bottom-b .intro-bottom-bk {
   width: 0.925926rem /* 100/108 */;
   height: 0.388889rem /* 42/108 */;
   text-align: center;
@@ -62,12 +62,12 @@
   color: #e2903a;
   font-size: 0.277778rem /* 30/108 */;
 }
-.detail .detail-bottom .detail-bottom-left .detail-bottom-b .detail-bottom-sk {
+.intro .intro-bottom .intro-bottom-left .intro-bottom-b .intro-bottom-sk {
   color: #b2b2b2;
   text-decoration: line-through;
   margin-top: 0.018519rem /* 2/108 */;
 }
-.detail .detail-bottom .detail-bottom-right {
+.intro .intro-bottom .intro-bottom-right {
   display: flex;
   justify-content: center;
   align-items: center;

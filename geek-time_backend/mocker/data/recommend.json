@@ -1,0 +1,1024 @@
+{
+
+        "blocks": [{
+            "title": "看过的人还看了",
+            "type": "product",
+            "list": [100055801, 100051901, 100050701, 100052201, 100053301, 100043001]
+        }],
+        "paths": [],
+        "products": [{
+            "id": 100055801,
+            "ctime": 1594801621,
+            "utime": 1595840512,
+            "begin_time": 1594742400,
+            "end_time": 1910361600,
+            "price": {
+                "market": 9900,
+                "sale": 7900,
+                "sale_type": 2
+            },
+            "is_onborad": true,
+            "is_sale": true,
+            "is_groupbuy": false,
+            "is_promo": true,
+            "is_shareget": false,
+            "is_sharesale": true,
+            "type": "c1",
+            "is_column": true,
+            "is_core": true,
+            "is_video": false,
+            "is_audio": true,
+            "is_dailylesson": false,
+            "is_university": false,
+            "nav_id": 1,
+            "title": "Vim 实用技巧必知必会",
+            "subtitle": "让编程效率神器为我所用",
+            "ucode": "8C24C10AEC779F",
+            "is_finish": false,
+            "author": {
+                "name": "吴咏炜",
+                "intro": "前 Intel 资深软件架构师",
+                "avatar": "https://static001.geekbang.org/resource/image/12/8a/1214fc4454be8be5512366f938029f8a.jpg"
+            },
+            "cover": {
+                "square": "https://static001.geekbang.org/resource/image/12/8a/1214fc4454be8be5512366f938029f8a.jpg",
+                "rectangle": "https://static001.geekbang.org/resource/image/4d/e1/4dbfdffc675120d8153afda952eb32e1.jpg"
+            },
+            "article": {
+                "id": 0,
+                "count": 24,
+                "count_req": 22,
+                "count_pub": 4,
+                "total_length": 2724
+            },
+            "seo": {
+                "keywords": ["Vim", "Linux", "编辑器", "编辑", "文本编辑", "效率", "vi", "编程"]
+            },
+            "share": {
+                "title": "吴咏炜 · Vim 实用技巧必知必会",
+                "content": "让编程效率神器为我所用",
+                "cover": ""
+            },
+            "unit": "24讲",
+            "column": {
+                "unit": "24讲",
+                "bgcolor": "F6F7FB",
+                "update_frequency": "每周一／三／五更新",
+                "is_preorder": false,
+                "is_finish": false,
+                "is_include_preview": true,
+                "show_chapter": true,
+                "is_sale_product": true,
+                "study_service": [1, 2, 3, 4, 5, 8, 9, 10, 11, 13, 14],
+                "path": {
+                    "desc": "你将获得：即学即用的Vim高频命令；定制自己专属的Vim环境；利用Vim脚本和插件实现常用功能；Vim高阶用法和技巧。",
+                    "desc_html": "\u003cp\u003e\u003cstrong\u003e你将获得：\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e即学即用的 Vim 高频命令；\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e定制自己专属的 Vim 环境；\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e利用 Vim 脚本和插件实现常用功能；\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eVim 高阶用法和技巧。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n"
+                }
+            },
+            "dl": {
+                "artile": {
+                    "id": 0,
+                    "video_duration": ""
+                }
+            },
+            "university": {
+                "total_hour": 0,
+                "term": 0,
+                "redirect_type": "",
+                "redirect_param": ""
+            },
+            "extra": {
+                "sub": {
+                    "count": 1693,
+                    "had_done": false,
+                    "could_order": false,
+                    "access_mask": 0
+                },
+                "fav": {
+                    "count": 0,
+                    "had_done": false
+                },
+                "rate": {
+                    "article_count": 0,
+                    "article_count_req": 0,
+                    "is_finished": false,
+                    "rate_percent": 0,
+                    "video_seconds": 0,
+                    "last_article_id": 0,
+                    "last_chapter_id": 0
+                },
+                "cert": {
+                    "id": "",
+                    "type": 0
+                },
+                "nps": {
+                    "min": 11,
+                    "status": 0,
+                    "url": "https://jinshuju.net/f/vUVK4d"
+                },
+                "any_read": {
+                    "total": 4,
+                    "count": 0
+                },
+                "university": {
+                    "status": 0,
+                    "view_status": 0,
+                    "charge_status": 0,
+                    "unlocked_status": 0,
+                    "unlocked_chapter_ids": [],
+                    "unlocked_chapter_id": 0,
+                    "unlocked_chapter_title": "",
+                    "unlocked_article_count": 0,
+                    "unlocked_next_time": 0,
+                    "expire_time": 0,
+                    "is_expired": false,
+                    "is_graduated": false,
+                    "had_sub": false,
+                    "timeline": []
+                },
+                "vip": {
+                    "show": false,
+                    "end_time": 0
+                },
+                "group_buy": {
+                    "success_ucount": 0,
+                    "join_code": "",
+                    "could_groupbuy": false,
+                    "had_join": false,
+                    "price": 0,
+                    "list": []
+                },
+                "sharesale": {
+                    "original_pic_color": "595656",
+                    "original_pic_url": "https://static001.geekbang.org/resource/image/99/2b/99574e94yy3a03990389f585a410a52b.jpg",
+                    "promo_pic_color": "595656",
+                    "promo_pic_url": "https://static001.geekbang.org/resource/image/38/9f/389d363c5aea766952b07e541b479c9f.jpg",
+                    "share_sale_price": 2400,
+                    "share_sale_guest_price": 0
+                },
+                "promo": {
+                    "ent_time": 1596211199
+                },
+                "channel": {
+                    "is": false,
+                    "back_amount": 0
+                },
+                "first_promo": {
+                    "price": 1990,
+                    "could_join": true
+                },
+                "helper": [],
+                "tab": {
+                    "comment": false
+                },
+                "modules": [],
+                "cid": 0,
+                "first_aids": []
+            }
+        }, {
+            "id": 100051901,
+            "ctime": 1588909203,
+            "utime": 1595840678,
+            "begin_time": 1589126400,
+            "end_time": 1908979200,
+            "price": {
+                "market": 9900,
+                "sale": 7900,
+                "sale_type": 3
+            },
+            "is_onborad": true,
+            "is_sale": true,
+            "is_groupbuy": true,
+            "is_promo": false,
+            "is_shareget": false,
+            "is_sharesale": true,
+            "type": "c1",
+            "is_column": true,
+            "is_core": true,
+            "is_video": false,
+            "is_audio": true,
+            "is_dailylesson": false,
+            "is_university": false,
+            "nav_id": 1,
+            "title": "互联网人的英语私教课",
+            "subtitle": "让你快速提升英语阅读能力",
+            "ucode": "691B3D8C95382E",
+            "is_finish": true,
+            "author": {
+                "name": "陈亦峰",
+                "intro": "同传译员，原北外高级翻译学院同声传译讲师",
+                "avatar": "https://static001.geekbang.org/resource/image/e0/61/e03c227092b4d9bd9da167569280dd61.jpg"
+            },
+            "cover": {
+                "square": "https://static001.geekbang.org/resource/image/e0/61/e03c227092b4d9bd9da167569280dd61.jpg",
+                "rectangle": "https://static001.geekbang.org/resource/image/87/40/872505c33888148b246120bb7ee89b40.jpg"
+            },
+            "article": {
+                "id": 0,
+                "count": 43,
+                "count_req": 33,
+                "count_pub": 43,
+                "total_length": 54845
+            },
+            "seo": {
+                "keywords": ["英文", "软技能", "学习", "语法", ""]
+            },
+            "share": {
+                "title": "陈亦峰 · 互联网人的英语私教课",
+                "content": "让你快速提升英语阅读能力",
+                "cover": ""
+            },
+            "unit": "43讲",
+            "column": {
+                "unit": "43讲",
+                "bgcolor": "F6F7FB",
+                "update_frequency": "全集",
+                "is_preorder": false,
+                "is_finish": true,
+                "is_include_preview": true,
+                "show_chapter": true,
+                "is_sale_product": true,
+                "study_service": [1, 2, 3, 4, 5, 8, 9, 10, 12, 14],
+                "path": {
+                    "desc": "一学即会的场景化单词记忆法；250+纯正地道的英语表达；50+精选原版阅读材料推荐；无障碍阅读英语文章。",
+                    "desc_html": "\u003cul\u003e\n\u003cli\u003e一学即会的场景化单词记忆法；\u003c/li\u003e\n\u003cli\u003e250 + 纯正地道的英语表达；\u003c/li\u003e\n\u003cli\u003e50+ 精选原版阅读材料推荐；\u003c/li\u003e\n\u003cli\u003e无障碍阅读英语文章。\u003c/li\u003e\n\u003c/ul\u003e\n"
+                }
+            },
+            "dl": {
+                "artile": {
+                    "id": 0,
+                    "video_duration": ""
+                }
+            },
+            "university": {
+                "total_hour": 0,
+                "term": 0,
+                "redirect_type": "",
+                "redirect_param": ""
+            },
+            "extra": {
+                "sub": {
+                    "count": 6133,
+                    "had_done": false,
+                    "could_order": false,
+                    "access_mask": 0
+                },
+                "fav": {
+                    "count": 0,
+                    "had_done": false
+                },
+                "rate": {
+                    "article_count": 0,
+                    "article_count_req": 0,
+                    "is_finished": false,
+                    "rate_percent": 0,
+                    "video_seconds": 0,
+                    "last_article_id": 0,
+                    "last_chapter_id": 0
+                },
+                "cert": {
+                    "id": "",
+                    "type": 0
+                },
+                "nps": {
+                    "min": 17,
+                    "status": 0,
+                    "url": "https://jinshuju.net/f/EsDv8h"
+                },
+                "any_read": {
+                    "total": 4,
+                    "count": 0
+                },
+                "university": {
+                    "status": 0,
+                    "view_status": 0,
+                    "charge_status": 0,
+                    "unlocked_status": 0,
+                    "unlocked_chapter_ids": [],
+                    "unlocked_chapter_id": 0,
+                    "unlocked_chapter_title": "",
+                    "unlocked_article_count": 0,
+                    "unlocked_next_time": 0,
+                    "expire_time": 0,
+                    "is_expired": false,
+                    "is_graduated": false,
+                    "had_sub": false,
+                    "timeline": []
+                },
+                "vip": {
+                    "show": false,
+                    "end_time": 0
+                },
+                "group_buy": {
+                    "success_ucount": 2,
+                    "join_code": "",
+                    "could_groupbuy": false,
+                    "had_join": false,
+                    "price": 7900,
+                    "list": []
+                },
+                "sharesale": {
+                    "original_pic_color": "595656",
+                    "original_pic_url": "https://static001.geekbang.org/resource/image/5a/ee/5aa7ab10e7debb7ffcf80374d2524aee.jpg",
+                    "promo_pic_color": "595656",
+                    "promo_pic_url": "https://static001.geekbang.org/resource/image/5a/d4/5ae477503a834b51cf7e65d42b4a05d4.jpg",
+                    "share_sale_price": 2400,
+                    "share_sale_guest_price": 0
+                },
+                "promo": {
+                    "ent_time": 0
+                },
+                "channel": {
+                    "is": false,
+                    "back_amount": 0
+                },
+                "first_promo": {
+                    "price": 1990,
+                    "could_join": true
+                },
+                "helper": [],
+                "tab": {
+                    "comment": false
+                },
+                "modules": [],
+                "cid": 0,
+                "first_aids": []
+            }
+        }, {
+            "id": 100050701,
+            "ctime": 1586836678,
+            "utime": 1595840698,
+            "begin_time": 1586707200,
+            "end_time": 1902758400,
+            "price": {
+                "market": 3900,
+                "sale": 2900,
+                "sale_type": 3
+            },
+            "is_onborad": true,
+            "is_sale": true,
+            "is_groupbuy": true,
+            "is_promo": false,
+            "is_shareget": false,
+            "is_sharesale": true,
+            "type": "c1",
+            "is_column": true,
+            "is_core": true,
+            "is_video": false,
+            "is_audio": true,
+            "is_dailylesson": false,
+            "is_university": false,
+            "nav_id": 1,
+            "title": "视觉笔记入门课",
+            "subtitle": "用视觉语言做超酷的笔记",
+            "ucode": "17A2537B525856",
+            "is_finish": true,
+            "author": {
+                "name": "高伟",
+                "intro": "视觉化咨询师、有画说社区发起人、视觉语言知识体系打造者和推广者",
+                "avatar": "https://static001.geekbang.org/resource/image/89/e9/89c84ceebb1c9981aa44cd776c4b81e9.jpg"
+            },
+            "cover": {
+                "square": "https://static001.geekbang.org/resource/image/89/e9/89c84ceebb1c9981aa44cd776c4b81e9.jpg",
+                "rectangle": "https://static001.geekbang.org/resource/image/36/f4/369e9ed22820643c3f437926ef731ef4.jpg"
+            },
+            "article": {
+                "id": 0,
+                "count": 16,
+                "count_req": 15,
+                "count_pub": 16,
+                "total_length": 16424
+            },
+            "seo": {
+                "keywords": ["笔记", "画", "视觉", "视觉笔记"]
+            },
+            "share": {
+                "title": "高伟 · 视觉笔记入门课",
+                "content": "用视觉语言做超酷的笔记",
+                "cover": ""
+            },
+            "unit": "16讲",
+            "column": {
+                "unit": "16讲",
+                "bgcolor": "F6F7FB",
+                "update_frequency": "全集",
+                "is_preorder": false,
+                "is_finish": true,
+                "is_include_preview": true,
+                "show_chapter": true,
+                "is_sale_product": true,
+                "study_service": [1, 2, 3, 4, 5],
+                "path": {
+                    "desc": "你将获得：新手适用的笔记绘画技巧人人都能学会的内容总结法常见的笔记方法和具体步骤两大实战案例带你手把手做笔记",
+                    "desc_html": "\u003cp\u003e\u003cstrong\u003e你将获得\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e新手适用的笔记绘画技巧\u003c/li\u003e\n\u003cli\u003e人人都能学会的内容总结法\u003c/li\u003e\n\u003cli\u003e常见的笔记方法和具体步骤\u003c/li\u003e\n\u003cli\u003e两大实战案例带你手把手做笔记\u003c/li\u003e\n\u003c/ul\u003e\n"
+                }
+            },
+            "dl": {
+                "artile": {
+                    "id": 0,
+                    "video_duration": ""
+                }
+            },
+            "university": {
+                "total_hour": 0,
+                "term": 0,
+                "redirect_type": "",
+                "redirect_param": ""
+            },
+            "extra": {
+                "sub": {
+                    "count": 7401,
+                    "had_done": false,
+                    "could_order": false,
+                    "access_mask": 0
+                },
+                "fav": {
+                    "count": 0,
+                    "had_done": false
+                },
+                "rate": {
+                    "article_count": 0,
+                    "article_count_req": 0,
+                    "is_finished": false,
+                    "rate_percent": 0,
+                    "video_seconds": 0,
+                    "last_article_id": 0,
+                    "last_chapter_id": 0
+                },
+                "cert": {
+                    "id": "",
+                    "type": 0
+                },
+                "nps": {
+                    "min": 8,
+                    "status": 0,
+                    "url": "https://jinshuju.net/f/VI61qN"
+                },
+                "any_read": {
+                    "total": 2,
+                    "count": 0
+                },
+                "university": {
+                    "status": 0,
+                    "view_status": 0,
+                    "charge_status": 0,
+                    "unlocked_status": 0,
+                    "unlocked_chapter_ids": [],
+                    "unlocked_chapter_id": 0,
+                    "unlocked_chapter_title": "",
+                    "unlocked_article_count": 0,
+                    "unlocked_next_time": 0,
+                    "expire_time": 0,
+                    "is_expired": false,
+                    "is_graduated": false,
+                    "had_sub": false,
+                    "timeline": []
+                },
+                "vip": {
+                    "show": false,
+                    "end_time": 0
+                },
+                "group_buy": {
+                    "success_ucount": 2,
+                    "join_code": "",
+                    "could_groupbuy": false,
+                    "had_join": false,
+                    "price": 2900,
+                    "list": []
+                },
+                "sharesale": {
+                    "original_pic_color": "595656",
+                    "original_pic_url": "https://static001.geekbang.org/resource/image/c2/89/c270ac6e7bdb8a37855c06544d489289.jpg",
+                    "promo_pic_color": "595656",
+                    "promo_pic_url": "https://static001.geekbang.org/resource/image/11/b9/11ec1271049824aeb066ec669db141b9.jpg",
+                    "share_sale_price": 990,
+                    "share_sale_guest_price": 0
+                },
+                "promo": {
+                    "ent_time": 0
+                },
+                "channel": {
+                    "is": false,
+                    "back_amount": 0
+                },
+                "first_promo": {
+                    "price": 990,
+                    "could_join": true
+                },
+                "helper": [],
+                "tab": {
+                    "comment": false
+                },
+                "modules": [],
+                "cid": 0,
+                "first_aids": []
+            }
+        }, {
+            "id": 100052201,
+            "ctime": 1589431154,
+            "utime": 1595844946,
+            "begin_time": 1589731200,
+            "end_time": 2161440000,
+            "price": {
+                "market": 9900,
+                "sale": 7900,
+                "sale_type": 3
+            },
+            "is_onborad": true,
+            "is_sale": true,
+            "is_groupbuy": true,
+            "is_promo": false,
+            "is_shareget": false,
+            "is_sharesale": true,
+            "type": "c1",
+            "is_column": true,
+            "is_core": true,
+            "is_video": false,
+            "is_audio": true,
+            "is_dailylesson": false,
+            "is_university": false,
+            "nav_id": 1,
+            "title": "职场求生攻略",
+            "subtitle": "会工作也是个技术活儿",
+            "ucode": "5505C1516EDFD5",
+            "is_finish": false,
+            "author": {
+                "name": "臧萌",
+                "intro": "PayPal 数据处理组技术负责人，《Java 入门 1 2 3》作者",
+                "avatar": "https://static001.geekbang.org/resource/image/67/e9/67cf505c85b38a2cae773d8a5bc36ce9.jpg"
+            },
+            "cover": {
+                "square": "https://static001.geekbang.org/resource/image/67/e9/67cf505c85b38a2cae773d8a5bc36ce9.jpg",
+                "rectangle": "https://static001.geekbang.org/resource/image/a1/70/a191fbd59cdc4d1992659847ab586870.jpg"
+            },
+            "article": {
+                "id": 0,
+                "count": 33,
+                "count_req": 29,
+                "count_pub": 32,
+                "total_length": 23599
+            },
+            "seo": {
+                "keywords": ["软技能", "职场", "技术", "面试"]
+            },
+            "share": {
+                "title": "臧萌 · 职场求生攻略",
+                "content": "会工作也是个技术活儿",
+                "cover": ""
+            },
+            "unit": "33讲",
+            "column": {
+                "unit": "33讲",
+                "bgcolor": "F6F7FB",
+                "update_frequency": "每周一／三／五更新",
+                "is_preorder": false,
+                "is_finish": false,
+                "is_include_preview": true,
+                "show_chapter": true,
+                "is_sale_product": true,
+                "study_service": [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14],
+                "path": {
+                    "desc": "你将获得：14年技术老兵职场心得；避开职场中常见的坑；职场通用的高效工作法；切实可用的职业规划指南。",
+                    "desc_html": "\u003cp\u003e你将获得：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e14 年技术老兵职场心得；\u003c/li\u003e\n\u003cli\u003e避开职场中常见的坑；\u003c/li\u003e\n\u003cli\u003e职场通用的高效工作法；\u003c/li\u003e\n\u003cli\u003e切实可用的职业规划指南。\u003c/li\u003e\n\u003c/ul\u003e\n"
+                }
+            },
+            "dl": {
+                "artile": {
+                    "id": 0,
+                    "video_duration": ""
+                }
+            },
+            "university": {
+                "total_hour": 0,
+                "term": 0,
+                "redirect_type": "",
+                "redirect_param": ""
+            },
+            "extra": {
+                "sub": {
+                    "count": 1479,
+                    "had_done": false,
+                    "could_order": false,
+                    "access_mask": 0
+                },
+                "fav": {
+                    "count": 0,
+                    "had_done": false
+                },
+                "rate": {
+                    "article_count": 0,
+                    "article_count_req": 0,
+                    "is_finished": false,
+                    "rate_percent": 0,
+                    "video_seconds": 0,
+                    "last_article_id": 0,
+                    "last_chapter_id": 0
+                },
+                "cert": {
+                    "id": "",
+                    "type": 0
+                },
+                "nps": {
+                    "min": 15,
+                    "status": 0,
+                    "url": "https://jinshuju.net/f/ONyZp0"
+                },
+                "any_read": {
+                    "total": 4,
+                    "count": 0
+                },
+                "university": {
+                    "status": 0,
+                    "view_status": 0,
+                    "charge_status": 0,
+                    "unlocked_status": 0,
+                    "unlocked_chapter_ids": [],
+                    "unlocked_chapter_id": 0,
+                    "unlocked_chapter_title": "",
+                    "unlocked_article_count": 0,
+                    "unlocked_next_time": 0,
+                    "expire_time": 0,
+                    "is_expired": false,
+                    "is_graduated": false,
+                    "had_sub": false,
+                    "timeline": []
+                },
+                "vip": {
+                    "show": false,
+                    "end_time": 0
+                },
+                "group_buy": {
+                    "success_ucount": 2,
+                    "join_code": "",
+                    "could_groupbuy": false,
+                    "had_join": false,
+                    "price": 7900,
+                    "list": []
+                },
+                "sharesale": {
+                    "original_pic_color": "595656",
+                    "original_pic_url": "https://static001.geekbang.org/resource/image/43/89/4384feb1f3cc784f027330bd0def9e89.jpg",
+                    "promo_pic_color": "595656",
+                    "promo_pic_url": "https://static001.geekbang.org/resource/image/a5/72/a58cce33c2d6c8b902c5301cffd74d72.jpg",
+                    "share_sale_price": 2400,
+                    "share_sale_guest_price": 0
+                },
+                "promo": {
+                    "ent_time": 0
+                },
+                "channel": {
+                    "is": false,
+                    "back_amount": 0
+                },
+                "first_promo": {
+                    "price": 1990,
+                    "could_join": true
+                },
+                "helper": [],
+                "tab": {
+                    "comment": false
+                },
+                "modules": [],
+                "cid": 0,
+                "first_aids": []
+            }
+        }, {
+            "id": 100053301,
+            "ctime": 1591261030,
+            "utime": 1595840680,
+            "begin_time": 1591113600,
+            "end_time": 1875542400,
+            "price": {
+                "market": 6800,
+                "sale": 5500,
+                "sale_type": 3
+            },
+            "is_onborad": true,
+            "is_sale": true,
+            "is_groupbuy": true,
+            "is_promo": false,
+            "is_shareget": false,
+            "is_sharesale": true,
+            "type": "c1",
+            "is_column": true,
+            "is_core": true,
+            "is_video": false,
+            "is_audio": true,
+            "is_dailylesson": false,
+            "is_university": false,
+            "nav_id": 1,
+            "title": "正则表达式入门课",
+            "subtitle": "教你轻松学习正则",
+            "ucode": "",
+            "is_finish": true,
+            "author": {
+                "name": "涂伟忠",
+                "intro": "高级研发工程师",
+                "avatar": "https://static001.geekbang.org/resource/image/10/f8/100a8db2037884e5c486a4041a0aebf8.jpg"
+            },
+            "cover": {
+                "square": "https://static001.geekbang.org/resource/image/10/f8/100a8db2037884e5c486a4041a0aebf8.jpg",
+                "rectangle": "https://static001.geekbang.org/resource/image/c6/e4/c608e01399afab04686b993fae6186e4.jpg"
+            },
+            "article": {
+                "id": 0,
+                "count": 17,
+                "count_req": 14,
+                "count_pub": 17,
+                "total_length": 12188
+            },
+            "seo": {
+                "keywords": ["正则", "正则表达式", "元字符", "匹配模式", "Python", "效率", ""]
+            },
+            "share": {
+                "title": "涂伟忠 · 正则表达式入门课",
+                "content": "教你轻松学习正则",
+                "cover": ""
+            },
+            "unit": "17讲",
+            "column": {
+                "unit": "17讲",
+                "bgcolor": "F6F7FB",
+                "update_frequency": "全集",
+                "is_preorder": false,
+                "is_finish": true,
+                "is_include_preview": true,
+                "show_chapter": true,
+                "is_sale_product": true,
+                "study_service": [1, 2, 3, 4, 5, 7, 8, 10],
+                "path": {
+                    "desc": "你将获得：正则表达式的系统学习路径；事半功倍的分类记忆法；常见正则问题及解决方案；多场景案例实操正则应用。",
+                    "desc_html": "\u003cp\u003e\u003cstrong\u003e你将获得：\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e正则表达式的系统学习路径；\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e事半功倍的分类记忆法；\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e常见正则问题及解决方案；\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e多场景案例实操正则应用。\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n"
+                }
+            },
+            "dl": {
+                "artile": {
+                    "id": 0,
+                    "video_duration": ""
+                }
+            },
+            "university": {
+                "total_hour": 0,
+                "term": 0,
+                "redirect_type": "",
+                "redirect_param": ""
+            },
+            "extra": {
+                "sub": {
+                    "count": 3286,
+                    "had_done": false,
+                    "could_order": false,
+                    "access_mask": 0
+                },
+                "fav": {
+                    "count": 0,
+                    "had_done": false
+                },
+                "rate": {
+                    "article_count": 0,
+                    "article_count_req": 0,
+                    "is_finished": false,
+                    "rate_percent": 0,
+                    "video_seconds": 0,
+                    "last_article_id": 0,
+                    "last_chapter_id": 0
+                },
+                "cert": {
+                    "id": "",
+                    "type": 0
+                },
+                "nps": {
+                    "min": 7,
+                    "status": 0,
+                    "url": "https://jinshuju.net/f/vGf4Hm"
+                },
+                "any_read": {
+                    "total": 2,
+                    "count": 0
+                },
+                "university": {
+                    "status": 0,
+                    "view_status": 0,
+                    "charge_status": 0,
+                    "unlocked_status": 0,
+                    "unlocked_chapter_ids": [],
+                    "unlocked_chapter_id": 0,
+                    "unlocked_chapter_title": "",
+                    "unlocked_article_count": 0,
+                    "unlocked_next_time": 0,
+                    "expire_time": 0,
+                    "is_expired": false,
+                    "is_graduated": false,
+                    "had_sub": false,
+                    "timeline": []
+                },
+                "vip": {
+                    "show": false,
+                    "end_time": 0
+                },
+                "group_buy": {
+                    "success_ucount": 2,
+                    "join_code": "",
+                    "could_groupbuy": false,
+                    "had_join": false,
+                    "price": 5500,
+                    "list": []
+                },
+                "sharesale": {
+                    "original_pic_color": "595656",
+                    "original_pic_url": "https://static001.geekbang.org/resource/image/78/97/78d3ef2050abecc6282b6c5d211fe397.jpg",
+                    "promo_pic_color": "595656",
+                    "promo_pic_url": "https://static001.geekbang.org/resource/image/a0/bf/a0bbb83842333d6249a75ce8a3e30ebf.jpg",
+                    "share_sale_price": 1800,
+                    "share_sale_guest_price": 0
+                },
+                "promo": {
+                    "ent_time": 0
+                },
+                "channel": {
+                    "is": false,
+                    "back_amount": 0
+                },
+                "first_promo": {
+                    "price": 990,
+                    "could_join": true
+                },
+                "helper": [],
+                "tab": {
+                    "comment": false
+                },
+                "modules": [],
+                "cid": 0,
+                "first_aids": []
+            }
+        }, {
+            "id": 100043001,
+            "ctime": 1576580314,
+            "utime": 1595840501,
+            "begin_time": 1608652800,
+            "end_time": 1608652800,
+            "price": {
+                "market": 9900,
+                "sale": 7900,
+                "sale_type": 3
+            },
+            "is_onborad": true,
+            "is_sale": true,
+            "is_groupbuy": true,
+            "is_promo": false,
+            "is_shareget": false,
+            "is_sharesale": true,
+            "type": "c1",
+            "is_column": true,
+            "is_core": true,
+            "is_video": false,
+            "is_audio": true,
+            "is_dailylesson": false,
+            "is_university": false,
+            "nav_id": 1,
+            "title": "摄影入门课",
+            "subtitle": "希望人人都能拍出好照片",
+            "ucode": "B1BA13EFFC82A2",
+            "is_finish": true,
+            "author": {
+                "name": "小麥",
+                "intro": "独立摄影师",
+                "avatar": "https://static001.geekbang.org/resource/image/bd/2d/bdd84a72a646787620529b427400a12d.jpg"
+            },
+            "cover": {
+                "square": "https://static001.geekbang.org/resource/image/bd/2d/bdd84a72a646787620529b427400a12d.jpg",
+                "rectangle": "https://static001.geekbang.org/resource/image/68/26/687b03bce0bac8cb608aabd8f1d09926.jpg"
+            },
+            "article": {
+                "id": 0,
+                "count": 27,
+                "count_req": 22,
+                "count_pub": 27,
+                "total_length": 27467
+            },
+            "seo": {
+                "keywords": []
+            },
+            "share": {
+                "title": "小麥 · 摄影入门课",
+                "content": "希望人人都能拍出好照片",
+                "cover": ""
+            },
+            "unit": "27讲",
+            "column": {
+                "unit": "27讲",
+                "bgcolor": "F6F7FB",
+                "update_frequency": "全集",
+                "is_preorder": false,
+                "is_finish": true,
+                "is_include_preview": true,
+                "show_chapter": true,
+                "is_sale_product": true,
+                "study_service": [1, 2, 3, 4, 5, 11],
+                "path": {
+                    "desc": "你将获得：拍摄设备的选择指南；一套核心的摄影知识体系；实用且易上手的摄影技巧；手机后期App使用攻略。",
+                    "desc_html": "\u003cp\u003e\u003cstrong\u003e你将获得\u003c/strong\u003e：\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e拍摄设备的选择指南；\u003c/li\u003e\n\u003cli\u003e一套核心的摄影知识体系；\u003c/li\u003e\n\u003cli\u003e实用且易上手的摄影技巧；\u003c/li\u003e\n\u003cli\u003e手机后期App使用攻略。\u003c/li\u003e\n\u003c/ul\u003e\n"
+                }
+            },
+            "dl": {
+                "artile": {
+                    "id": 0,
+                    "video_duration": ""
+                }
+            },
+            "university": {
+                "total_hour": 0,
+                "term": 0,
+                "redirect_type": "",
+                "redirect_param": ""
+            },
+            "extra": {
+                "sub": {
+                    "count": 6649,
+                    "had_done": false,
+                    "could_order": false,
+                    "access_mask": 0
+                },
+                "fav": {
+                    "count": 0,
+                    "had_done": false
+                },
+                "rate": {
+                    "article_count": 0,
+                    "article_count_req": 0,
+                    "is_finished": false,
+                    "rate_percent": 0,
+                    "video_seconds": 0,
+                    "last_article_id": 0,
+                    "last_chapter_id": 0
+                },
+                "cert": {
+                    "id": "",
+                    "type": 0
+                },
+                "nps": {
+                    "min": 11,
+                    "status": 0,
+                    "url": "https://jinshuju.net/f/q7hXvL"
+                },
+                "any_read": {
+                    "total": 2,
+                    "count": 0
+                },
+                "university": {
+                    "status": 0,
+                    "view_status": 0,
+                    "charge_status": 0,
+                    "unlocked_status": 0,
+                    "unlocked_chapter_ids": [],
+                    "unlocked_chapter_id": 0,
+                    "unlocked_chapter_title": "",
+                    "unlocked_article_count": 0,
+                    "unlocked_next_time": 0,
+                    "expire_time": 0,
+                    "is_expired": false,
+                    "is_graduated": false,
+                    "had_sub": false,
+                    "timeline": []
+                },
+                "vip": {
+                    "show": false,
+                    "end_time": 0
+                },
+                "group_buy": {
+                    "success_ucount": 2,
+                    "join_code": "",
+                    "could_groupbuy": false,
+                    "had_join": false,
+                    "price": 7900,
+                    "list": []
+                },
+                "sharesale": {
+                    "original_pic_color": "595656",
+                    "original_pic_url": "https://static001.geekbang.org/resource/image/aa/9a/aa87e1ce1ac847dea85bde7ba05f689a.jpg",
+                    "promo_pic_color": "595656",
+                    "promo_pic_url": "https://static001.geekbang.org/resource/image/dc/7c/dcac46913a8831b7c195255c3520687c.jpg",
+                    "share_sale_price": 2400,
+                    "share_sale_guest_price": 0
+                },
+                "promo": {
+                    "ent_time": 0
+                },
+                "channel": {
+                    "is": false,
+                    "back_amount": 0
+                },
+                "first_promo": {
+                    "price": 1990,
+                    "could_join": true
+                },
+                "helper": [],
+                "tab": {
+                    "comment": false
+                },
+                "modules": [],
+                "cid": 0,
+                "first_aids": []
+            }
+        }]
+    }
