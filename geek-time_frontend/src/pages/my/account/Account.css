@@ -3,9 +3,10 @@
   height: 100%;
   background-color: #f8f8f8;
   font-family: "微软雅黑";
-  z-index: 999;
+  z-index: 499;
 }
 .Account .Account-header {
+  z-index: 500;
   height: 1.333333rem;
   width: 100%;
   position: fixed;
@@ -163,4 +164,15 @@
 .Account .Account-container .Account-explain .Account-explain-detail span {
   font-weight: bold;
   color: #353535;
+}
+.Account .Account-footer {
+  height: 1.851852rem /* 200/108 */;
+  width: 100%;
+  z-index: 499;
+  position: fixed;
+  top: 16rem;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
 }
