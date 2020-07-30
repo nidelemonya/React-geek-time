@@ -3,23 +3,24 @@ import { NavLink } from 'react-router-dom';
 import { Container, ListContainer } from './style';
 import Scroll from '../../../../common/scroll/Scroll';
 import { forceCheck } from 'react-lazyload';
+import Brief from '../../../../components/brief/Brief';
+import Catalog from '../../../../components/catalog/Catalog';
+import Recommend from '../../../../components/recommend/Recommend';
+import Comment from '../../../../components/comment/Comment';
 
 import * as actionTypes from './store/actionCreators';
 import { connect } from 'react-redux';
 import "./Intro.css";
 
 function Intro(props) {
-    const { intro } = props;
+    const { route, intro } = props;
     const { getIntroDataDispatch } = props
     // console.log(intro)
     useEffect(() => {
-        const id = props.match.params;
+        const id = props.match.params.id;
+        getIntroDataDispatch(id)
         // console.log(props.match)
-        console.log(id);
-        if (!intro.length) {
-            getIntroDataDispatch(id)
-        }
-    }, [getIntroDataDispatch, intro.length])
+    }, [getIntroDataDispatch])
     const handleChangeColor =  (e) =>{
         // console.log(e.target)
         e.target.style.color = '#404040;'
@@ -74,10 +75,14 @@ function Intro(props) {
                                     </div>
                                     <div className="_1S4s1vAE_0"><NavLink to={"/forum/course/100017301?tab=recommend"} className="selected" onClick={handleChangeColor}>推荐</NavLink></div>
                                     <div className="_1S4s1vAE_0"><NavLink to={"/forum/course/100017301?tab=comment"} className="selected" onClick={handleChangeColor} >精选留言</NavLink></div>
-                                    <div className="_1M18M5Tf_0 _1z35LrE-_0" style={{ width: 34 + 'px' }, { left: 39 + 'px' }}>
+                                    <div className="_1M18M5Tf_0 _1z35LrE-_0" style={{ width: 34 + 'px' }, { left: 36 + 'px' }}>
                                     </div>
                                 </div>
                             </div>
+                            <Brief/>
+                            <Catalog/>
+                            <Recommend/>
+                            <Comment/>
                         </div>
                     </Scroll>
                 </ListContainer>

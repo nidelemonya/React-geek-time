@@ -1,6 +1,6 @@
 // 负责进行数据请求
 import * as actionTypes from './constants';
-import { getIntroRequest } from '../../../../../api/request'
+import { getIntroRequest, getBriefRequest, getArticleListRequest, getChapterListRequest, getCommentListRequest, getRecommendListRequest } from '../../../../../api/request'
 
 export const changeIntro = (data) => ({
     type: actionTypes.CHANGE_INTRO,
@@ -37,11 +37,11 @@ export const changeCommentList = (data) => ({
     data
 })
 
-export const getIntro = () => {
+export const getIntro = (id) => {
     // 因为获取数据 是异步操作 所以返回一个函数
     return ( dispatch, getState ) => {
-        console.log(getState())
-        getIntroRequest().then(res =>{
+        // console.log(getState())
+        getIntroRequest(id).then(res =>{
             // console.log(res);
             const data = res.infos;
             dispatch(changeIntro(data));
@@ -54,9 +54,9 @@ export const getIntro = () => {
     }
 }
 
-export const getBrief = () => {
+export const getBrief = (id) => {
     return ( dispatch, getState ) => {
-        getBriefRequest(id, tab).then(res =>{
+        getBriefRequest(id).then(res =>{
             const data = res.infos;
             dispatch(changeBrief(data));
         }).catch(()=>{
@@ -64,9 +64,9 @@ export const getBrief = () => {
         })
     }
 }
-export const getArticleList = () => {
+export const getArticleList = (id) => {
     return ( dispatch, getState ) => {
-        getArticleListRequest(id, tab).then(res =>{
+        getArticleListRequest(id).then(res =>{
             const data = res.infos;
             dispatch(changeArticleList(data));
         }).catch(()=>{
@@ -74,9 +74,9 @@ export const getArticleList = () => {
         })
     }
 }
-export const getChapterList = () => {
+export const getChapterList = (id) => {
     return ( dispatch, getState ) => {
-        getChapterListRequest(id, tab).then(res =>{
+        getChapterListRequest(id).then(res =>{
             const data = res.infos;
             dispatch(changeChapterList(data));
         }).catch(()=>{
@@ -84,9 +84,9 @@ export const getChapterList = () => {
         })
     }
 }
-export const getRecommendList = () => {
+export const getRecommendList = (id) => {
     return ( dispatch, getState ) => {
-        getRecommendListRequest(id, tab).then(res =>{
+        getRecommendListRequest(id).then(res =>{
             const data = res.infos;
             dispatch(changeRecommendList(data));
         }).catch(()=>{
@@ -94,9 +94,9 @@ export const getRecommendList = () => {
         })
     }
 }
-export const getCommentList = () => {
+export const getCommentList = (id) => {
     return ( dispatch, getState ) => {
-        getCommentListRequest(id, tab).then(res =>{
+        getCommentListRequest(id).then(res =>{
             const data = res.infos;
             dispatch(changeCommentList(data));
         }).catch(()=>{

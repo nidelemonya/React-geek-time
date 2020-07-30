@@ -13,5 +13,25 @@ export const getInfoListRequest = count => {
 // 获取详情页面的数据
 export const getIntroRequest = (id, tab) => {
     // ${id} ${tab}
-    return axiosInstance.get(`/intro/${100056201}/?tab=${'comment'}`);
+    return axiosInstance.get(`/intro/${id}/?tab=${'intro'}`);
+}
+
+export const getBriefRequest = (id,tab) => {
+    return axiosInstance.get(`/intro/${id}/?tab=${'intro'}`);
+}
+
+export const getArticleListRequest = (id,tab) => {
+    return axiosInstance.get(`/intro/${id}/?tab=${'catalog'}`);
+}
+
+export const  getChapterListRequest = (id,tab) => {
+    return axiosInstance.get(`/intro/${id}/?tab=${'catalog'}`);
+}
+
+export const getRecommendListRequest = (id,tab) => {
+    return axiosInstance.get(`/intro/${id}/?tab=${'recommend'}`);
+}
+
+export const getCommentListRequest = (id,tab) => {
+    return axiosInstance.get(`/intro/${id}/?tab=${'comment'}`);
 }
