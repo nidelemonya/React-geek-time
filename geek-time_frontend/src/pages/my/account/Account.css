@@ -3,10 +3,9 @@
   height: 100%;
   background-color: #f8f8f8;
   font-family: "微软雅黑";
-  z-index: 499;
 }
 .Account .Account-header {
-  z-index: 500;
+  z-index: 120;
   height: 1.333333rem;
   width: 100%;
   position: fixed;
@@ -88,34 +87,34 @@
   border-radius: 0.185185rem /* 20/108 */;
   overflow: hidden;
 }
-.Account .Account-container {
+.Account .Account-content {
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
 }
-.Account .Account-container .Account-topUp {
+.Account .Account-content .Account-topUp {
   height: 60%;
   width: 100%;
 }
-.Account .Account-container .Account-topUp .Account-topUp-title {
+.Account .Account-content .Account-topUp .Account-topUp-title {
   width: 100%;
   display: flex;
   padding-top: 1.037037rem /* 112/108 */;
   line-height: 1.018519rem /* 110/108 */;
 }
-.Account .Account-container .Account-topUp .Account-topUp-title .title {
+.Account .Account-content .Account-topUp .Account-topUp-title .title {
   font-size: 0.5rem /* 54/108 */;
   color: #353535;
   margin-left: 0.444444rem /* 48/108 */;
   font-weight: bold;
 }
-.Account .Account-container .Account-topUp .Account-topUp-title .name {
+.Account .Account-content .Account-topUp .Account-topUp-title .name {
   margin-left: 0.277778rem /* 30/108 */;
   font-size: 0.296296rem /* 32/108 */;
   color: #888888;
   font-weight: bold;
 }
-.Account .Account-container .Account-topUp .Account-topUp-wrap {
+.Account .Account-content .Account-topUp .Account-topUp-wrap {
   height: 7.537037rem /* 814/108 */;
   display: flex;
   justify-content: space-between;
@@ -125,10 +124,10 @@
   background-color: #fff;
   padding: 0.759259rem /* 82/108 */ 0.407407rem /* 44/108 */ 0.972222rem /* 105/108 */ 0.407407rem /* 44/108 */;
 }
-.Account .Account-container .Account-topUp .Account-topUp-affirm {
+.Account .Account-content .Account-topUp .Account-topUp-affirm {
   width: 100%;
 }
-.Account .Account-container .Account-topUp .Account-topUp-affirm .Account-topUp-affirm-btn {
+.Account .Account-content .Account-topUp .Account-topUp-affirm .Account-topUp-affirm-btn {
   height: 1.388889rem /* 150/108 */;
   width: 9.203704rem /* 994/108 */;
   margin-left: 0.407407rem /* 44/108 */;
@@ -140,39 +139,28 @@
   font-weight: bold;
   line-height: 1.064815rem /* 105/108 */;
 }
-.Account .Account-container .Account-explain {
+.Account .Account-content .Account-explain {
   height: 40%;
   width: 100%;
   position: flex;
 }
-.Account .Account-container .Account-explain .Account-explain-title {
+.Account .Account-content .Account-explain .Account-explain-title {
   display: flex;
   padding-top: 1.092593rem /* 118/108 */;
   line-height: 1.018519rem /* 110/108 */;
 }
-.Account .Account-container .Account-explain .Account-explain-title .name {
+.Account .Account-content .Account-explain .Account-explain-title .name {
   font-size: 0.5rem /* 54/108 */;
   color: #353535;
   margin-left: 0.444444rem /* 48/108 */;
   font-weight: bold;
 }
-.Account .Account-container .Account-explain .Account-explain-detail {
+.Account .Account-content .Account-explain .Account-explain-detail {
   font-size: 0.351852rem /* 38/108 */;
   color: #a8a8a8;
   margin: 0.592593rem /* 64/108 */ 0.944444rem /* 102/108 */ 1.277778rem /* 138/108 */ 0.462963rem /* 50/108 */;
 }
-.Account .Account-container .Account-explain .Account-explain-detail span {
+.Account .Account-content .Account-explain .Account-explain-detail span {
   font-weight: bold;
   color: #353535;
-}
-.Account .Account-footer {
-  height: 1.851852rem /* 200/108 */;
-  width: 100%;
-  z-index: 499;
-  position: fixed;
-  top: 16rem;
-  left: 0;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
 }

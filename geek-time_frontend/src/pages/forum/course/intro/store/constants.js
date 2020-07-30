@@ -1,20 +1,8 @@
 export const CHANGE_INTRO = 'CHANGE_INTRO'
 export const CHANGE_INTRO_LOADING = 'CHANGE_INTRO_LOADING'
-export const CHANGE_TAB = 'CHANGE_CHANGE_TAB'
-// export const CHANGE_
-// export const CHANGE_
-// export const CHANGE_
-// export const CHANGE_
-// export const CHANGE_
-// export const CHANGE_
-
-// introList:[],
-// briefList:[],
-// // 目录列表
-// chapterList:[],
-// articleList:[],
-// // 推荐列表
-// recommendList:[],
-// // 评论列表
-// commentList:[],
-// introLoading:true,
+export const CHANGE_BRIEF = 'CHANGE_BRIEF'
+export const CHANGE_ARTICLE_LIST = 'CHANGE_ARTICLE_LIST'
+export const CHANGE_CHAPTER_LIST = 'CHANGE_CHAPTER_LIST'
+export const CHANGE_RECOMMEND_LIST = 'CHANGE_RECOMMEND_LIST'
+export const CHANGE_COMMENT_LIST = 'CHANGE_COMMENT_LIST'
+export const CHANGE_TAB= 'CHANGE_TAB'
