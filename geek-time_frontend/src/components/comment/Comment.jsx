@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default function Comment() {
+export default function Comment(props) {
+    const { style } = props
     return (
-        <div>
+        <div style={style}>
             Comment
         </div>
     )

@@ -12,7 +12,7 @@ const defaultState = {
     // 评论列表
     commentList: [],
     introLoading: true,
-    tab: 'intro',
+    id:'100017301'
 }
 
 export default (state = defaultState, action) => {
@@ -22,8 +22,8 @@ export default (state = defaultState, action) => {
             return { ...state, intro: action.data }
         case actionTypes.CHANGE_INTRO_LOADING:
             return { ...state, introLoading: action.data }
-        case actionTypes.CHANGE_TAB:
-            return { ...state, tab: action.data }
+        case actionTypes.CHANGE_ID:
+            return { ...state, id: action.data }
         case actionTypes.CHANGE_BRIEF:
             return { ...state, brief: action.data }
         case actionTypes.CHANGE_ARTICLE_LIST:

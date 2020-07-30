@@ -32,12 +32,12 @@ export const TabItem = styled.div`
     text-align: center;
     & > .tab-icon {
         position: absolute;
-        bottom: .37037rem /* 40/108 */;
+        bottom: .296296rem /* 32/108 */;
         font-size: .574074rem /* 62/108 */;
     }
     & > .tab-title {
         position: absolute;
-        bottom: .111111rem /* 12/108 */;
+        bottom: .046296rem /* 5/108 */;
         font-size: .240741rem /* 26/108 */;
     }
 `;

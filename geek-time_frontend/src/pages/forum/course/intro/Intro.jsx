@@ -1,4 +1,4 @@
-import React, { useEffect, memo } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, ListContainer } from './style';
 import Scroll from '../../../../common/scroll/Scroll';
@@ -13,18 +13,55 @@ import { connect } from 'react-redux';
 import "./Intro.css";
 
 function Intro(props) {
-    const { route, intro } = props;
-    const { getIntroDataDispatch } = props
+
+    const [Briefshow, setBriefshow] = useState(true);
+    const [Catalogfshow, setCatalogshow] = useState(false);
+    const [Recommendshow, setRecommendshow] = useState(false);
+    const [Commentshow, setCommentshow] = useState(false);
+
+    const { id, intro } = props;
+    const { getIntroDataDispatch, getCatalogDataDispatch, getRecommendDataDispatch, getCommentDataDispatch } = props
     // console.log(intro)
     useEffect(() => {
+        // 拿到当前 id 子路由
         const id = props.match.params.id;
         getIntroDataDispatch(id)
-        // console.log(props.match)
+        // console.log(id)
     }, [getIntroDataDispatch])
-    const handleChangeColor =  (e) =>{
-        // console.log(e.target)
-        e.target.style.color = '#404040;'
+
+    const difference = () => {
+        if (Briefshow) setBriefshow(false)
+        if (Catalogfshow) setCatalogshow(false)
+        if (Recommendshow) setRecommendshow(false)
+        if (Commentshow) setCommentshow(false)
     }
+    const handleIntro = () => {
+        difference()
+        setBriefshow(true)
+    }
+
+    const handleCatalog = () => {
+        getCatalogDataDispatch()
+        difference()
+        setCatalogshow(true)
+    }
+
+    const handleRecommend = () => {
+        getRecommendDataDispatch()
+        difference()
+        setRecommendshow(true)
+    }
+
+    const handleComment = () => {
+        getCommentDataDispatch()
+        difference()
+        setCommentshow(true)
+    }
+
+    const BriefStyle = Briefshow ? { display: "" } : { display: "none" };
+    const CatalogStyle = Catalogfshow ? { display: "" } : { display: "none" };
+    const RecommendStyle = Recommendshow ? { display: "" } : { display: "none" };
+    const CommentStyle = Commentshow ? { display: "" } : { display: "none" };
     return (
         <Container>
             <div className="intro">
@@ -64,25 +101,25 @@ function Intro(props) {
                             <div data-columnintrotabs="columnIntroTabs" className="_3F8GtztG_0">
                                 <div className="_3TPdE1uq_0 _2LAchprJ_0 L8uZfH9D_0">
                                     <div className="_1S4s1vAE_0">
-                                        <NavLink to={"/forum/course/100017301?tab=intro"} className="selected" onClick={handleChangeColor}>简介</NavLink>
+                                        <NavLink to={`/forum/course/${id}?tab=intro`} className="selected" onClick={handleIntro}>简介</NavLink>
                                     </div>
                                     <div className="_1S4s1vAE_0">
-                                        <NavLink to={"/forum/course/100017301?tab=catalog"} className="selected" onClick={handleChangeColor}>目录
+                                        <NavLink to={`/forum/course/${id}?tab=catalog`} className="selected" onClick={handleCatalog}>目录
                                         <span className="_3mvvnPU9_0">
                                                 <span className="_2i6pHVrd_0">试看</span>
                                             </span>
                                         </NavLink>
                                     </div>
-                                    <div className="_1S4s1vAE_0"><NavLink to={"/forum/course/100017301?tab=recommend"} className="selected" onClick={handleChangeColor}>推荐</NavLink></div>
-                                    <div className="_1S4s1vAE_0"><NavLink to={"/forum/course/100017301?tab=comment"} className="selected" onClick={handleChangeColor} >精选留言</NavLink></div>
+                                    <div className="_1S4s1vAE_0"><NavLink to={`/forum/course/${id}?tab=recommend`} className="selected" onClick={handleRecommend}>推荐</NavLink></div>
+                                    <div className="_1S4s1vAE_0"><NavLink to={`/forum/course/${id}?tab=comment`} className="selected" onClick={handleComment} >精选留言</NavLink></div>
                                     <div className="_1M18M5Tf_0 _1z35LrE-_0" style={{ width: 34 + 'px' }, { left: 36 + 'px' }}>
                                     </div>
                                 </div>
                             </div>
-                            <Brief/>
-                            <Catalog/>
-                            <Recommend/>
-                            <Comment/>
+                            <Brief style={BriefStyle} />
+                            <Catalog style={CatalogStyle}/>
+                            <Recommend style={RecommendStyle}/>
+                            <Comment style={CommentStyle}/>
                         </div>
                     </Scroll>
                 </ListContainer>
@@ -114,6 +151,7 @@ function Intro(props) {
 
 const mapStateToProps = (state) => ({
     intro: state.intro.intro,
+    id: state.intro.id
 })
 
 // 映射dispatch到props上
@@ -121,6 +159,20 @@ const mapDispatchToProps = (dispatch) => {
     return {
         getIntroDataDispatch(id) {
             dispatch(actionTypes.getIntro(id))
+            dispatch(actionTypes.getBrief())
+        },
+
+        getCatalogDataDispatch() {
+            dispatch(actionTypes.getChapterList())
+            dispatch(actionTypes.getArticleList())
+        },
+
+        getRecommendDataDispatch() {
+            dispatch(actionTypes.getRecommendList())
+        },
+
+        getCommentDataDispatch() {
+            dispatch(actionTypes.getCommentList())
         }
     }
 }

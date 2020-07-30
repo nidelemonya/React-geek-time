@@ -1,8 +1,8 @@
 const infos = require('./data/infos.json');
-// const intro = require('./data/all.json');
+const intro = require('./data/intro.json');
 const chapters = require('./data/chapters.json');
 const articles = require('./data/articles.json');
-// const info = require('./data/all.json');
+const info = require('./data/info.json');
 const comments = require('./data/comments.json');
 const recommends = require('./data/recommends.json')
 
@@ -24,26 +24,17 @@ module.exports = {
     'GET /data/intro/:id':  (req, res) => {
         // 获取请求的 参数 id 分类 tab
         const { id } = req.params;
-        // const { tab = 'intro' } = req.query;
-        const { tab = 'recommend' } = req.query;
-        let data = []
+        const { tab = 'intro' } = req.query;
+        let data = [];
         console.log(id, tab);
+        console.log(tab === 'comment')
         switch (tab) {
-            // case 'intro': data = [...intro.filter(m => m.id === Number(id)),...info.filter(m => m.id === Number(id))]
+            case 'intro': data = [...intro.filter(m => m.id === Number(id)),...info.filter(m => m.id === Number(id))]
             case 'catalog': data = [...chapters.filter(m => m.id === Number(id)), ...articles.filter(m => m.id === Number(id))]
             case 'recommend': data = recommends.filter(m => m.id === Number(id))
             case 'comment': data = comments.filter(m => m.id === Number(id))
-            // default : data = data = [...chapters.filter(m => m.id === Number(id)), ...articles.filter(m => m.id === Number(id))]
         }
         res.json({
             "data":data});
         }
-
-
-    // 'GET /data/intro': (req, res) => {
-    //     // 获取传进来的 参数offset
-    //     console.log(req.query);
-    //     res.json({
-    //         "infos":infos});
-    //     }
 }

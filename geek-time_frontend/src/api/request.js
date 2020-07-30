@@ -11,27 +11,27 @@ export const getInfoListRequest = count => {
 }
 
 // 获取详情页面的数据
-export const getIntroRequest = (id, tab) => {
+export const getIntroRequest = (id) => {
     // ${id} ${tab}
-    return axiosInstance.get(`/intro/${id}/?tab=${'intro'}`);
+    return axiosInstance.get(`/intro/${id}/?tab=intro`);
 }
 
-export const getBriefRequest = (id,tab) => {
-    return axiosInstance.get(`/intro/${id}/?tab=${'intro'}`);
+export const getBriefRequest = (id) => {
+    return axiosInstance.get(`/intro/${id}/?tab=intro`);
 }
 
-export const getArticleListRequest = (id,tab) => {
-    return axiosInstance.get(`/intro/${id}/?tab=${'catalog'}`);
+export const getArticleListRequest = (id) => {
+    return axiosInstance.get(`/intro/${id}/?tab=catalog`);
 }
 
-export const  getChapterListRequest = (id,tab) => {
-    return axiosInstance.get(`/intro/${id}/?tab=${'catalog'}`);
+export const  getChapterListRequest = (id) => {
+    return axiosInstance.get(`/intro/${id}/?tab=catalog`);
 }
 
-export const getRecommendListRequest = (id,tab) => {
-    return axiosInstance.get(`/intro/${id}/?tab=${'recommend'}`);
+export const getRecommendListRequest = (id) => {
+    return axiosInstance.get(`/intro/${id}/?tab=recommend`);
 }
 
-export const getCommentListRequest = (id,tab) => {
-    return axiosInstance.get(`/intro/${id}/?tab=${'comment'}`);
+export const getCommentListRequest = (id) => {
+    return axiosInstance.get(`/intro/${id}/?tab=comment`);
 }
