@@ -2,14 +2,18 @@ import React from 'react';
 import { Container } from './style';
 import { withRouter } from 'react-router'
 import './Payment.css';
+import { NavLink } from 'react-router-dom';
 
 function Pay(props) {
+    const handleBack = () => {
+        window.history.back();
+    }
     return (
         <Container>
             <div className="pay">
                 <div className="pay-header">
                     <div className="pay-icon">
-                        <span className="iconfont">&#xe571;</span>
+                        <span className="iconfont" onClick={handleBack}>&#xe571;</span>
                     </div>
                     <div className="pay-title">
                         <span>结算台</span>
@@ -39,13 +43,17 @@ function Pay(props) {
                         <h3 className="pay-method-h3">当前支付方式</h3>
                         <div className="method-list-item">
                             <div>
-                                <span className="iconfont">&#xe614;</span>
+                                <span className="iconfont">&#xe613;</span>
                                 <span className="pay-method-text">
-                                    <em>微信支付</em>
+                                    <em>余额支付</em>
                                 </span>
+                                <span className="count">（当前余额:￥0）</span>
                             </div>
                             <div className="checkbox">
-                                <span className="iconfont checked">&#xe6ab;</span>
+                            <NavLink to={"/user/account/"} activeClassName="selected">
+                                <button className="btn">去充值</button>
+                                    {/* <span className="iconfont checked">&#xe6ab;</span> */}
+                            </NavLink>
                             </div>
                         </div>
                         <div className="choose-other-pay">

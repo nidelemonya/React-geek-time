@@ -125,18 +125,37 @@
 .pay .pay-container .pay-method .method-list-item .iconfont {
   padding-left: 0.351852rem /* 38/108 */;
   font-size: 0.537037rem /* 58/108 */;
-  color: green;
+  color: #f98a19;
 }
 .pay .pay-container .pay-method .method-list-item .pay-method-text {
   font-size: 0.37037rem /* 40/108 */;
   padding-left: 0.351852rem /* 38/108 */;
   color: #333333;
 }
+.pay .pay-container .pay-method .method-list-item .count {
+  font-size: 0.37037rem /* 40/108 */;
+  color: #888888;
+}
 .pay .pay-container .pay-method .method-list-item .checkbox {
   margin-right: 0.351852rem /* 38/108 */;
+  width: 2.074074rem /* 224/108 */;
+  height: 0.777778rem /* 84/108 */;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbf6ed;
+  border-radius: 20px;
+  border: none;
 }
-.pay .pay-container .pay-method .method-list-item .checkbox .iconfont {
+.pay .pay-container .pay-method .method-list-item .checkbox .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #f98a19;
+  font-size: 0.388889rem /* 42/108 */;
+  font-weight: bold;
+  border: none;
+  background-color: #fbf6ed;
 }
 .pay .pay-container .pay-method .choose-other-pay {
   margin-top: 0.166667rem /* 18/108 */;
@@ -154,6 +173,7 @@
 .pay .pay-container .pay-method .choose-other-pay .iconfont {
   color: #999999;
   font-size: 0.333333rem /* 36/108 */;
+  margin-left: 0.138889rem /* 15/108 */;
 }
 .pay .pay-container .pay-method .coupon-rules {
   font-size: 0.296296rem /* 32/108 */;
