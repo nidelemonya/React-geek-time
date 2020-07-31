@@ -12,20 +12,121 @@
   background-color: #fff;
   z-index: 99;
   display: flex;
-  justify-content: space-around;
 }
-.pay .pay-header .iconfont {
-  color: #999999;
-  font-size: 0.462963rem /* 50/108 */;
-  margin-left: 0.388889rem /* 42/108 */;
+.pay .pay-header .pay-icon {
+  margin-left: 0.37037rem /* 40/108 */;
+  font-size: 0.425926rem /* 46/108 */;
+  color: #9a9a9a;
+  display: flex;
+  align-items: center;
+}
+.pay .pay-header .pay-title {
+  font-size: 0.518519rem /* 56/108 */;
+  font-weight: bold;
+  color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3.703704rem /* 400/108 */;
 }
 .pay .pay-container {
   width: 100%;
+  height: 100vh;
+  margin-top: 1.4rem;
+}
+.pay .pay-container .pay-info {
+  height: 2.555556rem /* 276/108 */;
+  width: 100%;
+}
+.pay .pay-container .pay-info .pay-list {
+  width: 100%;
+  display: flex;
+  background-color: #f5f8fa;
+  border-top: 1px solid #d9d9d9;
+  padding: 16px 15px;
+}
+.pay .pay-container .pay-info .pay-list img {
+  width: 1.777778rem /* 192/108 */;
+  height: 1.777778rem /* 192/108 */;
+  border-radius: 5px;
+}
+.pay .pay-container .pay-info .pay-list .pay-list-right {
+  display: flex;
+  display: inline-block;
+  margin-left: 0.222222rem /* 24/108 */;
+}
+.pay .pay-container .pay-info .pay-list .pay-list-right .title {
+  color: #333333;
+  font-size: 0.407407rem /* 44/108 */;
+  font-weight: bolder;
+  line-height: 0.425926rem /* 46/108 */;
+}
+.pay .pay-container .pay-info .pay-list .pay-list-right .item-subtitle {
+  font-size: 0.305556rem /* 33/108 */;
+  color: #888888;
+  margin-top: 0.277778rem /* 30/108 */;
+}
+.pay .pay-container .pay-info .pay-list .pay-list-right .item-price {
+  width: 7.3rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.740741rem /* 80/108 */;
+}
+.pay .pay-container .pay-info .pay-list .pay-list-right .item-price .price {
+  font-size: 0.314815rem /* 34/108 */;
+  color: #ec8d2e;
+  font-weight: 600;
+}
+.pay .pay-container .pay-info .pay-list .pay-list-right .item-price .item-count {
+  font-size: 0.240741rem /* 26/108 */;
+  color: #333333;
+  font-weight: 600;
+}
+.pay .pay-container .checkout-panel {
+  height: 1.296296rem /* 140/108 */;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.pay .pay-container .checkout-panel .checkout-price {
+  background-color: #fff;
+  padding: 0 0.6875rem 0 0;
+  line-height: 0.925926rem /* 100/108 */;
+  font-size: 0.333333rem /* 36/108 */;
+}
+.pay .pay-container .checkout-panel .checkout-price .price {
+  font-size: 0.314815rem /* 34/108 */;
+  color: #ec8d2e;
+  font-weight: 600;
+}
+.pay .pay-container .pay-method {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f8fa;
+}
+.pay .pay-container .pay-method .pay-method-h3 {
+  height: 1.296296rem /* 140/108 */;
+  background-color: #f5f8fa;
+  font-size: 0.351852rem /* 38/108 */;
+  color: #919191;
+  line-height: 1.296296rem /* 140/108 */;
+  font-weight: 600;
+  padding-left: 0.425926rem /* 46/108 */;
+}
+.pay .pay-container .pay-method .method-list-item {
+  height: 1.296296rem /* 140/108 */;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.pay .pay-container .pay-method .method-list-item .iconfont {
+  padding-left: 0.351852rem /* 38/108 */;
 }
 .pay .pay-container .bottom {
   height: 1.203704rem /* 130/108 */;
   width: 100%;
-  z-index: 999;
   position: fixed;
   bottom: 0;
   background-color: #fa8919;
