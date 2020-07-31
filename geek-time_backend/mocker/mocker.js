@@ -36,10 +36,10 @@ module.exports = {
                 data = [...chapters.filter(m => m.id === Number(id)), ...articles.filter(m => m.id === Number(id))]
                 break;
             case 'recommend': 
-                data = recommends.filter(m => m.id === Number(id))
+                data = recommends.filter(m => m.id === Number(id))[0]
                 break;
             case 'comment': 
-                data = comments.filter(m => m.id === Number(id))
+                data = comments.filter(m => m.id === Number(id))[0].comments
                 break;
             default:
                 data = [...intro.filter(m => m.id === Number(id)),...info.filter(m => m.id === Number(id))];

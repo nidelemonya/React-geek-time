@@ -1,111 +1,112 @@
 [
         {
             "id": 100017301,
-            "is_onborad": true,
-            "article_req_learned_count": 0,
-            "column_utime": 1595951205,
-            "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/0b\/0c\/0b646824c9d90e894322cfedd797630c.jpg",
-            "nav_id": 1,
-            "had_faved": false,
-            "is_sharesale": true,
-            "column_video_media": "",
-            "column_price": 12900,
-            "column_cover_inner": "https:\/\/static001.geekbang.org\/resource\/image\/6b\/48\/6bb82a4eb7095657bc3a31c25544ac48.jpg",
-            "column_cover_wxlite": "https:\/\/static001.geekbang.org\/resource\/image\/ba\/74\/baab29e2e13b0c94e4a9f6d022a0db74.jpg",
-            "column_sharesale_data": "{\"promo_pic_url\":\"https:\\\/\\\/static001.geekbang.org\\\/resource\\\/image\\\/8b\\\/69\\\/8ba0d3acc8cf8e4a920a3b782d578c69.jpg\",\"promo_pic_color\":\"595656\",\"original_pic_url\":\"https:\\\/\\\/static001.geekbang.org\\\/resource\\\/image\\\/e8\\\/a5\\\/e85b981cc87d9ba923e82ef8a2cee8a5.jpg\",\"original_pic_color\":\"595656\",\"share_sale_price\":2400,\"share_sale_guest_price\":0}",
-            "column_bgcolor": "#9b7a7a",
-            "article_total_count": 80,
-            "is_shareget": false,
-            "column_end_time": 1546704000,
-            "column_title": "数据结构与算法之美",
-            "last_aid": 0,
-            "is_include_audio": true,
-            "is_include_preview": true,
-            "column_ctime": 1536893949,
-            "author_intro": "前Google工程师",
-            "article_count": 80,
-            "is_channel": true,
-            "column_intro": "<h2>【1天后涨价 | 设计模式之美】<\/h2><p><a href=\"https:\/\/time.geekbang.org\/column\/intro\/250?utm_term=zeusNS7B1&utm_source=shujujiegou&utm_medium=xiangqingye\"><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/8a\/80\/8a27206e4b53a41ac5ed7310a9c07a80.jpg\" alt=\"unpreview\" \/><\/a><\/p>\n<p>小争哥「设计模式之美」，1天后涨价至 <span class=\"orange\">¥299<\/span>，现在秒杀+口令「wangzheng」，到手价仅 <span class=\"orange\">¥129<\/span><\/p>\n<br \/><h2>你将获得<\/h2><ul>\n<li>\n<p>20个经典数据结构与算法；<\/p>\n<\/li>\n<li>\n<p>100个真实项目场景案例；<\/p>\n<\/li>\n<li>\n<p>文科生都能懂的算法手绘图解；<\/p>\n<\/li>\n<li>\n<p>轻松搞定BAT的面试通关秘籍。<\/p>\n<\/li>\n<\/ul>\n<br \/><h2>讲师介绍<\/h2><p>王争，前Google工程师，从事Google翻译相关系统的开发，深入研究算法十余年。现任某金融公司核心系统资深系统架构师，负责公司核心业务的架构设计和开发。<\/p>\n<p>他将采用最适合工程师的学习方式，<strong>不拘泥于某一特定编程语言<\/strong>，从实际开发场景出发，由浅入深教你学习数据结构与算法的方法，帮你搞懂基本概念和核心理论，深入理解算法精髓，帮你提升使用数据结构和算法思维解决问题的能力。<\/p>\n<br \/><h2>课程介绍<\/h2><p>踏上了编程之路，也就意味着你选择了一种终身学习的生活方式。每一个程序员都要练就十八般武艺，而掌握数据结构与算法就像修炼了九阳神功。换句话说，掌握了数据结构与算法，你的内功修炼速度就会有质的飞跃。<\/p>\n<p>无论你是从事业务开发，想要评估代码性能和资源消耗；还是从事架构设计，想要优化设计模式；或者想要快速玩转热门技术，比如人工智能、区块链，都要先搞定数据结构与算法。因为，任凭新技术如何变化，只要掌握了这些计算机科学的核心“招式”，你就可以见招拆招，始终立于“不败之地”。<\/p>\n<p>那怎样才能真正掌握数据结构与算法呢？是把常用的数据结构与算法背得滚瓜烂熟吗？即便如此，面对现实世界的千变万化，你也不太可能照搬某个算法解决即将遇到的下一个问题。因此，就像学习设计模式、架构模式一样，<strong>学习数据结构与算法的关键，在于掌握其中的思想和精髓，学会解决实际问题的方法<\/strong>。<\/p>\n<p>专栏分为4个<strong>由浅入深<\/strong>的模块。<\/p>\n<ul>\n<li><strong>入门篇<\/strong><\/li>\n<\/ul>\n<p>为什么要学习数据结构与算法？数据结构与算法该怎么学？学习的重点又是什么？这一模块将为你指明数据结构与算法的学习路径；并着重介绍贯穿整个专栏学习的重要概念：时间复杂度和空间复杂度，为后面的学习打好基础。<\/p>\n<ul>\n<li><strong>基础篇<\/strong><\/li>\n<\/ul>\n<p>将介绍最常见、最重要的数据结构与算法。每种都从“来历”“特点”“适合解决的问题”“实际的应用场景”出发，进行详细介绍；并配有清晰易懂的手绘图解，由浅入深进行讲述；还适时总结一些实用“宝典”，教你解决真实开发问题的思路和方法。<\/p>\n<p><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/92\/9f\/92b71261f3e5f37ffc49ced520e80c9f.jpg\" alt=\"\" \/><\/p>\n<ul>\n<li><strong>高级篇<\/strong><\/li>\n<\/ul>\n<p>将从概念和应用的角度，深入剖析一些稍复杂的数据结构与算法，推演海量数据下的算法问题解决过程；帮你更加深入理解算法精髓，开拓视野，训练逻辑；真正带你升级算法思维，修炼深厚的编程内功。<\/p>\n<ul>\n<li><strong>实战篇<\/strong><\/li>\n<\/ul>\n<p>将通过实战案例串讲前面讲到的数据结构和算法；并拿一些开源项目和框架，剖析它们背后的数据结构和算法；并带你用学过的内容实现一个短网址系统；深化对概念和应用的理解，灵活使用数据结构和算法。<\/p>\n<br \/><h2>课程目录<\/h2><p><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/1b\/ae\/1b969cfe410a43d5f2b148c255beb3ae.jpg\" alt=\"\" \/><\/p>\n<br \/><h2>特别放送<\/h2><ol class=\"js-audit\">\n  <li>订阅后，分享专属海报，每邀请一位好友订阅有奖励。<\/li>\n  <li>戳此添加社群管理员，<a href=\"https:\/\/jinshuju.net\/f\/OCQKLn \">进入技术交流&福利群<\/a>。<\/li>\n  <li>戳此<a href=\"https:\/\/promo.geekbang.org\/activity\/student-certificate?utm_source=app&utm_medium=xiangqingye\">申请学生认证<\/a>，订阅课程一律 5 折。<\/li>\n  <li>最新课表抢先看，充值购课更优惠，限时充 ¥500 得 ¥580，\n<a href=\"https:\/\/shop18793264.youzan.com\/v2\/feature\/XRArFM4uO5?dc_ps=2534794065267047432.200001\">戳此查看>>><\/a>\n  <\/li>\n<p><a href=\"time:\/\/mall?url=https%3A%2F%2Fshop18793264.youzan.com%2Fv2%2Ffeature%2FXRArFM4uO5\"><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/48\/e5\/4863766d629aeaffe4d1f685fef117e5.png\" alt=\"unpreview\"><\/a><\/p>\n  <\/ol><br \/><h2>订阅须知<\/h2><ol class=\"js-audit\">\n<li>本专栏为订阅专栏，形式为图文+音频，现已更新完毕。订阅成功后，即可通过“极客时间”App端、小程序端、<a href=\"https:\/\/time.geekbang.org\/columns\">Web端<\/a>永久阅读。<\/li>\n<li>企业批量购买请点击“<a href=\"https:\/\/time.geekbang.org\/column\/article\/102047?utm_source=geektimeAPP&utm_medium=DingYueXuZhi&utm_campaign=qiyezhanghao\">企业充值<\/a>”了解详情，可支持员工选课，企业支付。<\/li>\n<li>本专栏为虚拟商品，一经订阅，概不退款。<\/li>\n<\/ol>",
-            "is_finish": true,
-            "author_name": "王争",
-            "column_name": "",
-            "column_cover": "https:\/\/static001.geekbang.org\/resource\/image\/11\/5b\/11a3a5aa2f5879ec88b284044bacd55b.jpg",
-            "column_cover_explore": "https:\/\/static001.geekbang.org\/resource\/image\/aa\/3c\/aa3264ff6dce0b7454e24b465857603c.png",
-            "channel_back_amount": 2400,
-            "column_unit": "80讲",
-            "column_subtitle": "为工程师量身打造的数据结构与算法私教课",
-            "footer_cover_data": "{\"img_url\":\"https:\\\/\\\/static001.geekbang.org\\\/resource\\\/image\\\/e8\\\/32\\\/e8567d6b2e2b889882370ed54ca27f32.png\",\"mp_url\":\"\",\"link_url\":\"https:\\\/\\\/u.geekbang.org\\\/subject\\\/algorithm\\\/1000343?utm_source=time_app&utm_medium=WangZhengzhuanlantuijian&utm_term=WangZhengzhuanlantuijian&gk_cus_user_wechat=university\"}",
-            "column_sku": 100017301,
-            "nps": {
-                "status": 0,
-                "url": "https:\/\/jinshuju.net\/f\/Ie9yCN"
-            },
-            "freelyread_total": 4,
-            "is_preorder": false,
-            "sub_count": 87703,
-            "rate_percent": 0,
-            "column_type": 1,
-            "show_chapter": true,
-            "article_learned_count": 0,
-            "first_promo": {
-                "price": 2990,
-                "could_join": true
-            },
-            "groupbuy_for_gift": {
-                "success_ucount": 2,
-                "could_groupbuy": true,
-                "price": 9900
-            },
-            "groupbuy_list": [
-                {
-                    "amount": 9900,
-                    "left_seconds": 85776,
-                    "code": "Ijt6TNxufm",
-                    "host_nickname": "啊哈哈",
-                    "host_avatar": "https:\/\/static001.geekbang.org\/account\/avatar\/00\/1a\/b1\/61\/5a3c44cd.jpg",
-                    "total_ucount": 2,
-                    "want_ucount": 1
+            "intro":[{"is_onborad": true,
+                "article_req_learned_count": 0,
+                "column_utime": 1595951205,
+                "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/0b\/0c\/0b646824c9d90e894322cfedd797630c.jpg",
+                "nav_id": 1,
+                "had_faved": false,
+                "is_sharesale": true,
+                "column_video_media": "",
+                "column_price": 12900,
+                "column_cover_inner": "https:\/\/static001.geekbang.org\/resource\/image\/6b\/48\/6bb82a4eb7095657bc3a31c25544ac48.jpg",
+                "column_cover_wxlite": "https:\/\/static001.geekbang.org\/resource\/image\/ba\/74\/baab29e2e13b0c94e4a9f6d022a0db74.jpg",
+                "column_sharesale_data": "{\"promo_pic_url\":\"https:\\\/\\\/static001.geekbang.org\\\/resource\\\/image\\\/8b\\\/69\\\/8ba0d3acc8cf8e4a920a3b782d578c69.jpg\",\"promo_pic_color\":\"595656\",\"original_pic_url\":\"https:\\\/\\\/static001.geekbang.org\\\/resource\\\/image\\\/e8\\\/a5\\\/e85b981cc87d9ba923e82ef8a2cee8a5.jpg\",\"original_pic_color\":\"595656\",\"share_sale_price\":2400,\"share_sale_guest_price\":0}",
+                "column_bgcolor": "#9b7a7a",
+                "article_total_count": 80,
+                "is_shareget": false,
+                "column_end_time": 1546704000,
+                "column_title": "数据结构与算法之美",
+                "last_aid": 0,
+                "is_include_audio": true,
+                "is_include_preview": true,
+                "column_ctime": 1536893949,
+                "author_intro": "前Google工程师",
+                "article_count": 80,
+                "is_channel": true,
+                "column_intro": "<h2>【1天后涨价 | 设计模式之美】<\/h2><p><a href=\"https:\/\/time.geekbang.org\/column\/intro\/250?utm_term=zeusNS7B1&utm_source=shujujiegou&utm_medium=xiangqingye\"><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/8a\/80\/8a27206e4b53a41ac5ed7310a9c07a80.jpg\" alt=\"unpreview\" \/><\/a><\/p>\n<p>小争哥「设计模式之美」，1天后涨价至 <span class=\"orange\">¥299<\/span>，现在秒杀+口令「wangzheng」，到手价仅 <span class=\"orange\">¥129<\/span><\/p>\n<br \/><h2>你将获得<\/h2><ul>\n<li>\n<p>20个经典数据结构与算法；<\/p>\n<\/li>\n<li>\n<p>100个真实项目场景案例；<\/p>\n<\/li>\n<li>\n<p>文科生都能懂的算法手绘图解；<\/p>\n<\/li>\n<li>\n<p>轻松搞定BAT的面试通关秘籍。<\/p>\n<\/li>\n<\/ul>\n<br \/><h2>讲师介绍<\/h2><p>王争，前Google工程师，从事Google翻译相关系统的开发，深入研究算法十余年。现任某金融公司核心系统资深系统架构师，负责公司核心业务的架构设计和开发。<\/p>\n<p>他将采用最适合工程师的学习方式，<strong>不拘泥于某一特定编程语言<\/strong>，从实际开发场景出发，由浅入深教你学习数据结构与算法的方法，帮你搞懂基本概念和核心理论，深入理解算法精髓，帮你提升使用数据结构和算法思维解决问题的能力。<\/p>\n<br \/><h2>课程介绍<\/h2><p>踏上了编程之路，也就意味着你选择了一种终身学习的生活方式。每一个程序员都要练就十八般武艺，而掌握数据结构与算法就像修炼了九阳神功。换句话说，掌握了数据结构与算法，你的内功修炼速度就会有质的飞跃。<\/p>\n<p>无论你是从事业务开发，想要评估代码性能和资源消耗；还是从事架构设计，想要优化设计模式；或者想要快速玩转热门技术，比如人工智能、区块链，都要先搞定数据结构与算法。因为，任凭新技术如何变化，只要掌握了这些计算机科学的核心“招式”，你就可以见招拆招，始终立于“不败之地”。<\/p>\n<p>那怎样才能真正掌握数据结构与算法呢？是把常用的数据结构与算法背得滚瓜烂熟吗？即便如此，面对现实世界的千变万化，你也不太可能照搬某个算法解决即将遇到的下一个问题。因此，就像学习设计模式、架构模式一样，<strong>学习数据结构与算法的关键，在于掌握其中的思想和精髓，学会解决实际问题的方法<\/strong>。<\/p>\n<p>专栏分为4个<strong>由浅入深<\/strong>的模块。<\/p>\n<ul>\n<li><strong>入门篇<\/strong><\/li>\n<\/ul>\n<p>为什么要学习数据结构与算法？数据结构与算法该怎么学？学习的重点又是什么？这一模块将为你指明数据结构与算法的学习路径；并着重介绍贯穿整个专栏学习的重要概念：时间复杂度和空间复杂度，为后面的学习打好基础。<\/p>\n<ul>\n<li><strong>基础篇<\/strong><\/li>\n<\/ul>\n<p>将介绍最常见、最重要的数据结构与算法。每种都从“来历”“特点”“适合解决的问题”“实际的应用场景”出发，进行详细介绍；并配有清晰易懂的手绘图解，由浅入深进行讲述；还适时总结一些实用“宝典”，教你解决真实开发问题的思路和方法。<\/p>\n<p><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/92\/9f\/92b71261f3e5f37ffc49ced520e80c9f.jpg\" alt=\"\" \/><\/p>\n<ul>\n<li><strong>高级篇<\/strong><\/li>\n<\/ul>\n<p>将从概念和应用的角度，深入剖析一些稍复杂的数据结构与算法，推演海量数据下的算法问题解决过程；帮你更加深入理解算法精髓，开拓视野，训练逻辑；真正带你升级算法思维，修炼深厚的编程内功。<\/p>\n<ul>\n<li><strong>实战篇<\/strong><\/li>\n<\/ul>\n<p>将通过实战案例串讲前面讲到的数据结构和算法；并拿一些开源项目和框架，剖析它们背后的数据结构和算法；并带你用学过的内容实现一个短网址系统；深化对概念和应用的理解，灵活使用数据结构和算法。<\/p>\n<br \/><h2>课程目录<\/h2><p><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/1b\/ae\/1b969cfe410a43d5f2b148c255beb3ae.jpg\" alt=\"\" \/><\/p>\n<br \/><h2>特别放送<\/h2><ol class=\"js-audit\">\n  <li>订阅后，分享专属海报，每邀请一位好友订阅有奖励。<\/li>\n  <li>戳此添加社群管理员，<a href=\"https:\/\/jinshuju.net\/f\/OCQKLn \">进入技术交流&福利群<\/a>。<\/li>\n  <li>戳此<a href=\"https:\/\/promo.geekbang.org\/activity\/student-certificate?utm_source=app&utm_medium=xiangqingye\">申请学生认证<\/a>，订阅课程一律 5 折。<\/li>\n  <li>最新课表抢先看，充值购课更优惠，限时充 ¥500 得 ¥580，\n<a href=\"https:\/\/shop18793264.youzan.com\/v2\/feature\/XRArFM4uO5?dc_ps=2534794065267047432.200001\">戳此查看>>><\/a>\n  <\/li>\n<p><a href=\"time:\/\/mall?url=https%3A%2F%2Fshop18793264.youzan.com%2Fv2%2Ffeature%2FXRArFM4uO5\"><img src=\"https:\/\/static001.geekbang.org\/resource\/image\/48\/e5\/4863766d629aeaffe4d1f685fef117e5.png\" alt=\"unpreview\"><\/a><\/p>\n  <\/ol><br \/><h2>订阅须知<\/h2><ol class=\"js-audit\">\n<li>本专栏为订阅专栏，形式为图文+音频，现已更新完毕。订阅成功后，即可通过“极客时间”App端、小程序端、<a href=\"https:\/\/time.geekbang.org\/columns\">Web端<\/a>永久阅读。<\/li>\n<li>企业批量购买请点击“<a href=\"https:\/\/time.geekbang.org\/column\/article\/102047?utm_source=geektimeAPP&utm_medium=DingYueXuZhi&utm_campaign=qiyezhanghao\">企业充值<\/a>”了解详情，可支持员工选课，企业支付。<\/li>\n<li>本专栏为虚拟商品，一经订阅，概不退款。<\/li>\n<\/ol>",
+                "is_finish": true,
+                "author_name": "王争",
+                "column_name": "",
+                "column_cover": "https:\/\/static001.geekbang.org\/resource\/image\/11\/5b\/11a3a5aa2f5879ec88b284044bacd55b.jpg",
+                "column_cover_explore": "https:\/\/static001.geekbang.org\/resource\/image\/aa\/3c\/aa3264ff6dce0b7454e24b465857603c.png",
+                "channel_back_amount": 2400,
+                "column_unit": "80讲",
+                "column_subtitle": "为工程师量身打造的数据结构与算法私教课",
+                "footer_cover_data": "{\"img_url\":\"https:\\\/\\\/static001.geekbang.org\\\/resource\\\/image\\\/e8\\\/32\\\/e8567d6b2e2b889882370ed54ca27f32.png\",\"mp_url\":\"\",\"link_url\":\"https:\\\/\\\/u.geekbang.org\\\/subject\\\/algorithm\\\/1000343?utm_source=time_app&utm_medium=WangZhengzhuanlantuijian&utm_term=WangZhengzhuanlantuijian&gk_cus_user_wechat=university\"}",
+                "column_sku": 100017301,
+                "nps": {
+                    "status": 0,
+                    "url": "https:\/\/jinshuju.net\/f\/Ie9yCN"
                 },
-                {
-                    "amount": 9900,
-                    "left_seconds": 86071,
-                    "code": "EzU3QrYpOB",
-                    "host_nickname": "杨建",
-                    "host_avatar": "https:\/\/static001.geekbang.org\/account\/avatar\/00\/16\/f2\/98\/6cd90598.jpg",
-                    "total_ucount": 2,
-                    "want_ucount": 1
-                }
-            ],
-            "groupbuy": {
-                "success_ucount": 2,
-                "join_code": "",
-                "could_groupbuy": true,
-                "had_join": false,
-                "price": 9900
-            },
-            "is_member_sub": 2,
-            "is_sale_product": true,
-            "freelyread_count": 0,
-            "column_video_cover": "",
-            "had_sub": false,
-            "column_share_title": "王争 · 数据结构与算法之美",
-            "lecture_url": "https:\/\/static001.geekbang.org\/resource\/image\/d3\/3a\/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg",
-            "author_info": "",
-            "column_sharesale": 1,
-            "last_chapter_id": 0,
-            "article_req_total_count": 58,
-            "update_frequency": "全集",
-            "column_price_market": 12900,
-            "column_begin_time": 1537113600,
-            "column_wxlite_code": "https:\/\/static001.geekbang.org\/product\/wxa\/trans-wxa_sku\/100017301.png",
-            "column_poster_wxlite": "https:\/\/static001.geekbang.org\/resource\/image\/1c\/fc\/1c59d0f2ca3cef6f3dba1c8bd475c9fc.jpg",
-            "is_experience": false,
-            "product_type": "c1",
-            "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/11\/5b\/11a3a5aa2f5879ec88b284044bacd55b.jpg"
+                "freelyread_total": 4,
+                "is_preorder": false,
+                "sub_count": 87703,
+                "rate_percent": 0,
+                "column_type": 1,
+                "show_chapter": true,
+                "article_learned_count": 0,
+                "first_promo": {
+                    "price": 2990,
+                    "could_join": true
+                },
+                "groupbuy_for_gift": {
+                    "success_ucount": 2,
+                    "could_groupbuy": true,
+                    "price": 9900
+                },
+                "groupbuy_list": [
+                    {
+                        "amount": 9900,
+                        "left_seconds": 85776,
+                        "code": "Ijt6TNxufm",
+                        "host_nickname": "啊哈哈",
+                        "host_avatar": "https:\/\/static001.geekbang.org\/account\/avatar\/00\/1a\/b1\/61\/5a3c44cd.jpg",
+                        "total_ucount": 2,
+                        "want_ucount": 1
+                    },
+                    {
+                        "amount": 9900,
+                        "left_seconds": 86071,
+                        "code": "EzU3QrYpOB",
+                        "host_nickname": "杨建",
+                        "host_avatar": "https:\/\/static001.geekbang.org\/account\/avatar\/00\/16\/f2\/98\/6cd90598.jpg",
+                        "total_ucount": 2,
+                        "want_ucount": 1
+                    }
+                ],
+                "groupbuy": {
+                    "success_ucount": 2,
+                    "join_code": "",
+                    "could_groupbuy": true,
+                    "had_join": false,
+                    "price": 9900
+                },
+                "is_member_sub": 2,
+                "is_sale_product": true,
+                "freelyread_count": 0,
+                "column_video_cover": "",
+                "had_sub": false,
+                "column_share_title": "王争 · 数据结构与算法之美",
+                "lecture_url": "https:\/\/static001.geekbang.org\/resource\/image\/d3\/3a\/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg",
+                "author_info": "",
+                "column_sharesale": 1,
+                "last_chapter_id": 0,
+                "article_req_total_count": 58,
+                "update_frequency": "全集",
+                "column_price_market": 12900,
+                "column_begin_time": 1537113600,
+                "column_wxlite_code": "https:\/\/static001.geekbang.org\/product\/wxa\/trans-wxa_sku\/100017301.png",
+                "column_poster_wxlite": "https:\/\/static001.geekbang.org\/resource\/image\/1c\/fc\/1c59d0f2ca3cef6f3dba1c8bd475c9fc.jpg",
+                "is_experience": false,
+                "product_type": "c1",
+                "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/11\/5b\/11a3a5aa2f5879ec88b284044bacd55b.jpg"}]
         },
         {
             "id": 100020801,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1595840470,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/be\/88\/beff98556ac339ddc14b97609cea9288.jpg",
@@ -186,10 +187,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/59\/db\/598593a4da4fd7ea898711cc623292db.jpg"
+            }]
         },
         {
             "id": 100006701,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1596005736,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/97\/c5\/97ef24b25838514cb095ceadf2470bc5.jpg",
@@ -270,10 +273,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/6f\/51\/6f1829aeae4e740e949340c663834551.jpg"
+            }]
         },
         {
             "id": 100002201,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1596010536,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/08\/c1\/084b2e8b8757ccb8401d6e6501ef8bc1.jpg",
@@ -365,10 +370,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/21\/da\/216b472de3f9027371576e107601c2da.jpg"
+            }]
         },
         {
             "id": 100006601,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1596011381,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/ce\/db\/ceb37edc8efefc8b2cde54f6592340db.jpg",
@@ -469,10 +476,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/a9\/ed\/a96b163e2d9bf19cdfc0f5d0d69e13ed.jpg"
+            }]
         },
         {
             "id": 100007101,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1595992566,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/93\/15\/9386ab8368f005f8df8bf489df68eb15.jpg",
@@ -546,10 +555,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/99\/57\/99f9772bb4ff0d815bb75f6812d24f57.jpg"
+            }]
         },
         {
             "id": 100023201,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1595840473,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/d4\/a1\/d419aa2295afded1f1808d71b3ccd8a1.jpg",
@@ -650,10 +661,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/80\/e2\/80293b21a2cc9c02ccde5cec6838efe2.jpg"
+            }]
         },
         {
             "id": 100015201,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1595840466,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/b9\/c6\/b9d0a9a625d3d87aac996e53efdcbfc6.jpg",
@@ -745,10 +758,12 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/3d\/a3\/3d7751a2844e063b00125c017bf360a3.jpg"
+            }]
         },
         {
             "id": 100010301,
-            "is_onborad": true,
+            "intro":[{
+                "is_onborad": true,
             "article_req_learned_count": 0,
             "column_utime": 1596005821,
             "column_poster": "https:\/\/static001.geekbang.org\/resource\/image\/d6\/07\/d6da5c15d3ea8acb5bbfc9150321ee07.jpg",
@@ -840,7 +855,9 @@
             "is_experience": false,
             "product_type": "c1",
             "author_header": "https:\/\/static001.geekbang.org\/resource\/image\/94\/32\/9411bedb8461e1384ccefadb3394fe32.jpg"
+            }]
         },{
-            "id": 100023501
+            "id": 100023501,
+            "intro":[{}]
         }
     ]

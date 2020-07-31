@@ -45,7 +45,7 @@ export const getIntro = (id) => {
         dispatch(changeId(id));
         getIntroRequest(id).then(res =>{
             console.log(res);
-            const data = res.data[0];
+            const data = res.data[0].intro;
             dispatch(changeIntro(data));
             // 拿到数据  IntroLoading 变成false
             dispatch(changeIntroLoading(false));
@@ -62,7 +62,7 @@ export const getBrief = () => {
         const id = getState().intro.id;
         getBriefRequest(id).then(res =>{
             console.log(res);
-            const data = res.data[1];
+            const data = res.data[1].info;
             dispatch(changeBrief(data));
         }).catch(()=>{
             console.log('简介数据传输错误')
@@ -73,8 +73,8 @@ export const getArticleList = () => {
     return ( dispatch, getState ) => {
         const id = getState().intro.id;
         getArticleListRequest(id).then(res =>{
-            console.log(res);
-            const data = res.data[1];
+            // console.log(res);
+            const data = res.data[1].articles;
             dispatch(changeArticleList(data));
         }).catch(()=>{
             console.log('文章列表数据传输错误')
@@ -86,7 +86,7 @@ export const getChapterList = () => {
         const id = getState().intro.id;
         getChapterListRequest(id).then(res =>{
             console.log(res);
-            const data = res.data[0];
+            const data = res.data[0].chapters;
             dispatch(changeChapterList(data));
         }).catch(()=>{
             console.log('目录列表数据传输错误')
@@ -97,7 +97,7 @@ export const getRecommendList = () => {
     return ( dispatch, getState ) => {
         const id = getState().intro.id;
         getRecommendListRequest(id).then(res =>{
-            console.log(res);
+            // console.log(res);
             const data = res.data;
             dispatch(changeRecommendList(data));
         }).catch(()=>{
@@ -110,7 +110,7 @@ export const getCommentList = () => {
         const id = getState().intro.id;
         console.log(getState());
         getCommentListRequest(id).then(res =>{
-            console.log(res);
+            // console.log(res);
             const data = res.data;
             dispatch(changeCommentList(data));
         }).catch(()=>{

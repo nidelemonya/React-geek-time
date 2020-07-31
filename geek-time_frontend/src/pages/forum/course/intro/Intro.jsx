@@ -19,7 +19,9 @@ function Intro(props) {
     const [Recommendshow, setRecommendshow] = useState(false);
     const [Commentshow, setCommentshow] = useState(false);
 
-    const { id, intro } = props;
+    //  注意 map() 不会对空数组进行检测。
+    const { id, intro, brief, articleList, chapterList, recommendList, commentList, introLoading  } = props;
+    console.log(props);
     const { getIntroDataDispatch, getCatalogDataDispatch, getRecommendDataDispatch, getCommentDataDispatch } = props
     // console.log(intro)
     useEffect(() => {
@@ -150,8 +152,14 @@ function Intro(props) {
 
 
 const mapStateToProps = (state) => ({
+    id: state.intro.id,
     intro: state.intro.intro,
-    id: state.intro.id
+    brief: state.intro.brief,
+    articleList:state.intro.articleList,
+    chapterList: state.intro.chapterList,
+    recommendList: state.intro.recommendList,
+    commentList: state.intro.commentList,
+    introLoading: state.intro.introLoading,
 })
 
 // 映射dispatch到props上
