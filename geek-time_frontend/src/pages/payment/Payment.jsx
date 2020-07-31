@@ -48,17 +48,17 @@ function Pay(props) {
                                 <span className="iconfont checked">&#xe6ab;</span>
                             </div>
                         </div>
-                        {/* <div className="choose-other-pay">
+                        <div className="choose-other-pay">
                             <div className="choose-label">选择其他支付方式</div>
                             <span className="iconfont">&#xe534;</span>
                         </div>
-                        <p className="coupon-rules">· 本商品为虚拟内容服务，购买后不支持退换、转让，请斟酌确认。</p> */}
+                        <p className="coupon-rules">· 本商品为虚拟内容服务，购买后不支持退换、转让，请斟酌确认。</p>
                     </div>
-                    {/* <p className="current-user">
-                        <span>当前登录账号：157****2750
-                        <a className="orange">切换账号</a>
+                    <p className="current-user">
+                        <span className="title">当前登录账号：157****2750
+                        {/* <a className="orange">切换账号</a> */}
                         </span>
-                    </p>  */}
+                    </p> 
                     <div className="bottom">
                         <div className="bottom-name">¥19.90 确认支付</div>
                     </div>
