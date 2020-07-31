@@ -21,7 +21,7 @@ function Intro(props) {
 
     //  注意 map() 不会对空数组进行检测。
     const { id, intro, brief, articleList, chapterList, recommendList, commentList, introLoading  } = props;
-    console.log(props);
+    // console.log(props);
     const { getIntroDataDispatch, getCatalogDataDispatch, getRecommendDataDispatch, getCommentDataDispatch } = props
     // console.log(intro)
     useEffect(() => {
@@ -121,7 +121,7 @@ function Intro(props) {
                             <Brief style={BriefStyle} />
                             <Catalog style={CatalogStyle}/>
                             <Recommend style={RecommendStyle}/>
-                            <Comment style={CommentStyle}/>
+                            <Comment style={CommentStyle} commentList={commentList}/>
                         </div>
                     </Scroll>
                 </ListContainer>
