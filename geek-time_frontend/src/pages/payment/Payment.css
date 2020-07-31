@@ -31,7 +31,7 @@
 }
 .pay .pay-container {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   margin-top: 1.4rem;
 }
 .pay .pay-container .pay-info {
@@ -102,7 +102,6 @@
 }
 .pay .pay-container .pay-method {
   width: 100%;
-  height: 100vh;
   background-color: #f5f8fa;
 }
 .pay .pay-container .pay-method .pay-method-h3 {
@@ -120,9 +119,66 @@
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
+  align-items: center;
+  line-height: 1.296296rem /* 140/108 */;
 }
 .pay .pay-container .pay-method .method-list-item .iconfont {
   padding-left: 0.351852rem /* 38/108 */;
+  font-size: 0.537037rem /* 58/108 */;
+  color: green;
+}
+.pay .pay-container .pay-method .method-list-item .pay-method-text {
+  font-size: 0.37037rem /* 40/108 */;
+  padding-left: 0.351852rem /* 38/108 */;
+  color: #333333;
+}
+.pay .pay-container .pay-method .method-list-item .checkbox {
+  margin-right: 0.351852rem /* 38/108 */;
+}
+.pay .pay-container .pay-method .method-list-item .checkbox .iconfont {
+  color: #f98a19;
+}
+.pay .pay-container .pay-method .choose-other-pay {
+  margin-top: 0.166667rem /* 18/108 */;
+  height: 1.055556rem /* 114/108 */;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pay .pay-container .pay-method .choose-other-pay .choose-label {
+  font-size: 0.333333rem /* 36/108 */;
+  color: #414141;
+  font-weight: 500;
+}
+.pay .pay-container .pay-method .choose-other-pay .iconfont {
+  color: #999999;
+  font-size: 0.333333rem /* 36/108 */;
+}
+.pay .pay-container .pay-method .coupon-rules {
+  font-size: 0.296296rem /* 32/108 */;
+  color: #b2b2b3;
+  padding-left: 0.296296rem /* 32/108 */;
+  padding-top: 0.277778rem /* 30/108 */;
+}
+.pay .pay-container .current-user {
+  background-color: #f5f8fa;
+  width: 100%;
+  height: 6.8rem;
+  color: #b2b2b2;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 5.8rem;
+}
+.pay .pay-container .current-user .title {
+  color: #b2b2b2;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
 }
 .pay .pay-container .bottom {
   height: 1.203704rem /* 130/108 */;
