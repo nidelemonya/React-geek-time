@@ -29,10 +29,20 @@ module.exports = {
         console.log(id, tab);
         console.log(tab === 'comment')
         switch (tab) {
-            case 'intro': data = [...intro.filter(m => m.id === Number(id)),...info.filter(m => m.id === Number(id))]
-            case 'catalog': data = [...chapters.filter(m => m.id === Number(id)), ...articles.filter(m => m.id === Number(id))]
-            case 'recommend': data = recommends.filter(m => m.id === Number(id))
-            case 'comment': data = comments.filter(m => m.id === Number(id))
+            case 'intro': 
+                data = [...intro.filter(m => m.id === Number(id)),...info.filter(m => m.id === Number(id))];
+                break;
+            case 'catalog':
+                data = [...chapters.filter(m => m.id === Number(id)), ...articles.filter(m => m.id === Number(id))]
+                break;
+            case 'recommend': 
+                data = recommends.filter(m => m.id === Number(id))
+                break;
+            case 'comment': 
+                data = comments.filter(m => m.id === Number(id))
+                break;
+            default:
+                data = [...intro.filter(m => m.id === Number(id)),...info.filter(m => m.id === Number(id))];
         }
         res.json({
             "data":data});
