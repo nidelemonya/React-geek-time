@@ -71,11 +71,13 @@ export const getBrief = () => {
 }
 export const getArticleList = () => {
     return ( dispatch, getState ) => {
+        dispatch(changeIntroLoading(true));
         const id = getState().intro.id;
         getArticleListRequest(id).then(res =>{
             // console.log(res);
             const data = res.data[1].articles;
             dispatch(changeArticleList(data));
+            dispatch(changeIntroLoading(false));
         }).catch(()=>{
             console.log('文章列表数据传输错误')
         })
@@ -85,7 +87,7 @@ export const getChapterList = () => {
     return ( dispatch, getState ) => {
         const id = getState().intro.id;
         getChapterListRequest(id).then(res =>{
-            console.log(res);
+            // console.log(res);
             const data = res.data[0].chapters;
             dispatch(changeChapterList(data));
         }).catch(()=>{
@@ -95,11 +97,13 @@ export const getChapterList = () => {
 }
 export const getRecommendList = () => {
     return ( dispatch, getState ) => {
+        dispatch(changeIntroLoading(true));
         const id = getState().intro.id;
         getRecommendListRequest(id).then(res =>{
             // console.log(res);
             const data = res.data;
             dispatch(changeRecommendList(data));
+            dispatch(changeIntroLoading(false));
         }).catch(()=>{
             console.log('推荐列表数据传输错误')
         })
@@ -107,12 +111,14 @@ export const getRecommendList = () => {
 }
 export const getCommentList = () => {
     return ( dispatch, getState ) => {
+        dispatch(changeIntroLoading(true));
         const id = getState().intro.id;
-        console.log(getState());
+        // console.log(getState());
         getCommentListRequest(id).then(res =>{
             // console.log(res);
             const data = res.data;
             dispatch(changeCommentList(data));
+            dispatch(changeIntroLoading(false));
         }).catch(()=>{
             console.log('评论列表数据传输错误')
         })

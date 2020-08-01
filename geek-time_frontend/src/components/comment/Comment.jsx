@@ -3,9 +3,9 @@ import './Comment.css'
 
 export default function Comment(props) {
     const { style, commentList } = props
-    console.log(commentList);
+    // console.log(commentList);
 
-    function time(time = +new Date()) {
+    const time = (time = +new Date()) => {
         var date = new Date(time + 8 * 3600 * 1000); // 增加8小时
         return date.toJSON().substr(0, 19).replace('T', ' ');
     }
@@ -16,7 +16,7 @@ export default function Comment(props) {
                     commentList.map(key => {
                         return (
                             <div key={key.id} className="_2qEA6KRz_0">
-                                <img src={key.user_header} alt={key.aid}  className="_2kUU_o1K_0" />
+                                <img src={key.user_header} alt=""  className="_2kUU_o1K_0" />
                                 <div className="_2Vntm3ZR_0">
                                     <div className="_2DK-_zXj_0">
                                         <div>

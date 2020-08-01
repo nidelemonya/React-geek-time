@@ -18,7 +18,7 @@ export default function ForumBar(props) {
     return (
         <div className="swiper-container">
             <div className="swiper-wrapper">
-                { pathList.length === 0 ? <React.Fragment>
+                { pathList.toJS().length === 0 ? <React.Fragment>
                     <div className="swiper-slide"></div>
                     <div className="swiper-slide"></div>
                 </React.Fragment>
@@ -26,23 +26,23 @@ export default function ForumBar(props) {
                     <React.Fragment>
                         <div className="swiper-slide">
                             <div className="slider-nav">
-                                <li className="forum-li" key={pathList[0].id}>
+                                <li className="forum-li" key={pathList.toJS()[0].id}>
                                     <div className="forum-bg">
                                         <div className="forum-div">
-                                            <div className="forum-div-title">{pathList[0].name}</div>
-                                            <div className="forum-div-num">{pathList[0].product_count}门课程</div>
+                                            <div className="forum-div-title">{pathList.toJS()[0].name}</div>
+                                            <div className="forum-div-num">{pathList.toJS()[0].product_count}门课程</div>
                                         </div>
-                                        <img src={pathList[0].icon} alt="" />
+                                        <img src={pathList.toJS()[0].icon} alt="" />
                                         <div className="forum-less"></div>
                                     </div>
                                 </li>
-                                <li className="forum-li" key={pathList[1].id}>
+                                <li className="forum-li" key={pathList.toJS()[1].id}>
                                     <div className="forum-bg">
                                         <div className="forum-div">
-                                            <div className="forum-div-title">{pathList[1].name}</div>
-                                            <div className="forum-div-num">{pathList[1].product_count}门课程</div>
+                                            <div className="forum-div-title">{pathList.toJS()[1].name}</div>
+                                            <div className="forum-div-num">{pathList.toJS()[1].product_count}门课程</div>
                                         </div>
-                                        <img src={pathList[1].icon} alt="" />
+                                        <img src={pathList.toJS()[1].icon} alt="" />
                                         <div className="forum-less"></div>
                                     </div>
                                 </li>
@@ -50,23 +50,23 @@ export default function ForumBar(props) {
                         </div>
                         <div className="swiper-slide">
                             <div className="slider-nav">
-                                <li className="forum-li" key={pathList[2].id}>
+                                <li className="forum-li" key={pathList.toJS()[2].id}>
                                     <div className="forum-bg">
                                         <div className="forum-div">
-                                            <div className="forum-div-title">{pathList[2].name}</div>
-                                            <div className="forum-div-num">{pathList[2].product_count}门课程</div>
+                                            <div className="forum-div-title">{pathList.toJS()[2].name}</div>
+                                            <div className="forum-div-num">{pathList.toJS()[2].product_count}门课程</div>
                                         </div>
-                                        <img src={pathList[2].icon} alt="" />
+                                        <img src={pathList.toJS()[2].icon} alt="" />
                                         <div className="forum-less"></div>
                                     </div>
                                 </li>
-                                <li className="forum-li" key={pathList[3].id}>
+                                <li className="forum-li" key={pathList.toJS()[3].id}>
                                     <div className="forum-bg">
                                         <div className="forum-div">
-                                            <div className="forum-div-title">{pathList[3].name}</div>
-                                            <div className="forum-div-num">{pathList[3].product_count}门课程</div>
+                                            <div className="forum-div-title">{pathList.toJS()[3].name}</div>
+                                            <div className="forum-div-num">{pathList.toJS()[3].product_count}门课程</div>
                                         </div>
-                                        <img src={pathList[3].icon} alt="" />
+                                        <img src={pathList.toJS()[3].icon} alt="" />
                                         <div className="forum-less"></div>
                                     </div>
                                 </li>
@@ -79,5 +79,5 @@ export default function ForumBar(props) {
 }
 
 ForumBar.propTypes = {
-    pathList: PropTypes.array.isRequired
+    pathList: PropTypes.object.isRequired
 }

@@ -11,7 +11,7 @@ export default function ForumList(props) {
     // console.log(infoList.length)
     return (
         <React.Fragment>
-            {infoList.map (m => {
+            {infoList.toJS().map (m => {
             return (
                 <NavLink key = {m.id} to={"/forum/course/"+m.id} activeClassName="selected">
                 <div className="forum-list-box">
@@ -46,5 +46,5 @@ export default function ForumList(props) {
 }
 
 ForumList.propTypes = {
-    infoList:PropTypes.array.isRequired
+    infoList:PropTypes.object.isRequired
 }

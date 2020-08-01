@@ -107,14 +107,27 @@ function Forum(props) {
         </div>)
 }
 
+// const mapStateToProps = (state) => {
+//     console.log(state.getIn(['forum','pathList']))
+//     return {
+//         pathList: state.forum.pathList,
+//         directionList: state.forum.directionList,
+//         infoList: state.forum.infoList,
+//         enterLoading: state.forum.enterLoading,
+//         pageCount: state.forum.pageCount,
+//         pullUpLoading: state.forum.pullUpLoading,
+//         pullDownLoading: state.forum.pullDownLoading
+//     }
+// }
+
 const mapStateToProps = (state) => ({
-    pathList: state.forum.pathList,
-    directionList: state.forum.directionList,
-    infoList: state.forum.infoList,
-    enterLoading: state.forum.enterLoading,
-    pageCount: state.forum.pageCount,
-    pullUpLoading: state.forum.pullUpLoading,
-    pullDownLoading: state.forum.pullDownLoading
+    pathList: state.getIn(['forum','pathList']),
+    directionList: state.getIn(['forum','directionList']),
+    infoList: state.getIn(['forum','infoList']),
+    enterLoading: state.getIn(['forum','enterLoading']),
+    pageCount: state.getIn(['forum','pageCount']),
+    pullUpLoading: state.getIn(['forum','pullUpLoading']),
+    pullDownLoading: state.getIn(['forum','v']),
 })
 
 const mapDispatchToProps = (dispatch) => {

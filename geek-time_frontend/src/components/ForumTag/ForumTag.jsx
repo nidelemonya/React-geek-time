@@ -6,7 +6,7 @@ export default function ForumTag(props) {
     const { directionList } = props;
     // console.log(directionList);
     return (
-        directionList.map(m => {
+        directionList.toJS().map(m => {
             return (
                 <div key={m.id} className="K0VUHZTt_0">{m.title}</div>
             )
@@ -15,5 +15,5 @@ export default function ForumTag(props) {
 }
 
 ForumTag.propTypes = {
-    directionList: PropTypes.array.isRequired
+    directionList: PropTypes.object.isRequired
 }

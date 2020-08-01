@@ -1,15 +1,16 @@
 // 负责进行数据请求
 import * as actionTypes from './constants';
-import { getLessonsRequest, getInfoListRequest} from '../../../../api/request'
+import { getLessonsRequest, getInfoListRequest} from '../../../../api/request';
+import { fromJS } from 'immutable';
 
 export const changePathList = (data) => ({
     type: actionTypes.CHANGE_PATH,
-    data:data
+    data:fromJS(data)
 })
 
 export const changeDirectionList = (data) => ({
     type: actionTypes.CHANGE_Direction,
-    data:data
+    data:fromJS(data)
 })
 
 export const changeListOffset = (data) => ({
@@ -38,7 +39,8 @@ export const changePullDownLoading = (data) => ({
 
 export const changeInfoList = (data) => ({
     type: actionTypes.CHANGE_INFOS,
-    data:data
+    // data: data
+    data: fromJS(data)
 })
 
 
@@ -77,7 +79,10 @@ export const getDirectionList = () => {
 export const getInfoList = () => {
     return ( dispatch, getState) => {
         // 获取偏移量
-        const offset = getState().forum.listOffset;
+
+        // const offset = getState().forum.listOffset;
+
+        const offset = getState().getIn(['forum', 'listOffset']);
         // console.log(offset,'listoffset');
         getInfoListRequest(offset).then(res=> {
             // console.log(res);
@@ -99,8 +104,12 @@ export const getInfoList = () => {
 
 export const refreshMoreInfoList = () => {
     return ( dispatch, getState ) => {
-        const offset = getState().forum.listOffset;
-        const infos = getState().forum.infoList;
+        // const offset = getState().forum.listOffset;
+
+        const offset = getState().getIn(['forum', 'listOffset']);
+        // const infos = getState().forum.infoList;
+
+        const infos = getState().getIn(['forum', 'infoList']).toJS();
         getInfoListRequest(offset).then(res => {
             // 拿到当前的infos 和新请求的 infos
             // console.log(res.infos);
