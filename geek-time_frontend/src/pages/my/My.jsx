@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import './My.css';
 import MyItems from '../../components/MyItem/MyItem';
 import MySwiper from '../../components/MySwiper/MySwiper';
@@ -7,9 +7,11 @@ import { forceCheck } from 'react-lazyload';
 import { ListContainer } from './style';
 import { iconSet } from '../../api/config';
 import { renderRoutes } from 'react-router-config';
+import { connect } from 'react-redux'
 
 function My(props) {
-    const { route } = props;
+    const { route, balance } = props;
+    // console.log(balance)
     return (
         <div className="my">
             <div className="my-header">
@@ -41,7 +43,7 @@ function My(props) {
                                 <MySwiper></MySwiper>
                             </div>
                             <div className="my-body__box">
-                                <MyItems item_list={iconSet.tab1} />
+                                <MyItems balance={balance.toFixed(2)} item_list={iconSet.tab1} />
                                 <MyItems item_list={iconSet.tab2} />
                                 <MyItems item_list={iconSet.tab3} />
                                 <MyItems item_list={iconSet.tab4} />
@@ -55,5 +57,13 @@ function My(props) {
         </div>
     )
 }
+const mapStateToProps = (state) => ({
+    balance: state.user.balance
+})
+const mapDispatchToProps = (dispatch) => {
+    return {
 
-export default My
+    }
+}
+// export default My
+export default connect(mapStateToProps,mapDispatchToProps)(memo(My));

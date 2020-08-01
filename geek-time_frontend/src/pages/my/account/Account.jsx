@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { withRouter } from 'react-router'
 import { Container, ListContainer } from './style';
 import Scroll from '../../../common/scroll/Scroll';
 import { forceCheck } from 'react-lazyload';
 import './Account.css';
+import * as actionTypes from '../store/actionCreators'
+import { connect } from 'react-redux'
+
 import { accountToUp } from '../../../api/config';
 import AccountList from '../../../components/AccountList/AccountList'
 
 function Account(props) {
+    const { balance, recharge } = props;
+    console.log(balance,recharge); 
+    const { getAccountDataDispatch, getRechargeDataDispatch } = props
     console.log(accountToUp)
+    //充值金额
+    const handleTopUp = () => {
+        console.log('recharge',recharge);
+        getAccountDataDispatch(recharge)
+    }
+    const handleSelect = (select) => {
+        console.log('parent', select);
+        getRechargeDataDispatch(Number(select))
+    }
+
     const handleBack = () => {
         window.history.back()
     }
@@ -27,11 +43,11 @@ function Account(props) {
                                 <div className="Account-number">
                                     <div className="money">
                                         <span className="iconfont">&#xe601;</span>
-                                        <span>0.00</span>
+                                        <span>{balance.toFixed(2)}</span>
                                     </div>
                                     <div className="count">
                                         充值币0.00  |  赠币0.00
-                    </div>
+                                    </div>
                                     <div className="check">查看明细</div>
                                 </div>
                                 <div className="Account-img">
@@ -45,10 +61,10 @@ function Account(props) {
                                         <span className="name">(  充值金额仅限 Android 系统使用  )</span>
                                     </div>
                                     <div className="Account-topUp-wrap" >
-                                        <AccountList topUp_list={accountToUp.list} />
+                                        <AccountList topUp_list={accountToUp.list} onSelected={handleSelect}/>
                                     </div>
                                     <div className="Account-topUp-affirm">
-                                        <button className="Account-topUp-affirm-btn">确认充值</button>
+                                        <button className="Account-topUp-affirm-btn" onClick={handleTopUp}>确认充值</button>
                                     </div>
                                 </div>
                                 <div className="Account-explain">
@@ -63,18 +79,30 @@ function Account(props) {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="Account-footer">
-                           
-                        </div> */}
                         </div>
                     </Scroll>
                 </ListContainer>
             </div>
         </Container>
-
-
     )
 }
 
 const Accounts = withRouter(Account)
-export default Accounts
+// export default Accounts
+
+const mapStateToProps = (state) => ({
+    balance: state.user.balance,
+    recharge: state.user.recharge
+})
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getAccountDataDispatch(number) {
+            dispatch(actionTypes.addBalance(number))
+        },
+        getRechargeDataDispatch(num) {
+            dispatch(actionTypes.getRecharge(num))
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(memo(Accounts))

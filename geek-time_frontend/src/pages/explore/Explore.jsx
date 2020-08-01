@@ -12,7 +12,7 @@ function Explore(props) {
         <div className="explore">
             <div className="explore-header">
                 <div className="explore-title">发现</div>
-                <span className="iconfont">&#xe606;</span>
+                <span className="iconfont">&#xe607;</span>
             </div>
             <ListContainer>
                 <Scroll

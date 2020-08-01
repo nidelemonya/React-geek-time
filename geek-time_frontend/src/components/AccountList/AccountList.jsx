@@ -6,8 +6,12 @@ import '../../assets/iconfont/iconfont.js';
 
 function AccountList(props) {
     const { topUp_list } = props;
-    const handleClick = (e) => {
-        console.log(e);
+    const { onSelected } = props;
+    // const handleClick = (id) => () => {
+    //     console.log(11111111, id);
+    // }
+    const handleClick = (number) => {
+        onSelected(number)
     }
     return (
         <div className="Account-topUp-wrapBox">
@@ -17,7 +21,10 @@ function AccountList(props) {
                         <div className = 'list' style={{
                             background:m.checked === true  ? 'orange':''
                         }}  checked={m.checked} key={m.id}
-                            onClick={handleClick(m.checked)}
+                            onClick={() => {
+                                // m.id
+                                handleClick(m.number)
+                            }}
                         
                         >
                             <div className="list-top">
