@@ -28,13 +28,13 @@ function Forum(props) {
 
     useEffect(() => {
         // 如果没有数据 请求一次
-        if (!pathList.length || !directionList.length) {
+        if (!pathList.toJS().length || !directionList.toJS().length) {
             getForumListDataDispatch();
         }
-        if (!infoList.length) {
+        if (!infoList.toJS().length) {
             getInfoListDataDispatch();
         }
-    }, [getForumListDataDispatch, getInfoListDataDispatch, pathList.length, directionList.length, infoList.length])
+    }, [getForumListDataDispatch, getInfoListDataDispatch, pathList, directionList, infoList])
     // 加个空数组防止一直刷新
     // console.log(pullUpLoading, pullDownLoading, '------')
     return (
@@ -127,7 +127,7 @@ const mapStateToProps = (state) => ({
     enterLoading: state.getIn(['forum','enterLoading']),
     pageCount: state.getIn(['forum','pageCount']),
     pullUpLoading: state.getIn(['forum','pullUpLoading']),
-    pullDownLoading: state.getIn(['forum','v']),
+    pullDownLoading: state.getIn(['forum','pullDownLoading']),
 })
 
 const mapDispatchToProps = (dispatch) => {

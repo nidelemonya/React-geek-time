@@ -11,8 +11,8 @@ function Pay(props) {
     const { brief, balance } = props;
     const { getPaymentDataDispatch } = props;
     const ref = useRef(null);
-    console.log(ref.current);
-    console.log(brief);
+    // console.log(ref.current);
+    // console.log(brief);
     const handleBack = () => {
         window.history.back();
     }

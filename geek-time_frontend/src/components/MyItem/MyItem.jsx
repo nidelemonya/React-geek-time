@@ -20,7 +20,7 @@ function MyItem(props) {
         // 哈希路由不能 push同一个路由 加一个随机数
     }
     const { item_list, balance } = props;
-    console.log (item_list)
+    // console.log (item_list)
     return (
         <div className="my-body__itemsBox">
             <div className="my-body__itemsBox_wrapper">

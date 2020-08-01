@@ -12,16 +12,16 @@ import AccountList from '../../../components/AccountList/AccountList'
 
 function Account(props) {
     const { balance, recharge } = props;
-    console.log(balance,recharge); 
+    // console.log(balance,recharge); 
     const { getAccountDataDispatch, getRechargeDataDispatch } = props
-    console.log(accountToUp)
+    // console.log(accountToUp)
     //充值金额
     const handleTopUp = () => {
-        console.log('recharge',recharge);
+        // console.log('recharge',recharge);
         getAccountDataDispatch(recharge)
     }
     const handleSelect = (select) => {
-        console.log('parent', select);
+        // console.log('parent', select);
         getRechargeDataDispatch(Number(select))
     }
 

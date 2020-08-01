@@ -25,7 +25,7 @@ function Intro(props) {
     // console.log(props);
     const { getIntroDataDispatch, getCatalogDataDispatch, getRecommendDataDispatch, getCommentDataDispatch } = props
     // console.log(intro, brief);
-    console.log(introLoading)
+    // console.log(introLoading)
     const ref = useRef(null);
     // console.log(ref);
     let length = 0,
