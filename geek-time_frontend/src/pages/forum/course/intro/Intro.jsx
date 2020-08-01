@@ -100,7 +100,7 @@ function Intro(props) {
                     <Scroll
                         onScroll={forceCheck}>
                         <div className="intro-center">
-                            {brief.map((m, i) => {
+                            {brief.toJS().map((m, i) => {
                                 return (
                                     <div key={i} className="_32BSm8u__0">
                                         <div className="_1TF-7Ks9_0">
@@ -183,7 +183,7 @@ function Intro(props) {
                 </ListContainer>
                 <div className="intro-bottom">
                     {
-                        brief.map((m, i) => {
+                        brief.toJS().map((m, i) => {
                             return (
                                 <div key={i} className="intro-bottom-left">
                                     <div className="intro-bottom-t">
@@ -215,14 +215,14 @@ function Intro(props) {
 
 
 const mapStateToProps = (state) => ({
-    id: state.intro.id,
-    intro: state.intro.intro,
-    brief: state.intro.brief,
-    articleList: state.intro.articleList,
-    chapterList: state.intro.chapterList,
-    recommendList: state.intro.recommendList,
-    commentList: state.intro.commentList,
-    introLoading: state.intro.introLoading,
+    id: state.getIn(['intro','id']),
+    intro: state.getIn(['intro','intro']),
+    brief: state.getIn(['intro','brief']),
+    articleList: state.getIn(['intro','articleList']),
+    chapterList: state.getIn(['intro','chapterList']),
+    recommendList: state.getIn(['intro','recommendList']),
+    commentList: state.getIn(['intro','commentList']),
+    introLoading: state.getIn(['intro','introLoading']),
 })
 
 // 映射dispatch到props上

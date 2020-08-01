@@ -13,7 +13,7 @@ export default function Comment(props) {
         <div style={style}>
             <div className="AEQMMag__0" columndata="[object Object]">
                 {
-                    commentList.map(key => {
+                    commentList.toJS().map(key => {
                         return (
                             <div key={key.id} className="_2qEA6KRz_0">
                                 <img src={key.user_header} alt=""  className="_2kUU_o1K_0" />

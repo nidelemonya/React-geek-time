@@ -1,11 +1,12 @@
 // 负责进行数据请求
 import * as actionTypes from './constants';
+import { fromJS } from 'immutable';
 import { getIntroRequest, getBriefRequest, getArticleListRequest, getChapterListRequest, getCommentListRequest, getRecommendListRequest } from '../../../../../api/request'
 
 export const changeIntro = (data) => ({
     type: actionTypes.CHANGE_INTRO,
     // data:data
-    data
+    data:fromJS(data)
 })
 export const changeId = (data) => ({
     type: actionTypes.CHANGE_ID,
@@ -18,23 +19,23 @@ export const changeIntroLoading = (data) => ({
 })
 export const changeBrief = (data) => ({
     type: actionTypes.CHANGE_BRIEF,
-    data
+    data:fromJS(data)
 })
 export const changeArticleList = (data) => ({
     type: actionTypes.CHANGE_ARTICLE_LIST,
-    data
+    data:fromJS(data)
 })
 export const changeChapterList = (data) => ({
     type: actionTypes.CHANGE_CHAPTER_LIST,
-    data
+    data:fromJS(data)
 })
 export const changeRecommendList = (data) => ({
     type: actionTypes.CHANGE_RECOMMEND_LIST,
-    data
+    data:fromJS(data)
 })
 export const changeCommentList = (data) => ({
     type: actionTypes.CHANGE_COMMENT_LIST,
-    data
+    data:fromJS(data)
 })
 
 export const getIntro = (id) => {
@@ -59,7 +60,7 @@ export const getIntro = (id) => {
 export const getBrief = () => {
     return ( dispatch, getState ) => {
         // console.log(getState());
-        const id = getState().intro.id;
+        const id = getState().getIn(['intro','id']);
         getBriefRequest(id).then(res =>{
             // console.log(res);
             const data = res.data[1].info;
@@ -72,7 +73,7 @@ export const getBrief = () => {
 export const getArticleList = () => {
     return ( dispatch, getState ) => {
         dispatch(changeIntroLoading(true));
-        const id = getState().intro.id;
+        const id =  getState().getIn(['intro','id']);
         getArticleListRequest(id).then(res =>{
             // console.log(res);
             const data = res.data[1].articles;
@@ -85,7 +86,7 @@ export const getArticleList = () => {
 }
 export const getChapterList = () => {
     return ( dispatch, getState ) => {
-        const id = getState().intro.id;
+        const id = getState().getIn(['intro','id']);
         getChapterListRequest(id).then(res =>{
             // console.log(res);
             const data = res.data[0].chapters;
@@ -98,7 +99,7 @@ export const getChapterList = () => {
 export const getRecommendList = () => {
     return ( dispatch, getState ) => {
         dispatch(changeIntroLoading(true));
-        const id = getState().intro.id;
+        const id =  getState().getIn(['intro','id']);
         getRecommendListRequest(id).then(res =>{
             // console.log(res);
             const data = res.data;
@@ -112,7 +113,7 @@ export const getRecommendList = () => {
 export const getCommentList = () => {
     return ( dispatch, getState ) => {
         dispatch(changeIntroLoading(true));
-        const id = getState().intro.id;
+        const id = getState().getIn(['intro','id']);
         // console.log(getState());
         getCommentListRequest(id).then(res =>{
             // console.log(res);

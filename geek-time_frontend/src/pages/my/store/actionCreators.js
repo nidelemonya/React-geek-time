@@ -13,14 +13,14 @@ export const changeRecharge = (data) => ({
 export const addBalance = (data) => {
     return ( dispatch, getState ) => {
         //原来的余额加上充值的金币
-        let balance = getState().user.balance + data;
+        let balance = getState().getIn(['user', 'balance']) + data;
         dispatch(changeBalance(balance));
     }
 }
 //支付完 减掉余额
 export const reduceBalance = (data) => {
     return ( dispatch, getState ) => {
-        let balance = getState().user.balance - data;
+        let balance = getState().getIn(['user', 'balance']) - data;
         dispatch(changeBalance(balance));
     }
 }

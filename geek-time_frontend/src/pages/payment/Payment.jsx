@@ -37,7 +37,7 @@ function Pay(props) {
                         <span>结算台</span>
                     </div>
                 </div>
-                {brief.map((m, i) => {
+                {brief.toJS().map((m, i) => {
                 return(
                 <div className="pay-container" key={i}>
                     <div className="pay-info">
@@ -101,8 +101,10 @@ function Pay(props) {
 const Pays = withRouter(Pay);
 // export default Pays;
 const mapStateToProps = (state) => ({
-    brief: state.intro.brief,
-    balance: state.user.balance
+    // brief: state.intro.brief,
+    // balance: state.user.balance
+    brief: state.getIn(['intro','brief']),
+    balance: state.getIn(['user','balance']),
 })
 
 const mapDispatchToProps = (dispatch) => {

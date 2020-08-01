@@ -58,7 +58,8 @@ function My(props) {
     )
 }
 const mapStateToProps = (state) => ({
-    balance: state.user.balance
+    // balance: state.user.balance
+    balance: state.getIn(['user','balance'])
 })
 const mapDispatchToProps = (dispatch) => {
     return {

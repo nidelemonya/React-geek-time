@@ -91,8 +91,10 @@ const Accounts = withRouter(Account)
 // export default Accounts
 
 const mapStateToProps = (state) => ({
-    balance: state.user.balance,
-    recharge: state.user.recharge
+    // balance: state.user.balance,
+    // recharge: state.user.recharge
+    balance: state.getIn(['user','balance']),
+    recharge: state.getIn(['user','recharge'])
 })
 
 const mapDispatchToProps = (dispatch) => {

@@ -6,7 +6,7 @@ export default function Brief(props) {
     // console.log(intro);
     // console.log(style)
     return (
-        intro.map((m, i) => {
+        intro.toJS().map((m, i) => {
             return (
                 <div key={i} className="_1vEhpLOL_0" style={style}>
                     <div className="_2NKpEZ4f_0" >
