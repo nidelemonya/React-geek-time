@@ -23,7 +23,7 @@ export const iconSet = {
         tab1: [
             {
                 id: 1,
-                iconUrl: "\ue605",
+                iconUrl: "\ue606",
                 name: "账户",
                 count: "0.0",
                 href:'/user/account',
@@ -73,7 +73,7 @@ export const iconSet = {
         tab4: [
             {
                 id: 1,
-                iconUrl: "\ue61f",
+                iconUrl: "\ue65d",
                 name: "礼券",
                 count: "2",
                 href:'/user',
@@ -86,7 +86,7 @@ export const iconSet = {
             },
             {
                 id: 3,
-                iconUrl: "\ue60c",
+                iconUrl: "\ue69f",
                 name: "分享有赏",
                 href:'/user',
             },
@@ -99,7 +99,7 @@ export const iconSet = {
             },
             {
                 id: 5,
-                iconUrl: "\ue60d",
+                iconUrl: "\ue613",
                 name: "关注服务号领币",
                 href:'/user',
             }
@@ -113,7 +113,7 @@ export const iconSet = {
             },
             {
                 id: 2,
-                iconUrl: "\ue616",
+                iconUrl: "\ue617",
                 name: "设置",
                 href:'/user',
             }

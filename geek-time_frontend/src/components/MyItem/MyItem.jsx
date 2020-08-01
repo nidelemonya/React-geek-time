@@ -19,7 +19,7 @@ function MyItem(props) {
         },200)
         // 哈希路由不能 push同一个路由 加一个随机数
     }
-    const { item_list } = props;
+    const { item_list, balance } = props;
     console.log (item_list)
     return (
         <div className="my-body__itemsBox">
@@ -35,7 +35,7 @@ function MyItem(props) {
                                     </div>
                                     <div className="item-right">
                                         {/* 后期 100 改成 store */}
-                                        <span className="count">{i.name === '账户'? 100 : i.count}</span>
+                                        <span className="count">{i.name === '账户'? balance: i.count}</span>
                                         <span className="icon2 iconfont">&#xe534;</span>
                                     </div>
                                 </div>

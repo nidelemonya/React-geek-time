@@ -13,7 +13,7 @@ function Home(props) {
                 <TabBar>
                     <NavLink to="/explore" activeClassName="selected">
                         <TabItem>
-                            <span className="tab-icon iconfont ">&#xe604;</span>
+                            <span className="tab-icon iconfont ">&#xe605;</span>
                             <div className="tab-title">发现</div>
                         </TabItem>
                     </NavLink>
@@ -37,7 +37,7 @@ function Home(props) {
                     </NavLink>
                     <NavLink to="/user" activeClassName="selected">
                         <TabItem>
-                            <span className="tab-icon iconfont ">&#xe502;</span>
+                            <span className="tab-icon iconfont ">&#xe503;</span>
                            <div className="tab-title">我的</div>
                      </TabItem>
                     </NavLink>

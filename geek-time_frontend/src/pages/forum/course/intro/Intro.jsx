@@ -7,6 +7,7 @@ import Brief from '../../../../components/brief/Brief';
 import Catalog from '../../../../components/catalog/Catalog';
 import Recommend from '../../../../components/recommend/Recommend';
 import Comment from '../../../../components/comment/Comment';
+import Loading from '../../../../common/loading/Loading';
 
 import * as actionTypes from './store/actionCreators';
 import { connect } from 'react-redux';
@@ -128,7 +129,7 @@ function Intro(props) {
                                             <div className="_2BooQxT-_0">{m.extra.sub.count}人已学习</div>
                                         </div> <div className="xae1v6CD_0">
                                             <div className="_3-qN2sZJ_0">
-                                                <span className="iconfont _3MKZ0IpG_0">
+                                                <span className="iconfont _3MKZ0IpG_0">&#xe6ab;
                                         </span>学习服务</div>
                                             <div className="IwQi4XxR_0">
                                                 {m.extra.helper.map((t, i) => {
@@ -207,6 +208,7 @@ function Intro(props) {
                     </div>
                 </div>
             </div>
+            <Loading Loading={introLoading} title="正在拼命加载中..." />
         </Container>
     )
 }
