@@ -47,19 +47,19 @@ export const iconSet = {
                 id: 1,
                 iconUrl: "\ue620",
                 name: "商城订单",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 2,
                 iconUrl: "\ue62b",
                 name: "我的拼团",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 3,
                 iconUrl: "\ue654",
                 name: "我的证书",
-                href:'/user/account',
+                href:'/user',
             }
         ],
         tab3: [
@@ -67,7 +67,7 @@ export const iconSet = {
                 id: 1,
                 iconUrl: "\ue664",
                 name: "我的每日一课",
-                href:'/user/account',
+                href:'/user',
             }
         ],
         tab4: [
@@ -76,32 +76,32 @@ export const iconSet = {
                 iconUrl: "\ue61f",
                 name: "礼券",
                 count: "2",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 2,
                 iconUrl: "\ue6ad",
                 name: "课程赠送",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 3,
                 iconUrl: "\ue60c",
                 name: "分享有赏",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 4,
                 iconUrl: "\ue608",
                 name: "邀请好友",
                 count: "得30元",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 5,
                 iconUrl: "\ue60d",
                 name: "关注服务号领币",
-                href:'/user/account',
+                href:'/user',
             }
         ],
         tab5: [
@@ -109,13 +109,13 @@ export const iconSet = {
                 id: 1,
                 iconUrl: "\ue60e",
                 name: "帮助与反馈",
-                href:'/user/account',
+                href:'/user',
             },
             {
                 id: 2,
                 iconUrl: "\ue616",
                 name: "设置",
-                href:'/user/account',
+                href:'/user',
             }
         ]
 }

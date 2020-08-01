@@ -1,9 +1,10 @@
 import React from 'react'
+import { Container } from './style';
 
 export default function Course(props){
     return (
-        <div>
+        <Container>
             Course
-        </div>
+        </Container>
     )
 }

@@ -44,7 +44,7 @@ export const getIntro = (id) => {
         // 一开始进来获取数据 修改 store 中的 id
         dispatch(changeId(id));
         getIntroRequest(id).then(res =>{
-            console.log(res);
+            // console.log(res);
             const data = res.data[0].intro;
             dispatch(changeIntro(data));
             // 拿到数据  IntroLoading 变成false
@@ -61,7 +61,7 @@ export const getBrief = () => {
         // console.log(getState());
         const id = getState().intro.id;
         getBriefRequest(id).then(res =>{
-            console.log(res);
+            // console.log(res);
             const data = res.data[1].info;
             dispatch(changeBrief(data));
         }).catch(()=>{

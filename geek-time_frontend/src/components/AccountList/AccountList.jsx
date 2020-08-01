@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 // import PropTypes from 'prop-types';
 import './AccountList.css';
 import '../../assets/iconfont/iconfont.js';
@@ -6,34 +6,26 @@ import '../../assets/iconfont/iconfont.js';
 
 function AccountList(props) {
     const { topUp_list } = props;
-    // var style  = 
-    // for (let i=0; i<8; i++) {
-    const [checked, setchecked] = useState(false)
-    // }
-    const handleClick = (a) => {
-        console.log(a);
-        // a = !a
-        setchecked(!a)
+    const handleClick = (e) => {
+        console.log(e);
     }
     return (
         <div className="Account-topUp-wrapBox">
             {
-                topUp_list.map(i => {
+                topUp_list.map(m => {
                     return (
                         <div className = 'list' style={{
-                            background:i.checked === true  ? 'orange':''
-                        }}  checked={i.checked} key={i.id}
-                            onClick={() => {
-                                handleClick(i.checked)
-                            }}
+                            background:m.checked === true  ? 'orange':''
+                        }}  checked={m.checked} key={m.id}
+                            onClick={handleClick(m.checked)}
                         
                         >
                             <div className="list-top">
-                                <span className="iconfont">{i.iconUrl}</span>
-                                <span>{i.number}</span>
+                                <span className="iconfont">{m.iconUrl}</span>
+                                <span>{m.number}</span>
                             </div>
                             <div className="list-button">
-                                <span>{i.count}</span>
+                                <span>{m.count}</span>
                             </div>
                         </div>
                     )

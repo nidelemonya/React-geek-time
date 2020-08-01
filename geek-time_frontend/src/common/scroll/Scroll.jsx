@@ -2,7 +2,7 @@ import React, { forwardRef, useState,useEffect, useRef, useImperativeHandle, use
 import PropTypes from "prop-types"
 import BScroll from "better-scroll"
 import styled from 'styled-components';
-import Loading from '../loading/Loading';
+// import Loading from '../loading/Loading';
 import Loading2 from '../loading-v2/Loading';
 import { debounce } from "../../api/utils";
 

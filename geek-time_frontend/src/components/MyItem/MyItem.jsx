@@ -10,7 +10,7 @@ function MyItem(props) {
         const Mydom = e.target;
         // console.log(Mydom);
         Mydom.style.background = '#efefef';
-        const href = e.target.getAttribute('href') +'/' + Math.random().toFixed(2);
+        const href = e.target.getAttribute('href') +'/';
         // console.log(href);
         let timeout = setTimeout(()=>{
             Mydom.style.background = '#ffffff'
@@ -20,13 +20,13 @@ function MyItem(props) {
         // 哈希路由不能 push同一个路由 加一个随机数
     }
     const { item_list } = props;
-    // console.log (item_list)
+    console.log (item_list)
     return (
         <div className="my-body__itemsBox">
             <div className="my-body__itemsBox_wrapper">
                 {
-                     item_list === undefined ? <React.Fragment></React.Fragment>
-                     : item_list.map(i => {
+                        // map 方法不会对空数组进行检测
+                        item_list.map(i => {
                         return (
                                 <div  className="items" key={i.id} href={i.href} onClick={handleChangeHref}>
                                     <div className="item_lift">

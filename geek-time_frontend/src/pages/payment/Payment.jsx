@@ -22,7 +22,7 @@ function Pay(props) {
                 <div className="pay-container">
                     <div className="pay-info">
                         <div className="pay-list">
-                            <img src="https://static001.geekbang.org/resource/image/d3/3a/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg?x-oss-process=image/resize,m_fill,h_216,w_164"/>
+                            <img src="https://static001.geekbang.org/resource/image/d3/3a/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg?x-oss-process=image/resize,m_fill,h_216,w_164" alt={123}/>
                             <div className="pay-list-right">
                                 <p className="title">如何看懂一幅画</p>
                                 <p className="item-subtitle">22讲 | 678人已学习</p>

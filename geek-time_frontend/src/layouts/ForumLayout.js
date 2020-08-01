@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { renderRoutes } from 'react-router-config';
 import { Top, Title, Navbar, NavIcon} from './ForumLayout.style';
 import { NavLink } from 'react-router-dom';
@@ -9,17 +9,12 @@ function Forum(props) {
     const ref = useRef(null);
     // console.log(ref);
     const { route } = props;
-    let FroumDom;
-    // console.log(ref.current)
-    useEffect(() => {
-        FroumDom = ref.current;
-        // console.log(FroumDom)
-    },FroumDom)
-    // 缓存 Dom 节点？
+    let FroumDom = ref.current;
+    // console.log(FroumDom)
     const changeNavIcon = (e) => {
         length = e.target.getAttribute('move');
         // console.log(length,'-----------------')
-        if (FroumDom !== undefined)   {
+        if (FroumDom !== null)   {
             // console.log(length,'111111111111')
             FroumDom.style.transform = `translateX(${length}rem)`
         }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, memo } from 'react';
+import React, { useState, useEffect, useRef, memo } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Container, ListContainer } from './style';
 import Scroll from '../../../../common/scroll/Scroll';
@@ -20,16 +20,24 @@ function Intro(props) {
     const [Commentshow, setCommentshow] = useState(false);
 
     //  注意 map() 不会对空数组进行检测。
-    const { id, intro, brief, articleList, chapterList, recommendList, commentList, introLoading  } = props;
+    const { id, intro, brief, articleList, chapterList, recommendList, commentList, introLoading } = props;
     // console.log(props);
     const { getIntroDataDispatch, getCatalogDataDispatch, getRecommendDataDispatch, getCommentDataDispatch } = props
-    // console.log(intro)
+    // console.log(intro, brief);
+    console.log(introLoading)
+    const ref = useRef(null);
+    // console.log(ref);
+    let length = 0,
+        IntroDom;
     useEffect(() => {
         // 拿到当前 id 子路由
         const id = props.match.params.id;
         getIntroDataDispatch(id)
         // console.log(id)
-    }, [getIntroDataDispatch])
+    },[getIntroDataDispatch, props.match.params.id])
+
+    IntroDom = ref.current;
+    // console.log(IntroDom)
 
     const difference = () => {
         if (Briefshow) setBriefshow(false)
@@ -37,6 +45,15 @@ function Intro(props) {
         if (Recommendshow) setRecommendshow(false)
         if (Commentshow) setCommentshow(false)
     }
+
+    const changeLength = (e) => {
+        length = e.target.getAttribute('move');
+        // console.log(length, IntroDom);
+        if (IntroDom !== null)   {
+            IntroDom.style.transform = `translateX(${length}rem)`
+        }
+    }
+
     const handleIntro = () => {
         difference()
         setBriefshow(true)
@@ -82,63 +99,107 @@ function Intro(props) {
                     <Scroll
                         onScroll={forceCheck}>
                         <div className="intro-center">
-                            <div className="_32BSm8u__0">
-                                <div className="_1TF-7Ks9_0">
-                                    <div className="_1tQ414Qd_0">
-                                        <img className="_3rqcVP2R_0" src="https://static001.geekbang.org/resource/image/d3/3a/d3a96afa07fbbc5219ffe5e2ccaade3a.jpg?x-oss-process=image/resize,m_fill,h_216,w_164" />
-                                        <div className="HXOfNAKh_0">
-                                            <span className="_2BooQxT-_0">全集</span>
+                            {brief.map((m, i) => {
+                                return (
+                                    <div key={i} className="_32BSm8u__0">
+                                        <div className="_1TF-7Ks9_0">
+                                            <div className="_1tQ414Qd_0">
+                                                <img className="_3rqcVP2R_0" src={m.author.avatar} alt={m.title}/>
+                                                <div className="HXOfNAKh_0">
+                                                    <span className="_2BooQxT-_0">{m.update_frequency}</span>
+                                                </div>
+                                            </div>
+                                            <div className="_3RNfor9y_0"><div>
+                                                <div className="_3-qN2sZJ_0">{m.title}</div>
+                                                <div className="_5si8bLe__0">{m.subtitle}</div>
+                                            </div>
+                                                <div className="_3JGTy9bX_0">
+                                                    <div className="_2zzFmXWs_0">讲师: {m.author.name}</div>
+                                                    <div className="_3Kig1Yjz_0">
+                                                        <span className="_1HcMwHaC_0">+</span>
+                                                        收藏
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="_136oNbm5_0">
+                                            <div className="_2BooQxT-_0">共{m.unit}<span>
+                                            ·约{(m.total_length/3600).toFixed(0)}小时{(Number(m.total_length/3600).toFixed(2).substr(3,4)*0.6).toFixed(0)}分钟</span></div>
+                                            <div className="_2BooQxT-_0">{m.extra.sub.count}人已学习</div>
+                                        </div> <div className="xae1v6CD_0">
+                                            <div className="_3-qN2sZJ_0">
+                                                <span className="iconfont _3MKZ0IpG_0">
+                                        </span>学习服务</div>
+                                            <div className="IwQi4XxR_0">
+                                                {m.extra.helper.map((t, i) => {
+                                                    if (i <= 2) {
+                                                        return (
+                                                            <React.Fragment key={i}>
+                                                                <span>{t.title}、</span>
+                                                            </React.Fragment>
+                                                        )
+                                                    }
+                                                    return <React.Fragment key={i}></React.Fragment>
+                                                })}
+                                                <span className="_1tRMNbMt_0"></span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="_3RNfor9y_0"><div><div className="_3-qN2sZJ_0">
-                                        数据结构与算法之美</div> <div className="_5si8bLe__0">为工程师量身打造的数据结构与算法私教课</div></div>
-                                        <div className="_3JGTy9bX_0"><div className="_2zzFmXWs_0">讲师：王争</div>
-                                            <div className="_3Kig1Yjz_0"><span className="_1HcMwHaC_0">+</span>收藏
-                                </div></div></div></div>
-                                <div className="_136oNbm5_0"><div className="_2BooQxT-_0">共80讲<span>·约15小时25分钟</span></div>
-                                    <div className="_2BooQxT-_0">87718人已学习</div></div> <div className="xae1v6CD_0">
-                                    <div className="_3-qN2sZJ_0"><span className="iconfont _3MKZ0IpG_0"></span>学习服务</div>
-                                    <div className="IwQi4XxR_0">无限回看、结课证书、奖励礼券<span className="_1tRMNbMt_0"></span>
-                                    </div></div></div>
+                                )
+                            })}
                             <div data-columnintrotabs="columnIntroTabs" className="_3F8GtztG_0">
                                 <div className="_3TPdE1uq_0 _2LAchprJ_0 L8uZfH9D_0">
                                     <div className="_1S4s1vAE_0">
-                                        <NavLink to={`/forum/course/${id}?tab=intro`} className="selected" onClick={handleIntro}>简介</NavLink>
+                                        <NavLink to={`/forum/course/${id}?tab=intro`} className="selected" onClick={handleIntro}>
+                                            <span move={0}  onClick={changeLength}>简介</span></NavLink>
                                     </div>
                                     <div className="_1S4s1vAE_0">
-                                        <NavLink to={`/forum/course/${id}?tab=catalog`} className="selected" onClick={handleCatalog}>目录
+                                        <NavLink to={`/forum/course/${id}?tab=catalog`} className="selected" onClick={handleCatalog}>
+                                            <span move={2.18} onClick={changeLength}>目录</span>
                                         <span className="_3mvvnPU9_0">
-                                                <span className="_2i6pHVrd_0">试看</span>
+                                                <span className="_2i6pHVrd_0"  onClick={changeLength}>试看</span>
                                             </span>
                                         </NavLink>
                                     </div>
-                                    <div className="_1S4s1vAE_0"><NavLink to={`/forum/course/${id}?tab=recommend`} className="selected" onClick={handleRecommend}>推荐</NavLink></div>
-                                    <div className="_1S4s1vAE_0"><NavLink to={`/forum/course/${id}?tab=comment`} className="selected" onClick={handleComment} >精选留言</NavLink></div>
-                                    <div className="_1M18M5Tf_0 _1z35LrE-_0" style={{ width: 34 + 'px' }, { left: 36 + 'px' }}>
+                                    <div className="_1S4s1vAE_0">
+                                        <NavLink to={`/forum/course/${id}?tab=recommend`} className="selected" onClick={handleRecommend}>
+                                        <span move={4.38}  onClick={changeLength}>推荐</span>
+                                        </NavLink></div>
+                                    <div className="_1S4s1vAE_0">
+                                        <NavLink to={`/forum/course/${id}?tab=comment`} className="selected" onClick={handleComment} >
+                                            <span move={6.88}  onClick={changeLength}>精选留言</span>
+                                        </NavLink></div>
+                                    <div className="_1M18M5Tf_0 _1z35LrE-_0" ref={ref} style={{left: 0.92 +'rem'}}>
                                     </div>
                                 </div>
                             </div>
-                            <Brief style={BriefStyle} />
-                            <Catalog style={CatalogStyle}/>
-                            <Recommend style={RecommendStyle}/>
-                            <Comment style={CommentStyle} commentList={commentList}/>
+                            <Brief style={BriefStyle} intro={intro} />
+                            <Catalog style={CatalogStyle} chapterList={chapterList} articleList={articleList} />
+                            <Recommend style={RecommendStyle} recommendList={recommendList} />
+                            <Comment style={CommentStyle} commentList={commentList} />
                         </div>
                     </Scroll>
                 </ListContainer>
                 <div className="intro-bottom">
-                    <div className="intro-bottom-left">
-                        <div className="intro-bottom-t">
-                            <span>￥19.9</span>
-                        </div>
-                        <div className="intro-bottom-b">
-                            <div className="intro-bottom-bk">
-                                <span>新人价</span>
-                            </div>
-                            <div className="intro-bottom-sk">
-                                <span>￥99</span>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        brief.map((m, i) => {
+                            return (
+                                <div key={i} className="intro-bottom-left">
+                                    <div className="intro-bottom-t">
+                                        <span>￥{m.extra.first_promo.price/100}</span>
+                                    </div>
+                                    <div className="intro-bottom-b">
+                                        <div className="intro-bottom-bk">
+                                            <span>新人价</span>
+                                        </div>
+                                        <div className="intro-bottom-sk">
+                                            <span>{m.price.sale/100}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                     <div className="intro-bottom-right">
                         <NavLink to={"/payment/"} activeClassName="selected">
                             <span>立即订阅</span>
@@ -155,7 +216,7 @@ const mapStateToProps = (state) => ({
     id: state.intro.id,
     intro: state.intro.intro,
     brief: state.intro.brief,
-    articleList:state.intro.articleList,
+    articleList: state.intro.articleList,
     chapterList: state.intro.chapterList,
     recommendList: state.intro.recommendList,
     commentList: state.intro.commentList,

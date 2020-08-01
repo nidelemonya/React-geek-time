@@ -99,7 +99,6 @@
 .Account .Account-content .Account-topUp .Account-topUp-title {
   width: 100%;
   display: flex;
-  padding-top: 1.037037rem /* 112/108 */;
   line-height: 1.018519rem /* 110/108 */;
 }
 .Account .Account-content .Account-topUp .Account-topUp-title .title {
@@ -146,7 +145,6 @@
 }
 .Account .Account-content .Account-explain .Account-explain-title {
   display: flex;
-  padding-top: 1.092593rem /* 118/108 */;
   line-height: 1.018519rem /* 110/108 */;
 }
 .Account .Account-content .Account-explain .Account-explain-title .name {
