@@ -2,7 +2,7 @@ import React from 'react';
 import './Comment.css'
 
 export default function Comment(props) {
-    const { style, commentList } = props
+    const { commentList } = props
     // console.log(commentList);
 
     const time = (time = +new Date()) => {
@@ -10,7 +10,6 @@ export default function Comment(props) {
         return date.toJSON().substr(0, 19).replace('T', ' ');
     }
     return (
-        <div style={style}>
             <div className="AEQMMag__0" columndata="[object Object]">
                 {
                     commentList.toJS().map(key => {
@@ -41,6 +40,5 @@ export default function Comment(props) {
                 }
 
             </div>
-        </div>
     )
 }

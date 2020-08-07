@@ -2,13 +2,13 @@ import React from 'react';
 import './Brief.css';
 export default function Brief(props) {
     // console.log(props);
-    const { style, intro } = props;
+    const { intro } = props;
     // console.log(intro);
     // console.log(style)
     return (
         intro.toJS().map((m, i) => {
             return (
-                <div key={i} className="_1vEhpLOL_0" style={style}>
+                <div key={i} className="_1vEhpLOL_0">
                     <div className="_2NKpEZ4f_0" >
                         {/*  dangerouslySetInnerHTML={{__html:m.column_intro}} */}
                         <div className="_2VrPoUeX_0">

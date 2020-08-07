@@ -15,15 +15,15 @@ import { renderRoutes } from 'react-router-config';
 function Forum(props) {
     // console.log(props);
     // 从 props 解构数据出来
-    const { route, pathList, directionList, infoList, enterLoading, pageCount, pullUpLoading, pullDownLoading } = props;
+    const { route, pathList, directionList, infoList, enterLoading, pullUpLoading, pullDownLoading } = props;
     const { getForumListDataDispatch, getInfoListDataDispatch, pullUpRefresh, pullDownRefresh } = props;
     // console.log(pathList, directionList, infoList)
     const handlePullUp = () => {
-        pullUpRefresh(pageCount);
+        pullUpRefresh();
     };
 
     const handlePullDown = () => {
-        pullDownRefresh(pageCount);
+        pullDownRefresh();
     };
 
     useEffect(() => {
@@ -120,6 +120,8 @@ function Forum(props) {
 //     }
 // }
 
+// 这个函数会接受 store.getState() 的结果作为参数 => state，然后返回一个对象，这个对象是根据 state 生成的。
+// mapStateTopProps 相当于告知了 Connect 应该如何去 store 里面取数据，然后可以把这个函数的返回结果传给被包装的组件
 const mapStateToProps = (state) => ({
     pathList: state.getIn(['forum','pathList']),
     directionList: state.getIn(['forum','directionList']),
@@ -129,7 +131,9 @@ const mapStateToProps = (state) => ({
     pullUpLoading: state.getIn(['forum','pullUpLoading']),
     pullDownLoading: state.getIn(['forum','pullDownLoading']),
 })
-
+// 和 mapStateToProps 一样，它返回一个对象，这个对象内容会同样被 connect 当作是 props 参数传给被包装的组件。
+// 不一样的是，这个函数不是接受 state 作为参数，而是 dispatch，
+// 你可以在返回的对象内部定义一些函数，这些函数会用到 dispatch 来触发特定的 action。
 const mapDispatchToProps = (dispatch) => {
     return {
         getForumListDataDispatch() {
@@ -141,7 +145,7 @@ const mapDispatchToProps = (dispatch) => {
         },
 
         // 滑到最底部刷新部分的处理
-        pullUpRefresh(count) {
+        pullUpRefresh() {
             dispatch(actionTypes.changePullUpLoading(true));
             dispatch(actionTypes.refreshMoreInfoList());
         },

@@ -77,11 +77,7 @@ function Intro(props) {
         difference()
         setCommentshow(true)
     }
-
-    const BriefStyle = Briefshow ? { display: "" } : { display: "none" };
-    const CatalogStyle = Catalogfshow ? { display: "" } : { display: "none" };
-    const RecommendStyle = Recommendshow ? { display: "" } : { display: "none" };
-    const CommentStyle = Commentshow ? { display: "" } : { display: "none" };
+    
     return (
         <Container>
             <div className="intro">
@@ -174,10 +170,14 @@ function Intro(props) {
                                     </div>
                                 </div>
                             </div>
-                            <Brief style={BriefStyle} intro={intro} />
+                            {/* <Brief style={BriefStyle} intro={intro} />
                             <Catalog style={CatalogStyle} chapterList={chapterList} articleList={articleList} />
                             <Recommend style={RecommendStyle} recommendList={recommendList} />
-                            <Comment style={CommentStyle} commentList={commentList} />
+                            <Comment style={CommentStyle} commentList={commentList} /> */}
+                            {Briefshow && <Brief intro={intro} />}
+                            {Catalogfshow && <Catalog chapterList={chapterList} articleList={articleList} />}
+                            {Recommendshow && <Recommend recommendList={recommendList} />}
+                            {Commentshow && <Comment commentList={commentList} />}
                         </div>
                     </Scroll>
                 </ListContainer>
