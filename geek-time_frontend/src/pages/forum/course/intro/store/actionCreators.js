@@ -65,6 +65,8 @@ export const getBrief = () => {
             // console.log(res);
             const data = res.data[1].info;
             dispatch(changeBrief(data));
+            // localStorage 存储数据
+            localStorage.setItem("brief",JSON.stringify(data))
         }).catch(()=>{
             console.log('简介数据传输错误')
         })

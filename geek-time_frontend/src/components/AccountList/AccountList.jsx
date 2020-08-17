@@ -11,21 +11,25 @@ function AccountList(props) {
     //     console.log(11111111, id);
     // }
     const handleClick = (number) => {
-        onSelected(number)
+        onSelected(number);
+        
     }
     return (
         <div className="Account-topUp-wrapBox">
             {
                 topUp_list.map(m => {
                     return (
-                        <div className = 'list' style={{
-                            background:m.checked === true  ? 'orange':''
-                        }}  checked={m.checked} key={m.id}
+                        <div className = 'list' 
+                            checked={m.checked} key={m.id}
                             onClick={() => {
                                 // m.id
-                                handleClick(m.number)
+                                handleClick(m.number);
+                                
                             }}
-                        
+                            // style={{
+                            //     // backgroundColor:m.checked === true  ? 'orange':'',
+                            // }} 
+                            
                         >
                             <div className="list-top">
                                 <span className="iconfont">{m.iconUrl}</span>
