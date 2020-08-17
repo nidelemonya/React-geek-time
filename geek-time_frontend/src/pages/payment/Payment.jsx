@@ -1,4 +1,4 @@
-import React, { memo, useRef } from 'react';
+import React, { memo, useRef, useEffect } from 'react';
 import { Container } from './style';
 import { withRouter } from 'react-router'
 import './Payment.css';
@@ -11,7 +11,8 @@ function Pay(props) {
     const { brief, balance } = props;
     const { getPaymentDataDispatch } = props;
     const ref = useRef(null);
-    // console.log(ref.current);
+    //localStorage.getItem: 读取 localStorage 项
+    const localBrief = JSON.parse(localStorage.getItem("brief"))
     // console.log(brief);
     const handleBack = () => {
         window.history.back();
@@ -20,12 +21,14 @@ function Pay(props) {
         reduce = reduce / 100;
         if (balance < reduce) {
             // alert('你没钱了，穷鬼')
-            
             return;
         }
         // console.log('reduce', reduce)
         getPaymentDataDispatch(reduce)
     }
+
+    // const BottomDom = ref.current;
+    // BottomDom.style.background = 'red';
     return (
         <Container>
             <div className="pay">
@@ -37,7 +40,7 @@ function Pay(props) {
                         <span>结算台</span>
                     </div>
                 </div>
-                {brief.toJS().map((m, i) => {
+                {( localBrief ? localBrief : brief.toJS()).map((m, i) => {
                 return(
                 <div className="pay-container" key={i}>
                     <div className="pay-info">
