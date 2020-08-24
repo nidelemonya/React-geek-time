@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import PropTypes from 'prop-types';
 import './AccountList.css';
 import '../../assets/iconfont/iconfont.js';
 // import { Link } from 'react-router-dom';
 
 function AccountList(props) {
+    const [dos, setdo] = useState("hidden");
     const { topUp_list } = props;
     const { onSelected } = props;
-    // const handleClick = (id) => () => {
-    //     console.log(11111111, id);
-    // }
-    const handleClick = (number) => {
+    useEffect(() => {
+        document.querySelector('#do1').style.background = "#fa8919"
+    },[])
+    const handleClick = (id,number) => {
+        // c = !c
+        // console.log(number)
+        document.querySelector('#do1').style.background = "#ffffff"
+        document.querySelector('#do2').style.background = "#ffffff"
+        document.querySelector('#do3').style.background = "#ffffff"
+        document.querySelector('#do4').style.background = "#ffffff"
+        document.querySelector('#do5').style.background = "#ffffff"
+        document.querySelector('#do6').style.background = "#ffffff"
+        document.querySelector('#do7').style.background = "#ffffff"
+        document.querySelector('#do8').style.background = "#ffffff"
+        document.querySelector('#do9').style.background = "#ffffff"
+        document.querySelector(`#do${id}`).style.background = "#fa8919"
         onSelected(number);
-        
     }
     return (
         <div className="Account-topUp-wrapBox">
@@ -23,15 +35,15 @@ function AccountList(props) {
                             checked={m.checked} key={m.id}
                             onClick={() => {
                                 // m.id
-                                handleClick(m.number);
-                                
+                                handleClick(m.id,m.number);
                             }}
+                            id={`do${m.id}`}
+                            // // style={{ backgroundColor: "#fa8919" }}
                             // style={{
-                            //     // backgroundColor:m.checked === true  ? 'orange':'',
-                            // }} 
-                            
+                            //     backgroundColor: m.checked === true  ? '#fa8919':'',
+                            // }}          
                         >
-                            <div className="list-top">
+                            <div className="list-top" >
                                 <span className="iconfont">{m.iconUrl}</span>
                                 <span>{m.number}</span>
                             </div>

@@ -64,7 +64,9 @@ function Account(props) {
                                         <AccountList topUp_list={accountToUp.list} onSelected={handleSelect}/>
                                     </div>
                                     <div className="Account-topUp-affirm">
-                                        <button className="Account-topUp-affirm-btn" onClick={handleTopUp}>确认充值</button>
+                                        <button className="Account-topUp-affirm-btn" 
+                                            onClick={handleTopUp}
+                                        >确认充值</button>
                                     </div>
                                 </div>
                                 <div className="Account-explain">
