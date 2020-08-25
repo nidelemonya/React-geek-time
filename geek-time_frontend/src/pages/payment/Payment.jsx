@@ -10,8 +10,10 @@ function Pay(props) {
     const [visible, setVisibility] = useState("hidden");
     // const [paymethod, setPayMethod] = useState("wechat");
     const [psdvisible, setpsdVisible] = useState("hidden");
+    const [aa, setaa] = useState(false)
+    const [bb, setbb] = useState(false)
     // const [balance, setBalance] = useState(0);
-    const { brief,reduce,balance } = props;
+    const { brief, reduce, balance } = props;
     const { getPaymentDataDispatch } = props;
     const ref = useRef(null);
     //localStorage.getItem: 读取 localStorage 项
@@ -21,14 +23,23 @@ function Pay(props) {
         window.history.back();
     }
     const handlePayment = (reduce) => {
-        console.log(typeof reduce)
+        console.log(reduce, balance)
+        if(reduce/100 > balance) {
+            setaa(true)
+            return
+        }
+        else setbb(true)
         reduce = reduce / 100;
         // console.log('reduce', reduce)
         getPaymentDataDispatch(reduce)
     }
-
-    // const BottomDom = ref.current;
-    // BottomDom.style.background = 'red';
+    useEffect(() => {
+        const BottomDom = ref.current;
+        console.log(BottomDom,balance)
+        if(reduce/100 < balance) {
+            BottomDom.style.background = 'red';
+        }
+    }, [])
     return (
         <Container>
             <div className="pay">
@@ -103,6 +114,7 @@ function Pay(props) {
                                         setpsdVisible("visible");
                                     }}>
                                 <div className="primary"
+                                    ref={ref}
                                 //   style={{ backgroundColor: "#fa8919" }}
                                     onClick={()=>{
                                         // setVisibility("hidden")
@@ -111,20 +123,16 @@ function Pay(props) {
                                 >¥{m.extra.first_promo.price / 100}确认支付</div>
                                     <div className="fixed-layer" style={{ visibility: `${psdvisible}` }}>
                                         <div className="password-box">
-                                            {
-                                            parseFloat(balance)  > parseFloat(reduce) 
-                                                ? (
-                                                <span>余额不足,
+                                                {aa&&<span>
+                                                    余额不足,
                                                     <NavLink to={"/user/account/"} style={{ color: "#fa8919" }}>前去充值</NavLink>
-                                                </span>
-                                                ) : (
-                                                    <span>支付成功,
+                                                </span>}
+                                                {bb&&<span>支付成功,
                                                         <NavLink to="/user/account/"
                                                             style={{ color: "#fa8919" }}
-                                                            onClick={() => handlePayment()}
+                                                            // onClick={() => handlePayment()}
                                                         >查看我的账户</NavLink>
-                                                    </span>
-                                                )}
+                                                    </span>}
                                         </div>
                                     </div>
                                 </div>

@@ -5,24 +5,16 @@ import '../../assets/iconfont/iconfont.js';
 // import { Link } from 'react-router-dom';
 
 function AccountList(props) {
-    const [dos, setdo] = useState("hidden");
+    const [dos, setdo] = useState(1);
     const { topUp_list } = props;
     const { onSelected } = props;
     useEffect(() => {
         document.querySelector('#do1').style.background = "#fa8919"
     },[])
     const handleClick = (id,number) => {
-        // c = !c
-        // console.log(number)
-        document.querySelector('#do1').style.background = "#ffffff"
-        document.querySelector('#do2').style.background = "#ffffff"
-        document.querySelector('#do3').style.background = "#ffffff"
-        document.querySelector('#do4').style.background = "#ffffff"
-        document.querySelector('#do5').style.background = "#ffffff"
-        document.querySelector('#do6').style.background = "#ffffff"
-        document.querySelector('#do7').style.background = "#ffffff"
-        document.querySelector('#do8').style.background = "#ffffff"
-        document.querySelector('#do9').style.background = "#ffffff"
+        setdo(id)
+        // 获取上一次的id 值并将其 背景色修改为 原来的颜色
+        document.querySelector(`#do${dos}`).style.background = "#f5f8fa"
         document.querySelector(`#do${id}`).style.background = "#fa8919"
         onSelected(number);
     }
@@ -37,11 +29,7 @@ function AccountList(props) {
                                 // m.id
                                 handleClick(m.id,m.number);
                             }}
-                            id={`do${m.id}`}
-                            // // style={{ backgroundColor: "#fa8919" }}
-                            // style={{
-                            //     backgroundColor: m.checked === true  ? '#fa8919':'',
-                            // }}          
+                            id={`do${m.id}`}        
                         >
                             <div className="list-top" >
                                 <span className="iconfont">{m.iconUrl}</span>

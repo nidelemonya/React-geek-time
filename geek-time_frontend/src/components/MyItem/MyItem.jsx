@@ -5,15 +5,11 @@ import './MyItem.css';
 import '../../assets/iconfont/iconfont.js';
 
 function MyItem(props) {
-    const handleChangeHref = (e) => {
-        // console.log(e.target.getAttribute('href'));
-        const Mydom = e.target;
-        // console.log(Mydom);
-        Mydom.style.background = '#efefef';
-        const href = e.target.getAttribute('href') +'/';
+    const handleChangeHref = (id, href) => {
+        document.querySelector(`#ss${id}`).style.background = '#efefef';
         // console.log(href);
         let timeout = setTimeout(()=>{
-            Mydom.style.background = '#ffffff'
+            document.querySelector(`#ss${id}`).style.background = '#ffffff'
             props.history.push(href);
             if(timeout) clearTimeout(timeout);
         },200)
@@ -28,7 +24,9 @@ function MyItem(props) {
                         // map 方法不会对空数组进行检测
                         item_list.map(i => {
                         return (
-                                <div  className="items" key={i.id} href={i.href} onClick={handleChangeHref}>
+                                <div  className="items" key={i.id} id={`ss${i.id}`} onClick={()=> {
+                                    handleChangeHref(i.id,i.href)
+                                }}>
                                     <div className="item_lift">
                                         <span className="icon1 iconfont">{i.iconUrl}</span>
                                         <div className="name">{i.name}</div>
