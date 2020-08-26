@@ -1,11 +1,10 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import Scroll from '../../common/scroll/Scroll';
 import { forceCheck } from 'react-lazyload';
 import { ListContainer } from './style';
 import './Tribe.css';
 
-function Tribe(props) {
+function Tribe() {
     return (
         <div className="tribe">
             <div className="tribe-header">

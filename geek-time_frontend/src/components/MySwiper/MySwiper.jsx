@@ -51,7 +51,3 @@ export default function MySwiper(props) {
         </div>
     )
 }
-
-MySwiper.propTypes = {
-    // list_study:PropTypes.object.isRequired
-}

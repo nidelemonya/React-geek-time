@@ -27,8 +27,8 @@ const CourseComponent = lazy(() => import ('../pages/my/course/Course'))
 const OrderComponent = lazy(() => import ('../pages/my/order/Order'))
 // 进行性能优化 懒加载;
 const SuspenseComponent = Component => props => {
+    // fallback 是一个回滚事件
     return (
-        // fallback 是一个回滚事件
         <Suspense fallback= {null}>
             <Component {...props}>
             </Component>

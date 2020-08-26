@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Brief.css';
 export default function Brief(props) {
-    // console.log(props);
     const { intro } = props;
     // console.log(intro);
-    // console.log(style)
     return (
         intro.toJS().map((m, i) => {
             return (
@@ -147,4 +146,8 @@ export default function Brief(props) {
             )
         })
     )
+}
+
+Brief.propTypes = {
+    intro: PropTypes.object.isRequired
 }

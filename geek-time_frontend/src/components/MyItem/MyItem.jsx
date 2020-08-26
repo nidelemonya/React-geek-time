@@ -6,14 +6,12 @@ import '../../assets/iconfont/iconfont.js';
 
 function MyItem(props) {
     const handleChangeHref = (id, href) => {
-        document.querySelector(`#ss${id}`).style.background = '#efefef';
-        // console.log(href);
+        document.querySelector(`#href${id}`).style.background = '#efefef';
         let timeout = setTimeout(()=>{
-            document.querySelector(`#ss${id}`).style.background = '#ffffff'
+            document.querySelector(`#href${id}`).style.background = '#ffffff'
             props.history.push(href);
             if(timeout) clearTimeout(timeout);
         },200)
-        // 哈希路由不能 push同一个路由 加一个随机数
     }
     const { item_list, balance } = props;
     // console.log (item_list)
@@ -24,7 +22,7 @@ function MyItem(props) {
                         // map 方法不会对空数组进行检测
                         item_list.map(i => {
                         return (
-                                <div  className="items" key={i.id} id={`ss${i.id}`} onClick={()=> {
+                                <div  className="items" key={i.id} id={`href${i.id}`} onClick={()=> {
                                     handleChangeHref(i.id,i.href)
                                 }}>
                                     <div className="item_lift">

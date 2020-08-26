@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import * as actionTypes from '../my/store/actionCreators';
 
 function Pay(props) {
-    const [visible, setVisibility] = useState("hidden");
     // const [paymethod, setPayMethod] = useState("wechat");
     const [psdvisible, setpsdVisible] = useState("hidden");
     const [notEnough, setnotEnough] = useState(false)
@@ -24,7 +23,7 @@ function Pay(props) {
     }
     const handlePayment = (reduce) => {
         console.log(reduce, balance)
-        if(reduce/100 > balance) {
+        if (reduce / 100 > balance) {
             setnotEnough(true)
             return
         }
@@ -35,12 +34,12 @@ function Pay(props) {
     }
     useEffect(() => {
         const BottomDom = ref.current;
-        console.log(BottomDom,balance)
-        if(reduce/100 < balance) {
+        console.log(BottomDom, balance)
+        if (reduce / 100 < balance) {
             BottomDom.style.background = '#fa8919';
             console.log(reduce)
         }
-    }, [])
+    }, [balance, reduce])
     return (
         <Container>
             <div className="pay">
@@ -101,45 +100,35 @@ function Pay(props) {
                                 <p className="current-user">
                                     <span className="title">当前登录账号：157****2750</span>
                                 </p>
-                                {/* <div ref = {ref} className="bottom">
-                            <div className="bottom-name" 
-                            onClick={()=>{
-                                setVisibility("hidden")
-                                // handlePayment(m.extra.first_promo.price)
-                            }}
-                            >￥{m.extra.first_promo.price / 100}确认支付</div>
-                        </div> */}
-
                                 <div className="bottom"
-                                    onClick={() => {     
+                                    onClick={() => {
                                         setpsdVisible("visible");
                                     }}>
-                                <div className="primary"
-                                    ref={ref}
-                                //   style={{ backgroundColor: "#fa8919" }}
-                                    onClick={()=>{
-                                        // setVisibility("hidden")
-                                        handlePayment(m.extra.first_promo.price)
-                                    }}
-                                >¥{m.extra.first_promo.price / 100}确认支付</div>
+                                    <div className="primary"
+                                        ref={ref}
+                                        //   style={{ backgroundColor: "#fa8919" }}
+                                        onClick={() => {
+                                            // setVisibility("hidden")
+                                            handlePayment(m.extra.first_promo.price)
+                                        }}
+                                    >¥{m.extra.first_promo.price / 100}确认支付</div>
                                     <div className="fixed-layer" style={{ visibility: `${psdvisible}` }}>
                                         <div className="password-box">
-                                                {notEnough&&<span>
-                                                    余额不足,
+                                            {notEnough && <span>
+                                                余额不足,
                                                     <NavLink to={"/user/account/"} style={{ color: "#fa8919" }}>前去充值</NavLink>
-                                                </span>}
-                                                {paySuccess&&<span>支付成功,
+                                            </span>}
+                                            {paySuccess && <span>支付成功,
                                                         <NavLink to="/user/account/"
-                                                            style={{ color: "#fa8919" }}
-                                                            // onClick={() => handlePayment()}
-                                                        >查看我的账户</NavLink>
-                                                    </span>}
+                                                    style={{ color: "#fa8919" }}
+                                                // onClick={() => handlePayment()}
+                                                >查看我的账户</NavLink>
+                                            </span>}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        // </div>
                     )
                 })}
             </div>
@@ -147,7 +136,6 @@ function Pay(props) {
     )
 }
 const Pays = withRouter(Pay);
-// export default Pays;
 const mapStateToProps = (state) => ({
     // brief: state.intro.brief,
     // balance: state.user.balance

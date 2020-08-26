@@ -3,7 +3,6 @@ import { withRouter } from 'react-router';
 import Scroll from '../../common/scroll/Scroll';
 import { forceCheck } from 'react-lazyload';
 import { ListContainer } from './style';
-// import PropTypes from 'prop-types';
 import './Study.css';
 
 function Study(props) {
@@ -65,10 +64,6 @@ function Study(props) {
 
         </div>
     )
-}
-
-Study.propTypes = {
-
 }
 
 const Studys = withRouter(Study)

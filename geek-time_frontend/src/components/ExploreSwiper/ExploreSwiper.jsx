@@ -30,6 +30,7 @@ export default function ExploreSwiper(props) {
         picUrl: 'https://static001.geekbang.org/resource/image/7e/0a/7e672bcf2ae2yyd8880c81860b94720a.jpg',
         linkUrl: '#'
       }]);
+
     useEffect(()=> {
         new Swiper('.swiper-container', {
             // Optional parameters
@@ -66,8 +67,4 @@ export default function ExploreSwiper(props) {
             <div className="swiper-pagination"></div>
         </div>
     )
-}
-
-ExploreSwiper.propTypes = {
-    // list_study:PropTypes.object.isRequired
 }

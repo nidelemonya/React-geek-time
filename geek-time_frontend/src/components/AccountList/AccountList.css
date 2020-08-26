@@ -26,7 +26,6 @@
   font-size: 0.259259rem /* 28/108 */;
   color: #b9bcbc;
 }
-.Account-topUp-wrapBox .white_color {
-  color: red;
-  z-index: 9999999;
+.Account-topUp-wrapBox .list .list-active {
+  color: #ffffff;
 }
