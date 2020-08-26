@@ -10,8 +10,8 @@ function Pay(props) {
     const [visible, setVisibility] = useState("hidden");
     // const [paymethod, setPayMethod] = useState("wechat");
     const [psdvisible, setpsdVisible] = useState("hidden");
-    const [aa, setaa] = useState(false)
-    const [bb, setbb] = useState(false)
+    const [notEnough, setnotEnough] = useState(false)
+    const [paySuccess, setpaySuccess] = useState(false)
     // const [balance, setBalance] = useState(0);
     const { brief, reduce, balance } = props;
     const { getPaymentDataDispatch } = props;
@@ -25,10 +25,10 @@ function Pay(props) {
     const handlePayment = (reduce) => {
         console.log(reduce, balance)
         if(reduce/100 > balance) {
-            setaa(true)
+            setnotEnough(true)
             return
         }
-        else setbb(true)
+        else setpaySuccess(true)
         reduce = reduce / 100;
         // console.log('reduce', reduce)
         getPaymentDataDispatch(reduce)
@@ -37,7 +37,8 @@ function Pay(props) {
         const BottomDom = ref.current;
         console.log(BottomDom,balance)
         if(reduce/100 < balance) {
-            BottomDom.style.background = 'red';
+            BottomDom.style.background = '#fa8919';
+            console.log(reduce)
         }
     }, [])
     return (
@@ -123,11 +124,11 @@ function Pay(props) {
                                 >¥{m.extra.first_promo.price / 100}确认支付</div>
                                     <div className="fixed-layer" style={{ visibility: `${psdvisible}` }}>
                                         <div className="password-box">
-                                                {aa&&<span>
+                                                {notEnough&&<span>
                                                     余额不足,
                                                     <NavLink to={"/user/account/"} style={{ color: "#fa8919" }}>前去充值</NavLink>
                                                 </span>}
-                                                {bb&&<span>支付成功,
+                                                {paySuccess&&<span>支付成功,
                                                         <NavLink to="/user/account/"
                                                             style={{ color: "#fa8919" }}
                                                             // onClick={() => handlePayment()}
