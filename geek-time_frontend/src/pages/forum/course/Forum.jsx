@@ -28,14 +28,15 @@ function Forum(props) {
 
     useEffect(() => {
         // 如果没有数据 请求一次
-        if (!pathList.toJS().length || !directionList.toJS().length) {
+        if (!pathList.size && !directionList.size) {
             getForumListDataDispatch();
         }
-        if (!infoList.toJS().length) {
+        if (!infoList.size) {
             getInfoListDataDispatch();
         }
-    }, [getForumListDataDispatch, getInfoListDataDispatch, pathList, directionList, infoList])
-    // 加个空数组防止一直刷新
+        // eslint-disable-next-line
+    }, [])
+    // 加个空数组表示只在组件挂载和卸载时执行一次
     // console.log(pullUpLoading, pullDownLoading, '------')
     return (
         <div className="forum">
@@ -137,8 +138,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => {
     return {
         getForumListDataDispatch() {
-            dispatch(actionTypes.getPathList())
-            dispatch(actionTypes.getDirectionList())
+            dispatch(actionTypes.getForumList())
         },
         getInfoListDataDispatch() {
             dispatch(actionTypes.getInfoList())

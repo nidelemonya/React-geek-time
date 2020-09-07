@@ -32,10 +32,11 @@ function Intro(props) {
         IntroDom;
     useEffect(() => {
         // 拿到当前 id 子路由
+        // console.log(id)
         const id = props.match.params.id;
         getIntroDataDispatch(id)
-        // console.log(id)
-    },[getIntroDataDispatch, props.match.params.id])
+        // eslint-disable-next-line
+    },[])
 
     IntroDom = ref.current;
     // console.log(IntroDom)

@@ -44,34 +44,21 @@ export const changeInfoList = (data) => ({
 })
 
 
-// 获取学习路径数据
-export const getPathList = () => {
+// 获取学习路径和课程方向数据
+export const getForumList = () => {
     // 因为获取数据 是异步操作 所以返回一个函数
     return ( dispatch ) => {
         getLessonsRequest().then(res =>{
             // console.log(res[0].list,'22222222')
             const data = res[0].list;
+            const data1 = res[1].list;
             dispatch(changePathList(data));
+            dispatch(changeDirectionList(data1));
             // 拿到数据  EnterLoading 变成false
             dispatch(changeEnterLoading(false));
         }).catch(()=>{
             // 没有正确得到数据 怎么办
-            console.log('课程数据传输错误')
-        })
-    }
-}
-// 获取课程方向数据
-export const getDirectionList = () => {
-    return ( dispatch ) => {
-        getLessonsRequest().then(res =>{
-            // console.log(res[0].list,'22222222')
-            const data = res[1].list;
-            dispatch(changeDirectionList(data));
-            // 拿到数据  EnterLoading 变成false
-            dispatch(changeEnterLoading(false));
-        }).catch(()=>{
-            // 没有正确得到数据 怎么办
-            console.log('课程数据传输错误')
+            console.log('学习路径和课程方向数据传输错误')
         })
     }
 }
