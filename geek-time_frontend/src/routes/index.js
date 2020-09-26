@@ -13,6 +13,7 @@ import HomeLayout from '../layouts/HomeLayout';
 import ForumLayout from '../layouts/ForumLayout';
 
 // 懒加载 不会直接引入
+// 因为用了懒加载的 import, 必须使用 lazy，又因为用了 lazy，必须使用 Suspense
 const ExploreComponent = lazy(()=> import ('../pages/explore/Explore'))
 const ForumComponent = lazy(()=> import ('../pages/forum/course/Forum'))
 const TribeComponent = lazy(()=> import ('../pages/tribe/Tribe'))

@@ -14,7 +14,8 @@ function AccountList(props) {
         document.querySelector(`#list-button1`).style.color = "#ffffff"
     }, [])
     const handleClick = (id, number) => {
-        setActive(id)
+        
+        console.log('函数里面的',active)
         // 获取上一次的 id 值并将其 背景色修改为 原来的颜色
         document.querySelector(`#color${active}`).style.background = "#f5f8fa"
         document.querySelector(`#color${id}`).style.background = "#fa8919"
@@ -25,7 +26,9 @@ function AccountList(props) {
         document.querySelector(`#list-button${active}`).style.color = "#b9bcbc"
         document.querySelector(`#list-button${id}`).style.color = "#ffffff"
         onSelected(number);
+        setActive(id) // 因为 setState 是异步。
     }
+    console.log('函数外面的',active)
     return (
         <div className="Account-topUp-wrapBox">
             {
